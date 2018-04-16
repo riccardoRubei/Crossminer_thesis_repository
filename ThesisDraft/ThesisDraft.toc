@@ -4,7 +4,14 @@
 \contentsline {subsection}{\numberline {2.1}Overview}{3}
 \contentsline {section}{\numberline {3}MUDABlue}{3}
 \contentsline {subsection}{\numberline {3.1}Overview}{3}
-\contentsline {section}{\numberline {4}Clan}{3}
-\contentsline {subsection}{\numberline {4.1}Overview}{3}
-\contentsline {section}{\numberline {5}Results}{3}
-\contentsline {section}{\numberline {6}Conclusion}{3}
+\contentsline {subsection}{\numberline {3.2}The Approach}{3}
+\contentsline {subsubsection}{\numberline {3.2.1}Exctract Identifiers}{4}
+\contentsline {subsubsection}{\numberline {3.2.2}Create identifier-by-software matrix}{4}
+\contentsline {subsubsection}{\numberline {3.2.3}Remove useless identifiers}{4}
+\contentsline {subsubsection}{\numberline {3.2.4}Apply the LSA}{4}
+\contentsline {subsubsection}{\numberline {3.2.5}Apply the Cosine Similarity}{5}
+\contentsline {subsubsection}{\numberline {3.2.6}Categorization}{5}
+\contentsline {section}{\numberline {4}Clan}{5}
+\contentsline {subsection}{\numberline {4.1}Overview}{5}
+\contentsline {section}{\numberline {5}Results}{5}
+\contentsline {section}{\numberline {6}Conclusion}{5}
