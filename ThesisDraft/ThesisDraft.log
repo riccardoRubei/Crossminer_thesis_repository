@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.11)  16 APR 2018 17:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.11)  17 APR 2018 11:03
 entering extended mode
 **ThesisDraft.tex
 
@@ -539,10 +539,104 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
  [2]
 (C:\Users\Riccardo\git\Crossminer_thesis_repository\Crossminer_thesis_repositor
-y\ThesisDraft\src/Similarity.tex) [3]
+y\ThesisDraft\src/Similarity.tex
+
+LaTeX Warning: Citation `Collobert:2011:NLP:1953048.2078186' on page 3 undefine
+d on input line 10.
+
+
+LaTeX Warning: Citation `Turney:2010:FMV:1861751.1861756' on page 3 undefined o
+n input line 10.
+
+
+LaTeX Warning: Citation `Reed:2006:TNT:1193211.1193734' on page 3 undefined on 
+input line 10.
+
+
+LaTeX Warning: Citation `Ramos1999' on page 3 undefined on input line 10.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation `10.1109/APSEC.2004.69' on page 3 undefined on input li
+ne 39.
+
+
+LaTeX Warning: Citation `10.1109ICPC.2016.7503721' on page 3 undefined on input
+ line 39.
+
+
+LaTeX Warning: Citation `McMillan:2012:DSS:2337223.2337267' on page 3 undefined
+ on input line 39.
+
+[3]
+
+LaTeX Warning: Citation `tversky1977features' on page 4 undefined on input line
+ 45.
+
+<images/Cosine.pdf, id=22, 193.72375pt x 198.7425pt>
+File: images/Cosine.pdf Graphic file (type pdf)
+ <use images/Cosine.pdf>
+Package pdftex.def Info: images/Cosine.pdf used on input line 55.
+(pdftex.def)             Requested size: 104.56342pt x 107.27385pt.
+
+
+LaTeX Warning: Citation `Huang:2012:LCD:2343876.2343884' on page 4 undefined on
+ input line 60.
+
+
+LaTeX Warning: Citation `Islam:2008:STS:1376815.1376819' on page 4 undefined on
+ input line 60.
+
+
+LaTeX Warning: Citation `Linden:2003:ARI:642462.642471' on page 4 undefined on 
+input line 60.
+
+
+LaTeX Warning: Citation `conf:iscis:MadylovaO09' on page 4 undefined on input l
+ine 60.
+
+
+LaTeX Warning: Citation `Mihalcea:2006:CKM:1597538.1597662' on page 4 undefined
+ on input line 60.
+
+
+LaTeX Warning: Citation `10.1109/APSEC.2004.69' on page 4 undefined on input li
+ne 60.
+
+
+LaTeX Warning: Citation `McMillan:2012:DSS:2337223.2337267' on page 4 undefined
+ on input line 60.
+
+
+LaTeX Warning: Citation `10.1109ICPC.2016.7503721' on page 4 undefined on input
+ line 60.
+
+
+LaTeX Warning: Citation `6671293' on page 4 undefined on input line 60.
+
+
+LaTeX Warning: Citation `Chen:2015:SFD:2684822.2685305' on page 4 undefined on 
+input line 60.
+
+
+LaTeX Warning: Citation `Wang:2015:WSA:2771783.2771795' on page 4 undefined on 
+input line 60.
+
+
+LaTeX Warning: Citation `Lo:2012:DSA:2473496.2473616' on page 4 undefined on in
+put line 60.
+
+
+LaTeX Warning: Citation `10.1109/SANER.2017.7884605' on page 4 undefined on inp
+ut line 60.
+
+) [4 <C:/Users/Riccardo/git/Crossminer_thesis_repository/Crossminer_thesis_repo
+sitory/ThesisDraft/images/Cosine.pdf>] [5]
 (C:\Users\Riccardo\git\Crossminer_thesis_repository\Crossminer_thesis_repositor
 y\ThesisDraft\src/MudaBlue.tex
-<images/Mudablue1.png, id=16, 709.90219pt x 259.7203pt>
+<images/Mudablue1.png, id=42, 709.90219pt x 259.7203pt>
 File: images/Mudablue1.png Graphic file (type png)
 
 <use images/Mudablue1.png>
@@ -553,33 +647,41 @@ Overfull \hbox (8.54666pt too wide) in paragraph at lines 10--12
  [][] 
  []
 
-[4
+[6
 
  <C:/Users/Riccardo/git/Crossminer_thesis_repository/Crossminer_thesis_reposito
-ry/ThesisDraft/images/Mudablue1.png>]) [5]
+ry/ThesisDraft/images/Mudablue1.png>]) [7]
+No file ThesisDraft.bbl.
+
 (C:\Users\Riccardo\git\Crossminer_thesis_repository\Crossminer_thesis_repositor
 y\ThesisDraft\ThesisDraft.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3921 strings out of 493921
- 59396 string characters out of 3144866
- 122765 words of memory out of 3000000
- 7167 multiletter control sequences out of 15000+200000
- 10612 words of font info for 37 fonts, out of 3000000 for 9000
+ 3951 strings out of 493921
+ 60059 string characters out of 3144866
+ 125801 words of memory out of 3000000
+ 7194 multiletter control sequences out of 15000+200000
+ 10958 words of font info for 38 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 44i,10n,43p,762b,267s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,10n,43p,958b,278s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb>
-Output written on ThesisDraft.pdf (5 pages, 344832 bytes).
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on ThesisDraft.pdf (7 pages, 429657 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
+ 90 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
