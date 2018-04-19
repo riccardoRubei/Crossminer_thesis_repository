@@ -5,14 +5,15 @@
 \contentsline {subsection}{\numberline {2.2}Mathematical Background}{3}
 \contentsline {subsubsection}{\numberline {2.2.1}Term-Document Matrix}{3}
 \contentsline {subsubsection}{\numberline {2.2.2}Cosine Similarity}{4}
-\contentsline {subsubsection}{\numberline {2.2.3}Singular Value Decomposition}{5}
-\contentsline {subsubsection}{\numberline {2.2.4}Latent Semantic Analysis}{5}
-\contentsline {section}{\numberline {3}MUDABlue}{6}
-\contentsline {subsection}{\numberline {3.1}Overview}{6}
-\contentsline {subsection}{\numberline {3.2}The Approach}{6}
-\contentsline {subsubsection}{\numberline {3.2.1}Exctract Identifiers}{6}
-\contentsline {subsubsection}{\numberline {3.2.2}Create identifier-by-software matrix}{6}
-\contentsline {subsubsection}{\numberline {3.2.3}Remove useless identifiers}{7}
-\contentsline {subsubsection}{\numberline {3.2.4}Apply the LSA}{7}
-\contentsline {subsubsection}{\numberline {3.2.5}Apply the Cosine Similarity}{7}
-\contentsline {subsubsection}{\numberline {3.2.6}Categorization}{7}
+\contentsline {subsubsection}{\numberline {2.2.3}Latent Semantic Analysis}{5}
+\contentsline {section}{\numberline {3}MUDABlue}{7}
+\contentsline {subsection}{\numberline {3.1}Overview}{7}
+\contentsline {subsection}{\numberline {3.2}The Approach}{7}
+\contentsline {subsubsection}{\numberline {3.2.1}Exctract Identifiers}{7}
+\contentsline {subsubsection}{\numberline {3.2.2}Create identifier-by-software matrix}{7}
+\contentsline {subsubsection}{\numberline {3.2.3}Remove useless identifiers}{8}
+\contentsline {subsubsection}{\numberline {3.2.4}Apply the LSA}{8}
+\contentsline {subsubsection}{\numberline {3.2.5}Apply the Cosine Similarity}{8}
+\contentsline {subsubsection}{\numberline {3.2.6}Categorization}{8}
+\contentsline {section}{\numberline {4}CLAN}{9}
+\contentsline {section}{References}{10}

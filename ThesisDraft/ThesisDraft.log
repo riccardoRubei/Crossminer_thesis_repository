@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.11)  17 APR 2018 11:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.11)  19 APR 2018 18:15
 entering extended mode
 **ThesisDraft.tex
 
@@ -392,6 +392,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks23
 \@floatcapt=\box27
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\cite\cite.sty"
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 \fancy@headwidth=\skip54
 \f@ncyO@elh=\skip55
@@ -457,18 +462,18 @@ Package tocloft Info: The document has section divisions on input line 44.
 )
 (C:\Users\Riccardo\git\Crossminer_thesis_repository\Crossminer_thesis_repositor
 y\ThesisDraft\ThesisDraft.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -523,11 +528,11 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 65.
+(Font)              <12> on input line 66.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 65.
+(Font)              <8> on input line 66.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 65.
+(Font)              <6> on input line 66.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
@@ -541,102 +546,31 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (C:\Users\Riccardo\git\Crossminer_thesis_repository\Crossminer_thesis_repositor
 y\ThesisDraft\src/Similarity.tex
 
-LaTeX Warning: Citation `Collobert:2011:NLP:1953048.2078186' on page 3 undefine
-d on input line 10.
-
-
-LaTeX Warning: Citation `Turney:2010:FMV:1861751.1861756' on page 3 undefined o
-n input line 10.
-
-
-LaTeX Warning: Citation `Reed:2006:TNT:1193211.1193734' on page 3 undefined on 
-input line 10.
-
-
-LaTeX Warning: Citation `Ramos1999' on page 3 undefined on input line 10.
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Citation `10.1109/APSEC.2004.69' on page 3 undefined on input li
-ne 39.
-
-
-LaTeX Warning: Citation `10.1109ICPC.2016.7503721' on page 3 undefined on input
- line 39.
-
-
-LaTeX Warning: Citation `McMillan:2012:DSS:2337223.2337267' on page 3 undefined
- on input line 39.
-
-[3]
-
-LaTeX Warning: Citation `tversky1977features' on page 4 undefined on input line
- 45.
-
-<images/Cosine.pdf, id=22, 193.72375pt x 198.7425pt>
+[3] <images/Cosine.pdf, id=21, 193.72375pt x 198.7425pt>
 File: images/Cosine.pdf Graphic file (type pdf)
- <use images/Cosine.pdf>
+
+<use images/Cosine.pdf>
 Package pdftex.def Info: images/Cosine.pdf used on input line 55.
 (pdftex.def)             Requested size: 104.56342pt x 107.27385pt.
+ [4 <C:/Users/Riccardo/git/Crossminer_thesis_repository/Crossminer_thesis_repos
+itory/ThesisDraft/images/Cosine.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 75.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
 
 
-LaTeX Warning: Citation `Huang:2012:LCD:2343876.2343884' on page 4 undefined on
- input line 60.
+LaTeX Warning: Reference `sec:cosine' on page 5 undefined on input line 82.
 
-
-LaTeX Warning: Citation `Islam:2008:STS:1376815.1376819' on page 4 undefined on
- input line 60.
-
-
-LaTeX Warning: Citation `Linden:2003:ARI:642462.642471' on page 4 undefined on 
-input line 60.
-
-
-LaTeX Warning: Citation `conf:iscis:MadylovaO09' on page 4 undefined on input l
-ine 60.
-
-
-LaTeX Warning: Citation `Mihalcea:2006:CKM:1597538.1597662' on page 4 undefined
- on input line 60.
-
-
-LaTeX Warning: Citation `10.1109/APSEC.2004.69' on page 4 undefined on input li
-ne 60.
-
-
-LaTeX Warning: Citation `McMillan:2012:DSS:2337223.2337267' on page 4 undefined
- on input line 60.
-
-
-LaTeX Warning: Citation `10.1109ICPC.2016.7503721' on page 4 undefined on input
- line 60.
-
-
-LaTeX Warning: Citation `6671293' on page 4 undefined on input line 60.
-
-
-LaTeX Warning: Citation `Chen:2015:SFD:2684822.2685305' on page 4 undefined on 
-input line 60.
-
-
-LaTeX Warning: Citation `Wang:2015:WSA:2771783.2771795' on page 4 undefined on 
-input line 60.
-
-
-LaTeX Warning: Citation `Lo:2012:DSA:2473496.2473616' on page 4 undefined on in
-put line 60.
-
-
-LaTeX Warning: Citation `10.1109/SANER.2017.7884605' on page 4 undefined on inp
-ut line 60.
-
-) [4 <C:/Users/Riccardo/git/Crossminer_thesis_repository/Crossminer_thesis_repo
-sitory/ThesisDraft/images/Cosine.pdf>] [5]
+) [5] [6]
 (C:\Users\Riccardo\git\Crossminer_thesis_repository\Crossminer_thesis_repositor
 y\ThesisDraft\src/MudaBlue.tex
-<images/Mudablue1.png, id=42, 709.90219pt x 259.7203pt>
+<images/Mudablue1.png, id=45, 709.90219pt x 259.7203pt>
 File: images/Mudablue1.png Graphic file (type png)
 
 <use images/Mudablue1.png>
@@ -647,12 +581,18 @@ Overfull \hbox (8.54666pt too wide) in paragraph at lines 10--12
  [][] 
  []
 
-[6
+[7
 
  <C:/Users/Riccardo/git/Crossminer_thesis_repository/Crossminer_thesis_reposito
-ry/ThesisDraft/images/Mudablue1.png>]) [7]
-No file ThesisDraft.bbl.
+ry/ThesisDraft/images/Mudablue1.png>]) [8]
+(C:\Users\Riccardo\git\Crossminer_thesis_repository\Crossminer_thesis_repositor
+y\ThesisDraft\src/CLAN.tex) [9
 
+]
+(C:\Users\Riccardo\git\Crossminer_thesis_repository\Crossminer_thesis_repositor
+y\ThesisDraft\ThesisDraft.bbl [10
+
+]) [11]
 (C:\Users\Riccardo\git\Crossminer_thesis_repository\Crossminer_thesis_repositor
 y\ThesisDraft\ThesisDraft.aux)
 
@@ -660,13 +600,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3951 strings out of 493921
- 60059 string characters out of 3144866
- 125801 words of memory out of 3000000
- 7194 multiletter control sequences out of 15000+200000
+ 4070 strings out of 493921
+ 62030 string characters out of 3144866
+ 127709 words of memory out of 3000000
+ 7302 multiletter control sequences out of 15000+200000
  10958 words of font info for 38 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 44i,10n,43p,958b,278s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,10n,43p,1375b,302s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
@@ -679,9 +619,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on ThesisDraft.pdf (7 pages, 429657 bytes).
+Output written on ThesisDraft.pdf (11 pages, 448008 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
+ 102 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
