@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.11)  24 APR 2018 18:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.11)  8 MAY 2018 16:01
 entering extended mode
 **ThesisDraft.tex
 
@@ -544,67 +544,192 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
  [2]
 (C:\Users\Riccardo\git\Crossminer_thesis_repository\Crossminer_thesis_repositor
-y\ThesisDraft\src/Similarity.tex
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[3] <images/Cosine.pdf, id=21, 193.72375pt x 198.7425pt>
-File: images/Cosine.pdf Graphic file (type pdf)
-
-<use images/Cosine.pdf>
-Package pdftex.def Info: images/Cosine.pdf used on input line 55.
-(pdftex.def)             Requested size: 104.56342pt x 107.27385pt.
- [4 <C:/Users/Riccardo/git/Crossminer_thesis_repository/Crossminer_thesis_repos
-itory/ThesisDraft/images/Cosine.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 75.
+y\ThesisDraft\src/Introduction.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 11.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
-
-
-LaTeX Warning: Reference `sec:cosine' on page 5 undefined on input line 82.
-
-) [5] [6]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
+ [3] [4])
+[5]
 (C:\Users\Riccardo\git\Crossminer_thesis_repository\Crossminer_thesis_repositor
-y\ThesisDraft\src/MudaBlue.tex
-<images/Mudablue1.png, id=45, 709.90219pt x 259.7203pt>
+y\ThesisDraft\src/Similarity.tex
+
+LaTeX Warning: Citation `Collobert:2011:NLP:1953048.2078186' on page 6 undefine
+d on input line 10.
+
+
+LaTeX Warning: Citation `Turney:2010:FMV:1861751.1861756' on page 6 undefined o
+n input line 10.
+
+
+LaTeX Warning: Citation `Reed:2006:TNT:1193211.1193734' on page 6 undefined on 
+input line 10.
+
+
+LaTeX Warning: Citation `Ramos1999' on page 6 undefined on input line 10.
+
+
+LaTeX Warning: Citation `10.1109/APSEC.2004.69' on page 6 undefined on input li
+ne 39.
+
+
+LaTeX Warning: Citation `10.1109ICPC.2016.7503721' on page 6 undefined on input
+ line 39.
+
+
+LaTeX Warning: Citation `McMillan:2012:DSS:2337223.2337267' on page 6 undefined
+ on input line 39.
+
+[6
+
+]
+
+LaTeX Warning: Citation `tversky1977features' on page 7 undefined on input line
+ 45.
+
+<images/Cosine.pdf, id=32, 193.72375pt x 198.7425pt>
+File: images/Cosine.pdf Graphic file (type pdf)
+ <use images/Cosine.pdf>
+Package pdftex.def Info: images/Cosine.pdf used on input line 55.
+(pdftex.def)             Requested size: 104.56342pt x 107.27385pt.
+
+
+LaTeX Warning: Citation `Huang:2012:LCD:2343876.2343884' on page 7 undefined on
+ input line 60.
+
+
+LaTeX Warning: Citation `Islam:2008:STS:1376815.1376819' on page 7 undefined on
+ input line 60.
+
+
+LaTeX Warning: Citation `Linden:2003:ARI:642462.642471' on page 7 undefined on 
+input line 60.
+
+
+LaTeX Warning: Citation `conf:iscis:MadylovaO09' on page 7 undefined on input l
+ine 60.
+
+
+LaTeX Warning: Citation `Mihalcea:2006:CKM:1597538.1597662' on page 7 undefined
+ on input line 60.
+
+
+LaTeX Warning: Citation `10.1109/APSEC.2004.69' on page 7 undefined on input li
+ne 60.
+
+
+LaTeX Warning: Citation `McMillan:2012:DSS:2337223.2337267' on page 7 undefined
+ on input line 60.
+
+
+LaTeX Warning: Citation `10.1109ICPC.2016.7503721' on page 7 undefined on input
+ line 60.
+
+
+LaTeX Warning: Citation `6671293' on page 7 undefined on input line 60.
+
+
+LaTeX Warning: Citation `Chen:2015:SFD:2684822.2685305' on page 7 undefined on 
+input line 60.
+
+
+LaTeX Warning: Citation `Wang:2015:WSA:2771783.2771795' on page 7 undefined on 
+input line 60.
+
+
+LaTeX Warning: Citation `Lo:2012:DSA:2473496.2473616' on page 7 undefined on in
+put line 60.
+
+
+LaTeX Warning: Citation `10.1109/SANER.2017.7884605' on page 7 undefined on inp
+ut line 60.
+
+
+LaTeX Warning: Citation `10.1109/APSEC.2004.69' on page 7 undefined on input li
+ne 66.
+
+
+LaTeX Warning: Citation `Landauer1998' on page 7 undefined on input line 66.
+
+
+LaTeX Warning: Citation `kb2005' on page 7 undefined on input line 66.
+
+
+LaTeX Warning: Citation `kb2005' on page 7 undefined on input line 66.
+
+[7 <C:/Users/Riccardo/git/Crossminer_thesis_repository/Crossminer_thesis_reposi
+tory/ThesisDraft/images/Cosine.pdf>]
+
+LaTeX Warning: Reference `sec:cosine' on page 8 undefined on input line 82.
+
+
+LaTeX Warning: Citation `10.1109/APSEC.2004.69' on page 8 undefined on input li
+ne 82.
+
+
+LaTeX Warning: Citation `10.1109ICPC.2016.7503721' on page 8 undefined on input
+ line 82.
+
+
+LaTeX Warning: Citation `McMillan:2012:DSS:2337223.2337267' on page 8 undefined
+ on input line 82.
+
+) [8] [9]
+(C:\Users\Riccardo\git\Crossminer_thesis_repository\Crossminer_thesis_repositor
+y\ThesisDraft\src/Approaches.tex
+<images/Mudablue1.png, id=55, 709.90219pt x 259.7203pt>
 File: images/Mudablue1.png Graphic file (type png)
 
 <use images/Mudablue1.png>
-Package pdftex.def Info: images/Mudablue1.png used on input line 10.
+Package pdftex.def Info: images/Mudablue1.png used on input line 12.
 (pdftex.def)             Requested size: 426.80034pt x 156.14645pt.
 
-Overfull \hbox (8.54666pt too wide) in paragraph at lines 10--12
+Overfull \hbox (8.54666pt too wide) in paragraph at lines 12--14
  [][] 
  []
 
-[7
+[10
 
  <C:/Users/Riccardo/git/Crossminer_thesis_repository/Crossminer_thesis_reposito
-ry/ThesisDraft/images/Mudablue1.png>]) [8]
-(C:\Users\Riccardo\git\Crossminer_thesis_repository\Crossminer_thesis_repositor
-y\ThesisDraft\src/CLAN.tex <images/Clan.png, id=55, 830.35219pt x 361.35pt>
-File: images/Clan.png Graphic file (type png)
+ry/ThesisDraft/images/Mudablue1.png>]
 
-<use images/Clan.png>
-Package pdftex.def Info: images/Clan.png used on input line 10.
+LaTeX Warning: Citation `McMillan:2012:DSS:2337223.2337267' on page 11 undefine
+d on input line 40.
+
+<images/Clan.png, id=61, 830.35219pt x 361.35pt>
+File: images/Clan.png Graphic file (type png)
+ <use images/Clan.png>
+Package pdftex.def Info: images/Clan.png used on input line 47.
 (pdftex.def)             Requested size: 426.7936pt x 185.73067pt.
 
-Overfull \hbox (8.53992pt too wide) in paragraph at lines 10--12
+Overfull \hbox (8.53992pt too wide) in paragraph at lines 47--49
  [][] 
  []
 
-[9
+[11] [12 <C:/Users/Riccardo/git/Crossminer_thesis_repository/Crossminer_thesis_
+repository/ThesisDraft/images/Clan.png>]
 
- <C:/Users/Riccardo/git/Crossminer_thesis_repository/Crossminer_thesis_reposito
-ry/ThesisDraft/images/Clan.png>]) [10]
+LaTeX Warning: Citation `10.1109/APSEC.2004.69' on page 13 undefined on input l
+ine 73.
+
+
+LaTeX Warning: Citation `Liu:2006:GDS:1150402.1150522' on page 13 undefined on 
+input line 73.
+
+
+LaTeX Warning: Citation `McMillan:2012:DSS:2337223.2337267' on page 13 undefine
+d on input line 73.
+
+
+LaTeX Warning: Citation `10.1109/SANER.2017.7884605' on page 13 undefined on in
+put line 73.
+
+) [13]
 (C:\Users\Riccardo\git\Crossminer_thesis_repository\Crossminer_thesis_repositor
-y\ThesisDraft\ThesisDraft.bbl [11
-
-]) [12]
+y\ThesisDraft\ThesisDraft.bbl)
 (C:\Users\Riccardo\git\Crossminer_thesis_repository\Crossminer_thesis_repositor
 y\ThesisDraft\ThesisDraft.aux)
 
@@ -612,13 +737,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4075 strings out of 493921
- 62117 string characters out of 3144866
- 127709 words of memory out of 3000000
- 7306 multiletter control sequences out of 15000+200000
+ 4076 strings out of 493921
+ 62200 string characters out of 3144866
+ 126674 words of memory out of 3000000
+ 7307 multiletter control sequences out of 15000+200000
  10958 words of font info for 38 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 44i,10n,43p,1375b,302s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,10n,43p,1375b,278s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
@@ -631,9 +756,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on ThesisDraft.pdf (12 pages, 521133 bytes).
+Output written on ThesisDraft.pdf (13 pages, 522166 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
+ 110 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
