@@ -1,8 +1,86 @@
 \subsection{Overview}
 
-In the field of Information Retrieval [NOTE], there are techniques being widely used in several applications. They can be considered as a basic and indispensable part of a knowledge mining system. [AGGIUNGERE QUALCOSA]
+Text similarity measures play an increasingly important role in text related research and applications in tasks such as information retrieval, text classification, document clustering, topic detection, topic tracking, questions generation, question answering, essay scoring, short answer scoring, machine translation, text summarization and others. Finding similarity between words is a fundamental part of text similarity which is then used as a primary stage for sentence, paragraph and document similarities. There two way in which words can be similar each other, lexically if they share sequences of characters similar and  semantically if are used in the same context, used in the same way and so on. 
 
-\subsection{Mathematical Background}
+\subsection{Background}
+
+The world of lexical similarity con be divided in two categories: character-based and word-based.
+To better understand what character-based means, here one of the most well known technique: Levenshtein distance.
+\subsubsection{ Levenshtein distance}
+ Levenshtein distance defines distance between two strings by counting the minimum number of operations needed to transform one string into the other, where an operation is defined as an insertion, deletion, or substitution of a single character, or a transposition of two adjacent characters.
+
+This is an example:
+
+\begin{itemize}
+    \item kitten to sitten (substitution of "s" for "k").
+    \item sitten to sittin (substitution of "i" for "e").
+    \item sittin to sitting (insertion of "g" at the end).
+\end{itemize}
+
+Moving to the word-based,  the word or string similarity measures operate on string sequences and character composition. A string metric is a metric that measures similarity or dissimilarity (distance) between two text strings for approximate string matching or comparison.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsubsection{Cosine Similarity}
+
+Cosine similarity is a metric used to compute similarity between two objects using their feature vectors \cite{tversky1977features}. An object is characterized as a vector, and for a pair of vectors $\vec{\alpha}=(\alpha_{1},\alpha_{2},..,\alpha_{n})$ and $\vec{\beta}=(\beta_{1},\beta_{2},..,\beta_{n})$ there is an angle between them. Intuitively, the cosine similarity metric measures the similarity as the cosine of the corresponding angle between the two vectors and it is computed using the inner product as follows. 
+
+\begin{equation} \label{eqn:Cosine}
+CosineSim(\vec{\alpha},\vec{\beta}) = \frac{\sum_{i=1}^{n}\alpha_{i}\cdot \beta_{i}}{\sqrt{\sum_{i=1}^{n}(\alpha_{i})^{2} }\cdot \sqrt{\sum_{i=1}^{n}(\beta_{i})^{2}}}
+\end{equation}
+
+Figure \ref{fig:Cosine} illustrates the cosine similarity between two vectors $\vec{\alpha}$ and $\vec{\beta}$ in a three-dimension space. This can be thought as the similarity between two documents with three terms $t=(t_{1},t_{2},t_{3})$.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.25\textwidth]{images/Cosine.pdf}
+	\caption{Cosine similarity between two feature vectors $\vec{\alpha}$ and $\vec{\beta}$}
+	\label{fig:Cosine}
+\end{figure}
+
+Cosine similarity has been popularly adopted in many applications that are related to similarity measurement in various domains \cite{Huang:2012:LCD:2343876.2343884},\cite{Islam:2008:STS:1376815.1376819},\cite{Linden:2003:ARI:642462.642471},\cite{conf:iscis:MadylovaO09},\cite{Mihalcea:2006:CKM:1597538.1597662}. Among the similarity metrics being recalled in this deliverable, the prevalence of Cosine Similarity is obvious as it is utilized in almost all of them as follows: \textit{MUDABlue} \cite{10.1109/APSEC.2004.69}, \textit{CLAN} \cite{McMillan:2012:DSS:2337223.2337267}, \textit{CLANdroid} \cite{10.1109ICPC.2016.7503721}, \textit{LibRec} \cite{6671293}, \textit{SimApp} \cite{Chen:2015:SFD:2684822.2685305}, \textit{WuKong} \cite{Wang:2015:WSA:2771783.2771795}, \textit{TagSim} \cite{Lo:2012:DSA:2473496.2473616}, and \textit{RepoPal} \cite{10.1109/SANER.2017.7884605}.\\
+
+This is an example of how the cosine similarity can be done  between two sentences.
+These are the two string that we want to compare to see how much they are related each other.
+
+\begin{itemize}
+\item Julie loves me more than Linda loves me.
+\item Jane likes me more than Julie loves me.
+\end{itemize}
+\newpage
+From the strings is possible to count the occurrencies of each term, putting everything in a matrix.
+\begin{figure}
+	\begin{equation} \nonumber
+	\bordermatrix{~ & string 1 & string 2 \cr	
+		me 		& 2 & 2  \cr 
+		Jane		& 0 & 1  \cr  
+		Julia		& 1 & 1  \cr
+		Linda 		& 1 & 0  \cr 
+		likes		& 0 & 1  \cr
+		loves		& 2 & 1  \cr
+		more		& 1 & 1  \cr
+		than		& 1 & 1  \cr	}
+	\end{equation}
+	\caption{The occurrencies.}
+	\label{fig:TDM}
+\end{figure}
+
+Since in this kind of evaluation is not important the meaning or where the words are, is possibile to create the related vectore in order to compute the similarity.\\
+
+	\begin{equation} \nonumber
+	String1 = [2, 0, 1, 1, 0, 2, 1, 1]
+	\end{equation}
+
+	\begin{equation} \nonumber
+	String2 = [2, 1, 1, 0, 1, 1, 1, 1]
+	\end{equation}
+
+Applying the cosine similarity formula this is the outcome:
+
+\begin{equation} \label{eqn:Cosine}
+CosineSim(\vec{\alpha},\vec{\beta}) = \frac{9}{\sqrt{12}\cdot \sqrt{10}} = 0.822
+\end{equation}
+This means that these strings are close each other 0.822, in a range bewteen 0.0 and 1.0.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -38,27 +116,6 @@ The set of terms $t$ consists of $6$ elements, i.e. $t=(she$, $is$, $today$, $a$
 
 TDM has been exploited to characterize software systems and finally to compute similarities between them \cite{10.1109/APSEC.2004.69},\cite{10.1109ICPC.2016.7503721},\cite{McMillan:2012:DSS:2337223.2337267}. In a TDM for software systems, each row represents a package, an API call or a function and each column represents a software system. A cell in the matrix is the number of occurrence of a package/an API/function in each corresponding software system. A TDM for software systems has a similar form to the matrix shown in Figure \ref{fig:TDM} where documents are replaced by software systems and terms are replaced by API calls.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsubsection{Cosine Similarity}
-
-Cosine similarity is a metric used to compute similarity between two objects using their feature vectors \cite{tversky1977features}. An object is characterized as a vector, and for a pair of vectors $\vec{\alpha}=(\alpha_{1},\alpha_{2},..,\alpha_{n})$ and $\vec{\beta}=(\beta_{1},\beta_{2},..,\beta_{n})$ there is an angle between them. Intuitively, the cosine similarity metric measures the similarity as the cosine of the corresponding angle between the two vectors and it is computed using the inner product as follows. 
-
-\begin{equation} \label{eqn:Cosine}
-CosineSim(\vec{\alpha},\vec{\beta}) = \frac{\sum_{i=1}^{n}\alpha_{i}\cdot \beta_{i}}{\sqrt{\sum_{i=1}^{n}(\alpha_{i})^{2} }\cdot \sqrt{\sum_{i=1}^{n}(\beta_{i})^{2}}}
-\end{equation}
-
-Figure \ref{fig:Cosine} illustrates the cosine similarity between two vectors $\vec{\alpha}$ and $\vec{\beta}$ in a three-dimension space. This can be thought as the similarity between two documents with three terms $t=(t_{1},t_{2},t_{3})$.
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.25\textwidth]{images/Cosine.pdf}
-	\caption{Cosine similarity between two feature vectors $\vec{\alpha}$ and $\vec{\beta}$}
-	\label{fig:Cosine}
-\end{figure}
-
-Cosine similarity has been popularly adopted in many applications that are related to similarity measurement in various domains \cite{Huang:2012:LCD:2343876.2343884},\cite{Islam:2008:STS:1376815.1376819},\cite{Linden:2003:ARI:642462.642471},\cite{conf:iscis:MadylovaO09},\cite{Mihalcea:2006:CKM:1597538.1597662}. Among the similarity metrics being recalled in this deliverable, the prevalence of Cosine Similarity is obvious as it is utilized in almost all of them as follows: \textit{MUDABlue} \cite{10.1109/APSEC.2004.69}, \textit{CLAN} \cite{McMillan:2012:DSS:2337223.2337267}, \textit{CLANdroid} \cite{10.1109ICPC.2016.7503721}, \textit{LibRec} \cite{6671293}, \textit{SimApp} \cite{Chen:2015:SFD:2684822.2685305}, \textit{WuKong} \cite{Wang:2015:WSA:2771783.2771795}, \textit{TagSim} \cite{Lo:2012:DSA:2473496.2473616}, and \textit{RepoPal} \cite{10.1109/SANER.2017.7884605}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 
 \subsubsection{Latent Semantic Analysis}
@@ -83,3 +140,95 @@ $U_{mm}$ describes the original row entities as vectors of derived orthogonal fa
 Another very relevant issue related to LSA is the low rank approximation applied by the SVD procedure. If the singular values in $S_{mn}$ are ordered by size, the first k largest may be kept and the remaining smaller ones set to zero. The product of the resulting matrices is a matrix $X$ which is only approximately equal to $A_{mm}$ , and is of rank k . It can be shown that the new matrix $X$ is the matrix of rank k which is closest in the least squares sense to $A_{mm}$ .
 The amount of dimension reduction, i.e., the choice of k , is critical to our work. Ideally, we want a value of k that is large enough to fit all the real structure in the data, but small enough so that we do not also fit the sampling error or unimportant details. The proper way to make such choices is an open issue in the factor analytic literature. In practice, we currently use an operational criterion - a
 value of k which yields good retrieval performance. In our we decided a k value = numer of reposotories/2 [TO BE COMPLETED]
+\newpage
+
+An example.
+\begin{itemize}
+	\item doc1: Human machine interface for ABC computer applications
+	\item doc2: A survey of user opinion of computer system response time
+	\item doc3: The EPS user interface management system
+	\item doc4: System and human system engineering testing of EPS
+	\item doc5: Relation of user perceived response time to error measurement
+	\item doc6: The generation of random, binary, ordered trees
+	\item doc7: The intersection graph of paths in trees
+	\item doc8: Graph minors IV: Widths of trees and well-quasi-ordering
+	\item doc9: Graph minors: A survey
+\end{itemize}
+
+\begin{figure}[h!]
+	\begin{equation} \nonumber
+	\bordermatrix{~ & doc1 & doc2 & doc3 & doc4 & doc5 & doc6 & doc7 & doc8 & doc9 \cr	
+		human	& 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \cr
+		interface	& 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \cr
+		computer	& 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \cr    
+		user 		& 0 & 1 & 1 & 0 & 2 & 0 & 0 & 0 & 0 \cr
+		system 	& 0 & 1 & 1 & 2 & 0 & 0 & 0 & 0 & 0 \cr
+		response	& 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \cr
+		time 		& 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 \cr
+		EPS 		& 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \cr
+		survey	& 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 0 \cr
+		trees 		& 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 \cr
+		graph 		& 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 \cr
+		minors		& 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 0 \cr	  }
+	\end{equation}
+	\caption{An example of a term-document matrix}
+	\label{fig:TDM}
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{equation} \nonumber
+	\bordermatrix{ ~ \cr
+		& 0.22 & -0.11 & 0.29 & -0.41 & -0.11 & -0.34 & 0.52 & -0.06 & -0.41 \cr
+		& 0.20 & -0.07 & 0.14 & -0.55 & 0.28 & 0.50 & -0.07 & -0.01 & -0.11 \cr
+		& 0.24 & 0.04 & -0.16 & -0.59 & -0.11 & -0.25 & -0.30 & 0.06 & 0.49 \cr
+		& 0.40 & 0.06 & -0.34 & 0.10 & 0.33 & 0.38 & 0.00 & 0.00 & 0.01 \cr
+		& 0.64 & -0.17 & 0.36 & 0.33 & -0.16 & -0.21 & -0.17 & 0.03 & 0.27 \cr
+		& 0.27 & 0.11 & -0.43 & 0.07 & 0.08 & -0.17 & 0.28 & -0.02 & -0.05 \cr
+		& 0.27 & 0.11 & -0.43 & 0.07 & 0.08 & -0.17 & 0.28 & -0.02 & -0.05 \cr
+		& 0.30 & -0.14 & 0.33 & 0.19 & 0.11 & 0.27 & 0.03 & -0.02 & -0.17 \cr
+		& 0.21 & 0.27 & -0.18 & -0.03 & -0.54 & 0.08 & -0.47 & -0.04 & -0.58 \cr
+		& 0.01 & 0.49 & 0.23 & 0.03 & 0.59 & -0.39 & -0.29 & 0.25 & -0.23 \cr
+		& 0.04 & 0.62 & 0.22 & 0.00 & -0.07 & 0.11 & 0.16 & -0.68 & 0.23 \cr
+		& 0.03 & 0.45 & 0.14 & -0.01 & -0.30 & 0.28 & 0.34 & 0.68 & 0.18 \cr	  }
+	\end{equation}
+	\caption{An example of a term-document matrix}
+	\label{fig:TDM}
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{equation} \nonumber
+	\bordermatrix{~  \cr	
+		& 3.34 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \cr
+		& 0 & 2.54 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \cr
+		& 0 & 0 & 2.35 & 0 & 0 & 0 & 0 & 0 & 0 \cr
+		& 0 & 0 & 0 & 1.64 & 0 & 0 & 0 & 0 & 0 \cr
+		& 0 & 0 & 0 & 0 & 1.50 & 0 & 0 & 0 & 0 \cr
+		& 0 & 0 & 0 & 0 & 0 & 1.31 & 0 & 0 & 0 \cr
+		& 0 & 0 & 0 & 0 & 0 & 0 & 0.85 & 0 & 0 \cr
+		& 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0.56 & 0 \cr
+		& 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0.36 \cr
+	  }
+	\end{equation}
+	\caption{An example of a term-document matrix}
+	\label{fig:TDM}
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{equation} \nonumber
+	\bordermatrix{~ & doc1 & doc2 & doc3 & doc4 & doc5 & doc6 & doc7 & doc8 & doc9 \cr	
+		human	& 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \cr
+		interface	& 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \cr
+		computer	& 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \cr    
+		user 		& 0 & 1 & 1 & 0 & 2 & 0 & 0 & 0 & 0 \cr
+		system 	& 0 & 1 & 1 & 2 & 0 & 0 & 0 & 0 & 0 \cr
+		response	& 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \cr
+		time 		& 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 \cr
+		EPS 		& 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \cr
+		survey	& 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 0 \cr
+		trees 		& 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 \cr
+		graph 		& 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 \cr
+		minors		& 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 0 \cr	  }
+	\end{equation}
+	\caption{An example of a term-document matrix}
+	\label{fig:TDM}
+\end{figure}

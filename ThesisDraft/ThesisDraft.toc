@@ -6,26 +6,26 @@
 \contentsline {subsubsection}{\numberline {1.2.3}Project Technologies}{4}
 \contentsline {section}{\numberline {2}The Similarity Problem}{6}
 \contentsline {subsection}{\numberline {2.1}Overview}{6}
-\contentsline {subsection}{\numberline {2.2}Mathematical Background}{6}
-\contentsline {subsubsection}{\numberline {2.2.1}Term-Document Matrix}{6}
+\contentsline {subsection}{\numberline {2.2}Background}{6}
+\contentsline {subsubsection}{\numberline {2.2.1} Levenshtein distance}{6}
 \contentsline {subsubsection}{\numberline {2.2.2}Cosine Similarity}{7}
-\contentsline {subsubsection}{\numberline {2.2.3}Latent Semantic Analysis}{7}
-\contentsline {section}{\numberline {3}The Approaches}{10}
-\contentsline {subsection}{\numberline {3.1}MUDABlue}{10}
-\contentsline {subsection}{\numberline {3.2}The Approach}{10}
-\contentsline {subsubsection}{\numberline {3.2.1}Exctract Identifiers}{10}
-\contentsline {subsubsection}{\numberline {3.2.2}Create identifier-by-software matrix}{10}
-\contentsline {subsubsection}{\numberline {3.2.3}Remove useless identifiers}{11}
-\contentsline {subsubsection}{\numberline {3.2.4}Apply the LSA}{11}
-\contentsline {subsubsection}{\numberline {3.2.5}Apply the Cosine Similarity}{11}
-\contentsline {subsubsection}{\numberline {3.2.6}Categorization}{11}
-\contentsline {subsection}{\numberline {3.3}CLAN: Closely reLated ApplicatioNs}{11}
-\contentsline {subsection}{\numberline {3.4}The Approach}{11}
-\contentsline {subsubsection}{\numberline {3.4.1}1 - 3: Terms Extraction}{12}
-\contentsline {subsubsection}{\numberline {3.4.2}4: TDMs Creation}{12}
-\contentsline {subsubsection}{\numberline {3.4.3}5: LSI Procedure}{12}
-\contentsline {subsubsection}{\numberline {3.4.4}6: Apply the Cosine Similarity}{12}
-\contentsline {subsubsection}{\numberline {3.4.5}7: Sum of the matrices}{12}
-\contentsline {subsubsection}{\numberline {3.4.6}8: Final similarity matrix}{13}
-\contentsline {subsubsection}{\numberline {3.4.7}RepoPal: Exploiting Metadata to Detect Similar GitHub Repositories}{13}
-\contentsline {paragraph}{Readme-based similarity}{13}
+\contentsline {subsubsection}{\numberline {2.2.3}Term-Document Matrix}{8}
+\contentsline {subsubsection}{\numberline {2.2.4}Latent Semantic Analysis}{9}
+\contentsline {section}{\numberline {3}The Approaches}{14}
+\contentsline {subsection}{\numberline {3.1}MUDABlue}{14}
+\contentsline {subsubsection}{\numberline {3.1.1}Exctract Identifiers}{14}
+\contentsline {subsubsection}{\numberline {3.1.2}Create identifier-by-software matrix}{14}
+\contentsline {subsubsection}{\numberline {3.1.3}Remove useless identifiers}{15}
+\contentsline {subsubsection}{\numberline {3.1.4}Apply the LSA}{15}
+\contentsline {subsubsection}{\numberline {3.1.5}Apply the Cosine Similarity}{15}
+\contentsline {subsubsection}{\numberline {3.1.6}Categorization}{15}
+\contentsline {subsection}{\numberline {3.2}CLAN: Closely reLated ApplicatioNs}{16}
+\contentsline {subsubsection}{\numberline {3.2.1}1 - 3: Terms Extraction}{16}
+\contentsline {subsubsection}{\numberline {3.2.2}4: TDMs Creation}{17}
+\contentsline {subsubsection}{\numberline {3.2.3}5: LSI Procedure}{17}
+\contentsline {subsubsection}{\numberline {3.2.4}6: Apply the Cosine Similarity}{17}
+\contentsline {subsubsection}{\numberline {3.2.5}7: Sum of the matrices}{17}
+\contentsline {subsubsection}{\numberline {3.2.6}8: Final similarity matrix}{17}
+\contentsline {subsection}{\numberline {3.3}RepoPal: Exploiting Metadata to Detect Similar GitHub Repositories}{18}
+\contentsline {paragraph}{Readme-based similarity}{18}
+\contentsline {section}{References}{19}

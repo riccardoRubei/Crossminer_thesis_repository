@@ -1,0 +1,19 @@
+\begin{figure}[h!]
+	\begin{equation} \nonumber
+	\bordermatrix{~ &doc1 &doc2 &doc3 &doc4 &doc5 &doc6 &doc7 $doc8 &doc9 \cr
+		human	& 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \cr 
+		interface	& 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \cr  
+		user 		& 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 0 \cr
+		system 	& 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 0 \cr
+		response	& 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 0 \cr
+		time 		& 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 0 \cr
+		EPS 		& 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 0 \cr
+		survey	& 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 0 \cr
+		trees 		& 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 0 \cr
+		graph 		& 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 0 \cr
+		minors		& 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 0 \cr	
+ }
+	\end{equation}
+	\caption{An example of a term-document matrix}
+	\label{fig:TDM}
+\end{figure}

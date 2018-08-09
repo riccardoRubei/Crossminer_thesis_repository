@@ -1,0 +1,135 @@
+\begin{thebibliography}{10}
+
+\bibitem{kb2005}
+Kirk Baker.
+\newblock Singular value decomposition tutorial.
+\newblock 2005.
+
+\bibitem{Chen:2015:SFD:2684822.2685305}
+Ning Chen, Steven~C.H. Hoi, Shaohua Li, and Xiaokui Xiao.
+\newblock Simapp: A framework for detecting similar mobile applications by
+  online kernel learning.
+\newblock In {\em Proceedings of the Eighth ACM International Conference on Web
+  Search and Data Mining}, WSDM '15, pages 305--314, New York, NY, USA, 2015.
+  ACM.
+
+\bibitem{Collobert:2011:NLP:1953048.2078186}
+Ronan Collobert, Jason Weston, L{\'e}on Bottou, Michael Karlen, Koray
+  Kavukcuoglu, and Pavel Kuksa.
+\newblock Natural language processing (almost) from scratch.
+\newblock {\em J. Mach. Learn. Res.}, 12:2493--2537, November 2011.
+
+\bibitem{10.1109/APSEC.2004.69}
+Pankaj~K. Garg, Shinji Kawaguchi, Makoto Matsushita, and Katsuro Inoue.
+\newblock Mudablue: An automatic categorization system for open source
+  repositories.
+\newblock {\em 2013 20th Asia-Pacific Software Engineering Conference (APSEC)},
+  pages 184--193, 2004.
+
+\bibitem{Huang:2012:LCD:2343876.2343884}
+Lan Huang, David Milne, Eibe Frank, and Ian~H. Witten.
+\newblock Learning a concept-based document similarity measure.
+\newblock {\em J. Am. Soc. Inf. Sci. Technol.}, 63(8):1593--1608, August 2012.
+
+\bibitem{Islam:2008:STS:1376815.1376819}
+Aminul Islam and Diana Inkpen.
+\newblock Semantic text similarity using corpus-based word similarity and
+  string similarity.
+\newblock {\em ACM Trans. Knowl. Discov. Data}, 2(2):10:1--10:25, July 2008.
+
+\bibitem{Landauer1998}
+Thomas~K. Landauer, Peter~W. Foltz, and Darrell Laham.
+\newblock An introduction to latent semantic analysis.
+\newblock {\em Discourse processes}, 25:259--284, 1998.
+
+\bibitem{10.1109ICPC.2016.7503721}
+Mario Linares-Vasquez, Andrew Holtzhauer, and Denys Poshyvanyk.
+\newblock On automatically detecting similar android apps.
+\newblock {\em 2016 IEEE 24th International Conference on Program Comprehension
+  (ICPC)}, 00:1--10, 2016.
+
+\bibitem{Linden:2003:ARI:642462.642471}
+Greg Linden, Brent Smith, and Jeremy York.
+\newblock Amazon.com recommendations: Item-to-item collaborative filtering.
+\newblock {\em IEEE Internet Computing}, 7(1):76--80, January 2003.
+
+\bibitem{Liu:2006:GDS:1150402.1150522}
+Chao Liu, Chen Chen, Jiawei Han, and Philip~S. Yu.
+\newblock Gplag: Detection of software plagiarism by program dependence graph
+  analysis.
+\newblock In {\em Proceedings of the 12th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, KDD '06, pages 872--881, New York,
+  NY, USA, 2006. ACM.
+
+\bibitem{Lo:2012:DSA:2473496.2473616}
+David Lo, Lingxiao Jiang, and Ferdian Thung.
+\newblock Detecting similar applications with collaborative tagging.
+\newblock In {\em Proceedings of the 2012 IEEE International Conference on
+  Software Maintenance (ICSM)}, ICSM '12, pages 600--603, Washington, DC, USA,
+  2012. IEEE Computer Society.
+
+\bibitem{conf:iscis:MadylovaO09}
+Ainura Madylova and Sule~G\"{u}nd\"{u}z \"{O}g\"{u}duc\"{u}.
+\newblock A taxonomy based semantic similarity of documents using the cosine
+  measure.
+\newblock In {\em ISCIS}, pages 129--134. IEEE, 2009.
+
+\bibitem{McMillan:2012:DSS:2337223.2337267}
+Collin McMillan, Mark Grechanik, and Denys Poshyvanyk.
+\newblock Detecting similar software applications.
+\newblock In {\em Proceedings of the 34th International Conference on Software
+  Engineering}, ICSE '12, pages 364--374, Piscataway, NJ, USA, 2012. IEEE
+  Press.
+
+\bibitem{Mihalcea:2006:CKM:1597538.1597662}
+Rada Mihalcea, Courtney Corley, and Carlo Strapparava.
+\newblock Corpus-based and knowledge-based measures of text semantic
+  similarity.
+\newblock In {\em Proceedings of the 21st National Conference on Artificial
+  Intelligence - Volume 1}, AAAI'06, pages 775--780. AAAI Press, 2006.
+
+\bibitem{Ramos1999}
+Juan Ramos.
+\newblock Using tf-idf to determine word relevance in document queries, 1999.
+
+\bibitem{Reed:2006:TNT:1193211.1193734}
+Joel~W. Reed, Yu~Jiao, Thomas~E. Potok, Brian~A. Klump, Mark~T. Elmore, and
+  Ali~R. Hurson.
+\newblock Tf-icf: A new term weighting scheme for clustering dynamic data
+  streams.
+\newblock In {\em Proceedings of the 5th International Conference on Machine
+  Learning and Applications}, ICMLA '06, pages 258--263, Washington, DC, USA,
+  2006. IEEE Computer Society.
+
+\bibitem{6671293}
+Ferdian Thung, David Lo, and Julia Lawall.
+\newblock Automated library recommendation.
+\newblock In {\em 2013 20th Working Conference on Reverse Engineering (WCRE)},
+  pages 182--191, Oct 2013.
+
+\bibitem{Turney:2010:FMV:1861751.1861756}
+Peter~D. Turney and Patrick Pantel.
+\newblock From frequency to meaning: Vector space models of semantics.
+\newblock {\em J. Artif. Int. Res.}, 37(1):141--188, January 2010.
+
+\bibitem{tversky1977features}
+Amos Tversky.
+\newblock Features of similarity.
+\newblock {\em Psychological Review}, 84(4):327--352, 1977.
+
+\bibitem{Wang:2015:WSA:2771783.2771795}
+Haoyu Wang, Yao Guo, Ziang Ma, and Xiangqun Chen.
+\newblock Wukong: A scalable and accurate two-phase approach to android app
+  clone detection.
+\newblock In {\em Proceedings of the 2015 International Symposium on Software
+  Testing and Analysis}, ISSTA 2015, pages 71--82, New York, NY, USA, 2015.
+  ACM.
+
+\bibitem{10.1109/SANER.2017.7884605}
+Yun Zhang, David Lo, Pavneet~Singh Kochhar, Xin Xia, Quanlai Li, and Jianling
+  Sun.
+\newblock Detecting similar repositories on github.
+\newblock {\em 2017 IEEE 24th International Conference on Software Analysis,
+  Evolution and Reengineering (SANER)}, 00:13--23, 2017.
+
+\end{thebibliography}
