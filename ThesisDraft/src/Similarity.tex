@@ -2,7 +2,9 @@
 
 Text similarity measures play an increasingly important role in text related research and applications in tasks such as information retrieval, text classification, document clustering, topic detection, topic tracking, questions generation, question answering, essay scoring, short answer scoring, machine translation, text summarization and others. Finding similarity between words is a fundamental part of text similarity which is then used as a primary stage for sentence, paragraph and document similarities. There two way in which words can be similar each other, lexically if they share sequences of characters similar and  semantically if are used in the same context, used in the same way and so on. 
 
-\subsection{Background}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{String-Based}
 
 The world of lexical similarity con be divided in two categories: character-based and word-based.
 To better understand what character-based means, here one of the most well known technique: Levenshtein distance.
@@ -19,7 +21,6 @@ This is an example:
 
 Moving to the word-based,  the word or string similarity measures operate on string sequences and character composition. A string metric is a metric that measures similarity or dissimilarity (distance) between two text strings for approximate string matching or comparison.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \subsubsection{Cosine Similarity}
 
@@ -82,8 +83,8 @@ CosineSim(\vec{\alpha},\vec{\beta}) = \frac{9}{\sqrt{12}\cdot \sqrt{10}} = 0.822
 \end{equation}
 This means that these strings are close each other 0.822, in a range bewteen 0.0 and 1.0.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+\subsection{Corpus-Based}
 \subsubsection{Term-Document Matrix}
  In Natural Language Processing \cite{Collobert:2011:NLP:1953048.2078186}, a term-document matrix (TDM) is used to represent the relationships between words and documents \cite{Turney:2010:FMV:1861751.1861756}. In a TDM, each row corresponds to a document and each column corresponds to a term. A cell in the TDM represents the weight of a term in a document. The most common weighting scheme used in document retrieval is the \emph{term frequency-inverse document frequency (tf-idf)} function \cite{Reed:2006:TNT:1193211.1193734}. If we consider a set of $n$ documents $D=(d_{1},d_{2},..,d_{n})$ and a set of terms $t=(t_{1},t_{2},..,t_{r})$ then the representation of a document $d \in D $ is vector $\vec{\delta}=(w_{1}^{d},w_{2}^{d},..,w_{r}^{d})$, where the weight $w_{k}^{d}$ of term $k$ in document $d$ is computed using the {\em tf-idf} function \cite{Ramos1999}:
 
@@ -116,8 +117,6 @@ The set of terms $t$ consists of $6$ elements, i.e. $t=(she$, $is$, $today$, $a$
 
 TDM has been exploited to characterize software systems and finally to compute similarities between them \cite{10.1109/APSEC.2004.69},\cite{10.1109ICPC.2016.7503721},\cite{McMillan:2012:DSS:2337223.2337267}. In a TDM for software systems, each row represents a package, an API call or a function and each column represents a software system. A cell in the matrix is the number of occurrence of a package/an API/function in each corresponding software system. A TDM for software systems has a similar form to the matrix shown in Figure \ref{fig:TDM} where documents are replaced by software systems and terms are replaced by API calls.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
-
 \subsubsection{Latent Semantic Analysis}
 
 The problem with the term-document matrix is that the intrinsic relationships among different terms of a document cannot fully be captured. Furthermore, same words can be used to explain different requirements or the other way around, the same requirements can be described using different words \cite{10.1109/APSEC.2004.69}. Latent Semantic Analysis (LSA), also known as Latent Semantic Indexing (LSI), has been proposed to overcome these problems \cite{Landauer1998}. The technique exploits a mathematical model that can infer latent semantic relationships to compute similarity. LSA represents the contextual usage meaning of words by statistical computations applied to a large corpus of text. It then generates a representation that captures the similarity of words and text passages. To perform LSA on a text, a term-document matrix is created to characterize the text. Afterwards, Singular Value Decomposition (SVD) - a matrix decomposition technique - is used in combination with LSA to reduce matrix dimensionality \cite{kb2005}. SVD takes a highly variable set of data entries as input and transforms to a lower dimensional space but reveals the substructure of the original data. Essentially, it decomposes a rectangular matrix into the product of three other matrices as given below\cite{kb2005}:
@@ -143,6 +142,7 @@ value of k which yields good retrieval performance. In our we decided a k value 
 \newpage
 
 An example.
+Image that these are a set of document to be analyzed and we want to apply the procedure stated before.
 \begin{itemize}
 	\item doc1: Human machine interface for ABC computer applications
 	\item doc2: A survey of user opinion of computer system response time
@@ -171,7 +171,7 @@ An example.
 		graph 		& 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 \cr
 		minors		& 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 0 \cr	  }
 	\end{equation}
-	\caption{An example of a term-document matrix}
+	\caption{Term-Document matrix related to the example.}
 	\label{fig:TDM}
 \end{figure}
 
@@ -191,7 +191,7 @@ An example.
 		& 0.04 & 0.62 & 0.22 & 0.00 & -0.07 & 0.11 & 0.16 & -0.68 & 0.23 \cr
 		& 0.03 & 0.45 & 0.14 & -0.01 & -0.30 & 0.28 & 0.34 & 0.68 & 0.18 \cr	  }
 	\end{equation}
-	\caption{An example of a term-document matrix}
+	\caption{$U_{mm}$x}
 	\label{fig:TDM}
 \end{figure}
 
@@ -209,26 +209,47 @@ An example.
 		& 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0.36 \cr
 	  }
 	\end{equation}
-	\caption{An example of a term-document matrix}
+	\caption{ $S_{mn}$}
 	\label{fig:TDM}
 \end{figure}
 
 \begin{figure}[h!]
 	\begin{equation} \nonumber
-	\bordermatrix{~ & doc1 & doc2 & doc3 & doc4 & doc5 & doc6 & doc7 & doc8 & doc9 \cr	
-		human	& 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \cr
-		interface	& 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \cr
-		computer	& 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \cr    
-		user 		& 0 & 1 & 1 & 0 & 2 & 0 & 0 & 0 & 0 \cr
-		system 	& 0 & 1 & 1 & 2 & 0 & 0 & 0 & 0 & 0 \cr
-		response	& 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \cr
-		time 		& 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 \cr
-		EPS 		& 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \cr
-		survey	& 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 0 \cr
-		trees 		& 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 \cr
-		graph 		& 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 \cr
-		minors		& 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 0 \cr	  }
+	\bordermatrix{~  \cr	
+		& 0.20 & 0.61 & 0.46 & 0.54 & 0.28 & 0.00 & 0.01 & 0.02 & 0.08 \cr
+		& -0.06 & 0.17 & -0.13 & -0.23 & 0.11 & 0.19 & 0.44 & 0.62 & 0.53 \cr
+		& 0.11 & -0.50 & 0.21 & 0.57 & -0.51 & 0.10 & 0.19 & 0.25 & 0.08 \cr
+		& -0.95 & -0.03 & 0.04 & 0.27 & 0.15 & 0.02 & 0.02 & 0.01 & -0.03 \cr
+		& 0.05 & -0.21 & 0.38 & -0.21 & 0.33 & 0.39 & 0.35 & 0.15 & -0.60 \cr
+		& -0.08 & -0.26 & 0.72 & -0.37 & 0.03 & -0.30 & -0.21 & 0.00 & 0.36 \cr
+		& 0.18 & -0.43 & -0.24 & 0.26 & 0.67 & -0.34 & -0.15 & 0.25 & 0.04 \cr
+		& -0.01 & 0.05 & 0.01 & -0.02 & -0.06 & 0.45 & -0.76 & 0.45 & -0.07 \cr
+		& -0.06 & 0.24 & 0.02 & -0.08 & -0.26 & -0.62 & 0.02 & 0.52 & -0.45 \cr	 
+ }
 	\end{equation}
-	\caption{An example of a term-document matrix}
+	\caption{$V_{mn}^{T}$}
 	\label{fig:TDM}
 \end{figure}
+The following image depict the result of the decomposition with a rank of 2.
+\begin{figure}[h!]
+	\begin{equation} \nonumber
+	\bordermatrix{~ & doc1 & doc2 & doc3 & doc4 & doc5 & doc6 & doc7 & doc8 & doc9 \cr	
+		human 	& 0.16 & 0.40 & 0.38 & 0.47 & 0.18 & -0.05 & -0.12 & -0.16 & -0.09 \cr
+		interface 	& 0.14 & 0.37 & 0.33 & 0.40 & 0.16 & -0.03 & -0.07 & -0.10 & -0.04 \cr
+		computer	& 0.15 & 0.51 & 0.36 & 0.41 & 0.24 & 0.02 & 0.06 & 0.09 & 0.12 \cr
+		user 		& 0.26 & 0.84 & 0.61 & 0.70 & 0.39 & 0.03 & 0.08 & 0.12 & 0.19 \cr
+		system 	& 0.45 & 1.23 & 1.05 & 1.27 & 0.56 & -0.07 & -0.15 & -0.21 & -0.05 \cr
+		response 	& 0.16 & 0.58 & 0.38 & 0.42 & 0.28 & 0.06 & 0.13 & 0.19 & 0.22 \cr
+		time 		& 0.16 & 0.58 & 0.38 & 0.42 & 0.28 & 0.06 & 0.13 & 0.19 & 0.22 \cr
+		EPS 	 	& 0.22 & 0.55 & 0.51 & 0.63 & 0.24 & -0.07 & -0.14 & -0.20 & -0.11 \cr 
+		survey 	& 0.10 & 0.53 & 0.23 & 0.21 & 0.27 & 0.14 & 0.31 & 0.44 & 0.42 \cr
+		trees 		& -0.06 & 0.23 & -0.14 & -0.27 & 0.14 & 0.24 & 0.55 & 0.77 & 0.66 \cr
+		graph 		& -0.06 & 0.34 & -0.15 & -0.30 & 0.20 & 0.31 & 0.69 & 0.98 & 0.85 \cr
+		minors 	& -0.04 & 0.25 & -0.10 & -0.21 & 0.15 & 0.22 & 0.50 & 0.71 & 0.62 \cr	  }
+	\end{equation}
+	\caption{Matrix decomposed.}
+	\label{fig:TDM}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+\subsection{Knowledge-Based}

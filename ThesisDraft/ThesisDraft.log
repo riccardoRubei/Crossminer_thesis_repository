@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.6.4)  9 AUG 2018 16:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.6.4)  10 AUG 2018 16:56
 entering extended mode
 **./ThesisDraft.tex
 (ThesisDraft.tex
@@ -251,6 +251,9 @@ LaTeX Warning: Label `fig:TDM' multiply defined.
 
 LaTeX Warning: Label `fig:TDM' multiply defined.
 
+
+LaTeX Warning: Label `fig:TDM' multiply defined.
+
 )
 \openout1 = `ThesisDraft.aux'.
 
@@ -396,23 +399,26 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 <images/Cosine.pdf, id=26, 193.72375pt x 198.7425pt>
 File: images/Cosine.pdf Graphic file (type pdf)
 <use images/Cosine.pdf>
-Package pdftex.def Info: images/Cosine.pdf  used on input line 36.
+Package pdftex.def Info: images/Cosine.pdf  used on input line 37.
 (pdftex.def)             Requested size: 104.56342pt x 107.27385pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
 [7 <./images/Cosine.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
 [8] [9]
 
-LaTeX Warning: Reference `sec:cosine' on page 10 undefined on input line 139.
+LaTeX Warning: Reference `sec:cosine' on page 10 undefined on input line 138.
 
 [10]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -450,10 +456,10 @@ Overfull \hbox (8.53992pt too wide) in paragraph at lines 45--47
 
  <./images/Clan.png>] [17]) [18
 
-] (ThesisDraft.bbl [19
+] (src/Evaluation.tex [19
 
-]) [20]
-(ThesisDraft.aux)
+]) (ThesisDraft.bbl
+[20]) [21] (ThesisDraft.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -462,10 +468,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4234 strings out of 492974
- 65741 string characters out of 3135951
- 164509 words of memory out of 3000000
- 8026 multiletter control sequences out of 15000+200000
+ 4238 strings out of 492974
+ 65875 string characters out of 3135951
+ 169518 words of memory out of 3000000
+ 8027 multiletter control sequences out of 15000+200000
  10958 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,11n,43p,1377b,300s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -480,9 +486,9 @@ m/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on ThesisDraft.pdf (20 pages, 541512 bytes).
+Output written on ThesisDraft.pdf (21 pages, 543494 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
+ 135 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
