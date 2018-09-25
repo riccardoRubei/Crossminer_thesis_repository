@@ -1,7 +1,65 @@
 \subsection{Overview}
-overview
-\subsection{Human Evaluation}
-human evaluation
+In this section we discuss the process that has been conceived and applied to evaluate the
+performance of CROSSSIM in comparison some baselines. As stated before we opted for MUDABLUE and
+CLAN. The rationale behind the selection of these approaches is that
+they are well-established algorithms.
+\subsection{User Study}
+Something about the theory concerning the user study.
+\subsection{Dataset}
+\subsubsection{Data Collection} \label{sec:DataCollection}
+
+%We collected a dataset consisting of GitHub Java projects that serve as inputs for the similarity computation and satisfy the following requirements: (\emph{i}) being GitHub Java projects; (\emph{ii}) providing the specification of their dependencies by means of \code{pom.xml} or \code{.gradle} files\footnote{The files \code{pom.xml} and with the extension \code{.gradle} are related to management of dependencies by means of Maven (\url{https://maven.apache.org/}) and Gradle (\url{https://gradle.org/}), respectively.}; (\emph{iii}) having at least 9 dependencies; (\emph{iv}) having the \code{README.md} file available; (\emph{v}) possessing at least 20 stars \cite{10.1109/SANER.2017.7884605}.
+
+To serve as input for the evaluation, it is necessary to populate a dataset that meets the requirements by all four approaches. By MUDABlue and CLAN, there are no specific requirements since both metrics rely solely on source code to function. However, for CrossSim, we consider only projects that satisfy certain criteria. In particular, we collected projects that meet the following requirements:
+
+\begin{itemize}
+	\item Being GitHub Java projects; 
+	\item Providing the specification of their dependencies by means of "code.xml" or ".gradle" files.;
+	\item Including at least $9$ dependencies. A project with no or little information about dependencies may adversely affect the performance of CrossSim; 
+	\item Having the "README.md" file available; 
+\end{itemize}
+
+Furthermore, we realized that the final outcomes of a similarity algorithm are to be validated by human beings, and in case the projects are irrelevant by their very nature, the perception given by human evaluators would also be \emph{dissimilar} in the end. This is valueless for the evaluation of similarity. Thus, to facilitate the analysis, instead of crawling projects in a random manner, we first observed projects in some specific categories (e.g. PDF processors, JSON parsers, Object Relational Mapping projects, and Spring MVC related tools). Once a certain number of projects for each category had been obtained, we also started collecting randomly to get projects from various categories.
+
+Using the GitHub API\footnote{GitHub API: \url{https://developer.github.com/v3/}}, we crawled projects to provide input for the evaluation. Though the number of projects that fulfill the requirements of a single approach, i.e. either RepoPal or CrossSim, is high, the number of projects that meet the requirements of both approaches is considerably lower. For example, a project contains both "pom.xml" and "README.md", albeit having only $5$ dependencies, does not meet the constraints and must be discarded. The crawling is time consuming as for each project, at least $6$ queries must be sent to get the relevant data. GitHub already sets a rate limit for an ordinary account\footnote{GitHub Rate Limit: \url{https://developer.github.com/v3/rate_limit/}}, with a total number of $5,000$ API calls per hour being allowed. And for the search operation, the rate is limited to $30$ queries per minute. Due to these reasons, we ended up getting a dataset of $580$ projects that are eligible for the evaluation. The dataset we collected and the CrossSim tool are already published online for public usage \cite{CROSSSIM-DATA}.
+
+%\subsubsection{Data collection} \label{sec:DataCollection}
+
+%In addition, to facilitate the evaluation of similarity and clustering techniques, instead of crawling projects in a random manner, we first observed projects in some specific categories. We suppose that the evaluation might lead to a cumbersome process if we consider arbitrary projects which are generally not related. The final outcomes of a similarity algorithm need to be validated by human beings, and given that the projects are irrelevant by their very nature, the perception given by human evaluators would also be \emph{dissimilar} in the end, and this is valueless for the evaluation of similarity. 
+
+
+Further than collecting projects for each category, we also started collecting random projects. These projects serve as a means to test the stability of the algorithms. If the algorithms work well, they will not perceive newly added random projects as similar to projects of some other specific categories. To this end, the categories and their corresponding cardinality to be studied in our evaluation are listed in Table \ref{tab:Categories}. This is an approximate classification since a project might belong to more than one category.
+
+\begin{table}[h!]
+	\small
+	\centering
+	\begin{tabular}{|p{0.80cm}|p{5.00cm}|p{2.30cm}|}  \hline
+		{\bf No.} & {\bf Name} & {\bf \# of Projects} \\  \hline
+		1 & SPARQL, RDF, Jena Apache & 21 \\  \hline
+		2 & PDF Processor & 8  \\  \hline
+		3 & Selenium Web Test & 26  \\  \hline
+		4 & ORM & 13  \\  \hline
+		5 & Spring MVC & 51  \\  \hline
+		6 & Music Player & 25  \\  \hline
+		7 & Boilerplate & 38  \\  \hline
+		8 & Elastic Search & 55  \\  \hline
+		9 & Hadoop, MapReduce & 52  \\  \hline
+		10 & JSON & 20  \\  \hline
+		11 & Miscellaneous Categories & 271  \\  \hline
+	\end{tabular}
+	\caption[List of software categories]{List of software categories}
+	\label{tab:Categories}
+\end{table}
+
+As can be seen in Table \ref{tab:Categories}, among $580$ considered projects, $309$ of them belong to some specific categories, such as \emph{SPARQL, RDF, Jena Apache}, \emph{Selenium Test}, \emph{Elastic Search}, \emph{Spring MVC}, etc. The other $271$ projects being selected randomly belong to \emph{Miscellaneous Categories}. These categories disperse in several domains and sometimes it happens that there is only one project in a category. %For the sake of clarity, we do not introduce the list of the categories in this deliverable.
+
+%The random projects are used as a means to.
+%From the dataset, a graph is built using the relationships in Section~\ref{sec:GraphRepresentation}. %There, nodes are either users, dependencies or projects and each is encoded using a unique number across the whole graph. Edges represent the corresponding relationships between users and projects or between dependencies and projects. 
+
+
+%\paragraph{\textbf{Application of RepoPal and CrossSim}}
+%\noindent\emph{\textbf{Application of RepoPal and CrossSim}}
+
 \subsection{Evaluation Results}
 evaluation results
 \newpage

@@ -95,3 +95,58 @@ The similarity between two readme files is calculated as the cosine similarity b
 \begin{equation}
 sim_{f}(r_{i},r_{j})=CosineSim(\vec{f_{i}},\vec{f_{j}})
 \end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+
+\subsection{Implementation Details}
+
+Parsing: The first step is clearly parsing the java files of the 580 repositories. I used the javaparser library to directly access
+the main components of the files (import and method invocation for CLAN, import, method declaration, variables and field variables for MudaBlue). For each repository i created a relative .txt file containing all the terms and the frequency, for the CLAN approach such terms are filtered by searching only the terms belonging to the Java JDK. AGGIUNGERE DETTAGLI CIRCA IL FATTO DELLA CONCATENAZIONE DEI RISULTATI PER LE VARIE REPOSITORY. All these terms are merged in another file, called mainlist.txt which is used to avoid reps.
+
+Matrix Creation: Once all the repositories are analyzed we can procede creating the term-document matrix. The matrix is created using the library 
+"import org.apache.commons.math3.linear.ArrayRealVector;
+import org.apache.commons.math3.linear.MatrixUtils;
+import org.apache.commons.math3.linear.RealMatrix;
+import org.apache.commons.math3.linear.RealVector;" creating one vector by one and then adding into the main matrix. 
+
+SVD: As stated before the svd operation consist in decomposing the main matrix in other 3. UN PO DI CODICE.
+import org.apache.commons.math3.linear.SingularValueDecomposition;
+As you can see this operation was already available in the library, so we just retrieved the results of the operation.
+
+LSA: Unfortunately an implementation of Latent Semantic Analysis wasn't available, so we re-implemented from scratch.
+Basically we multiplied the 3 matrix, the important point is the value "k" for the reducted rank, we selected a value of total repository/2. Here we got a very big issue since the "memory in gigabytes = (columns * rows*8)/(1024*1024*1024)", for MudaBlue we got an amount of 700000 distinct terms for a total of 3GB of dedicated memory just for matrix, without cosidering any kind of operation. The solution was to increase the available memory for eclipse up to 8GB. Even though this memory space we got many crashes, so we spend some time in refactoring the code to save memory, e.g. deleting unused data structure, using more light structures and so on.
+
+
+\subsubsection{Tools and Libreries}
+\begin{itemize}
+\item org.eclipse.jdt.core 3.10.0. 
+This is the core part of Eclipse's Java development tools. It contains the non-UI support for compiling and working with Java code, including the following:
+	\begin{itemize}
+	\item an incremental or batch Java compiler that can run standalone or as part of the Eclipse IDE
+	\item Java source and class file indexer and search infrastructure
+	\item a Java source code formatter
+	\item APIs for code assist, access to the AST and structured manipulation of Java source.
+	\end{itemize}
+\item eclipse-astparser 8.1. This is used to analyze the AST at runtime on Eclipse.
+\item commons-math3 3.6.1 Commons Math is a library of lightweight, self-contained mathematics and statistics components addressing the most common problems not available in the Java programming language or Commons Lang. 
+In particular used to compute the SVD, singular value decomposition.
+\item commons-text 1.2. Apache Commons Text is a library focused on algorithms working on strings. 
+\item javaparser-core 3.5.14. This is a library for parsing the java files.
+\item ejml 0.33. Efficient Java Matrix Library (EJML) is a linear algebra library for manipulating real/complex/dense/sparse matrices. Its design goals are; 1) to be as computationally and memory efficient as possible for both small and large matrices, and 2) to be accessible to both novices and experts. These goals are accomplished by dynamically selecting the best algorithms to use at runtime, clean API, and multiple interfaces.
+\end{itemize}
+
+
+
+\subsubsection{Architecture}
+
+architecture
+
+\subsubsection{Working Details}
+
+working details
+
+\subsubsection{Performances}
+
+performances
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  

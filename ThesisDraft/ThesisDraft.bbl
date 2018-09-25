@@ -19,6 +19,11 @@ Ronan Collobert, Jason Weston, L{\'e}on Bottou, Michael Karlen, Koray
 \newblock Natural language processing (almost) from scratch.
 \newblock {\em J. Mach. Learn. Res.}, 12:2493--2537, November 2011.
 
+\bibitem{CROSSSIM-DATA}
+{DISIM - University of L'Aquila}.
+\newblock {CrossSim} tool and evaluation data, 2017.
+\newblock \url{https://github.com/crossminer/CrossSimCAiSE18}.
+
 \bibitem{10.1109/APSEC.2004.69}
 Pankaj~K. Garg, Shinji Kawaguchi, Makoto Matsushita, and Katsuro Inoue.
 \newblock Mudablue: An automatic categorization system for open source
