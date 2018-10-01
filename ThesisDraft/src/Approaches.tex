@@ -47,22 +47,24 @@ The process consist of 12 steps here graphically reported.
 \caption{CLAN phases.}
 \end{figure}
 
-\subsubsection{1 - 3: Terms Extraction}
+\subsubsection{Terms Extraction}
 Steps from 1 to 3 can be merged together since are related to extraction of terms from the repositories.
 As stated before, an important concept is that terms extracted are only API calls, this means that all other things present in a piece of code are discarded, for example all the variables or the function declaration and invocation. Furthermore these API calls belong only to the JDK, in such a way also the calls to any other external library are discarded. This idea is also applied in the extraction of the import declaration, focus only on the JDK packages import.
 The result of this process will be an ordered set of data, representing the occurrencies of any Package;Class for all the projects.
 
-\subsubsection{4: TDMs Creation}
+\subsubsection{TDMs Creation}
 Once the dataset as been created, is reorganized in TDMs. Here two different matrices are created, one for the Classes and one for the Packages. Class-level and package-level similarities are different since applications are often more similar on the package level than on the class level because there are fewer packages than classes in the JDK. Therefore, there is the higher probability that two applications may have API calls that are located in the same package but not in the same class.
 
-\subsubsection{5: LSI Procedure}
+\subsubsection{LSI Procedure}
+The paper refers to LSI procedure, Latent Semantic Indexing[dumais2], but the term are synonym, so from here on, we will refer as Latent Semantic Analysis LSA.
 
-\subsubsection{6: Apply the Cosine Similarity}
+\subsubsection{Apply the Cosine Similarity}
+As for Mudablue, we will apply the cosine similarity to the matrix got from the LSA procedure.
 
-\subsubsection{7: Sum of the matrices}
+\subsubsection{Sum of the matrices}
 The 2 matrices are summed, but before are multplied by a certain value. Since the values for the entries in the 2 matrices are between 0.0 and 1.0 a simple sum could result in a value over 1.0, by this multiplication these values are reducted in order to be summed togheter but still maintaining the logical meaning. The authors chosen 0.5, also we, since is a good value to equal distribute the weight of the packages and method calls.The sum of this value is 1.0, and can span from 0.1 to 0.9 for each matrix, is clear that more is high on a matrix, more is important the values that we are considering from such matrix.
 
-\subsubsection{8: Final similarity matrix}
+\subsubsection{Final similarity matrix}
 \clearpage
 
 
@@ -97,27 +99,101 @@ sim_{f}(r_{i},r_{j})=CosineSim(\vec{f_{i}},\vec{f_{j}})
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+\subsection{System Description}
 
-\subsection{Implementation Details}
+\begin{figure}[H]
+\includegraphics[width=15cm,height=20cm,keepaspectratio]{images/Architecture.png}
+\caption{System Structure}
+\end{figure}
 
-Parsing: The first step is clearly parsing the java files of the 580 repositories. I used the javaparser library to directly access
-the main components of the files (import and method invocation for CLAN, import, method declaration, variables and field variables for MudaBlue). For each repository i created a relative .txt file containing all the terms and the frequency, for the CLAN approach such terms are filtered by searching only the terms belonging to the Java JDK. AGGIUNGERE DETTAGLI CIRCA IL FATTO DELLA CONCATENAZIONE DEI RISULTATI PER LE VARIE REPOSITORY. All these terms are merged in another file, called mainlist.txt which is used to avoid reps.
+In this image is depicted the general architecture of the implemented systems, as you can see the systems share the same architecture with some differences that will be discussed later.
+As you can see, the process consist of 7 steps.
+\begin{itemize}
+ \item Retrieving the dataset, in this case a folder with all 580 repositories.
+ \item All these repositories are analyzed, and any \emph{.java} file is parsed.
+ \item For each repository a vector that contains all the frequencies for each term found is created, and then added in a matrix. 
+ \item The SVD procedure, decomposing the matrix in other 3.
+ \item The matrices are multiplied back to realize the LSA procedure.
+ \item For each vector, we count the cosine similarity with all the others.
+ \item Now we have the final matrix, where any repositories is compared to all the others.
+\end{itemize} 
 
-Matrix Creation: Once all the repositories are analyzed we can procede creating the term-document matrix. The matrix is created using the library 
-"import org.apache.commons.math3.linear.ArrayRealVector;
-import org.apache.commons.math3.linear.MatrixUtils;
-import org.apache.commons.math3.linear.RealMatrix;
-import org.apache.commons.math3.linear.RealVector;" creating one vector by one and then adding into the main matrix. 
+\subsubsection{System Details}
 
-SVD: As stated before the svd operation consist in decomposing the main matrix in other 3. UN PO DI CODICE.
-import org.apache.commons.math3.linear.SingularValueDecomposition;
+\begin{figure}[H]
+\includegraphics[width=15cm,height=20cm,keepaspectratio]{images/Architecture1.png}
+\caption{Parsing}
+\end{figure}
+
+Parsing: The first step is clearly parsing the java files of the 580 repositories. We used the javaparser library to directly access
+the main components of the files (import and method invocation for CLAN, import, method declaration, variables and field variables for MudaBlue). For each repository we created a relative .txt file containing the frequencies, for the CLAN approach such terms are filtered by searching only the terms belonging to the Java JDK. All these terms are merged in another file, called mainlist.txt which is used to avoid reps. The idea is parsing the files and compare with the mainlist.txt to add new terms, and then count, for each terms how many times appears inside the files. So the result will be a vector of numbers.
+
+\begin{figure}[H]
+\includegraphics[width=15cm,height=20cm,keepaspectratio]{images/Architecture2.png}
+\caption{Matrix Creation}
+\end{figure}
+
+Matrix Creation: Once all the repositories are analyzed we can procede in creating the term-document matrix. The matrix is created using the library \emph{apache commons math3} and in particular these components:
+\begin{itemize}
+\item ArrayRealVector.
+\item RealMatrix.
+\item RealVector.
+\end{itemize}
+Each files contains only his own terms naturally, so the idea is, once the parsing process is done, to count how many terms we have and then, adding many zeros as many terms are missing. To clarify, imagine that we have 3 documents \emph{A,B,C} for 10 different terms.
+Now if we examine the document A, we might discover 4 terms, this means that the other 6 terms are missing here, so can be marked as 0. 
+For the document B, we might find out 2 new terms, and so on.
+
+\begin{figure}[H]
+\includegraphics[width=15cm,height=20cm,keepaspectratio]{images/Architecture3.png}
+\caption{Singular Value Decomposition}
+\end{figure}
+
+SVD: As stated before the svd operation consist in decomposing the main matrix in other 3.
+
+\begin{equation}
+A_{mn}=U_{mm}S_{mn}V_{mn}^{T}
+\end{equation}
+
+in which
+
+\begin{itemize}
+	\item $U_{mm}$: Orthogonal matrix.
+	\item $S_{mn}$: Diagonal matrix.
+	\item $V_{mn}^{T}$: The transpose of an orthogonal matrix.
+	\item $X$: Low Rank matrix.
+\end{itemize}
+
+Such operation are provided by \emph{math3 linear SingularValueDecomposition}.
+So we invoke the methods passing as parameter the term-document matrix.
 As you can see this operation was already available in the library, so we just retrieved the results of the operation.
 
+\begin{figure}[H]
+\includegraphics[width=15cm,height=20cm,keepaspectratio]{images/Architecture4.png}
+\caption{Latent Semantic Analysis}
+\end{figure}
+
 LSA: Unfortunately an implementation of Latent Semantic Analysis wasn't available, so we re-implemented from scratch.
-Basically we multiplied the 3 matrix, the important point is the value "k" for the reducted rank, we selected a value of total repository/2. Here we got a very big issue since the "memory in gigabytes = (columns * rows*8)/(1024*1024*1024)", for MudaBlue we got an amount of 700000 distinct terms for a total of 3GB of dedicated memory just for matrix, without cosidering any kind of operation. The solution was to increase the available memory for eclipse up to 8GB. Even though this memory space we got many crashes, so we spend some time in refactoring the code to save memory, e.g. deleting unused data structure, using more light structures and so on.
+Basically we multiplied the 3 matrix provided by the \emph{SVD} procedure, the important point is the value \emph{k} for the reduced rank, we selected a value of total $\frac{repository}{2}$. As explained in the Dumais paper, this value should be selected empirically. 
+Here we got a very big issue since the
+$Memory\,in\,gigabytes\,=\,\frac{(columns*rows*8)}{(1024*1024*1024)}$ is required for a matrix, for MudaBlue we got an amount of 700000 distinct terms for a total of 3GB of dedicated memory just for matrix, without cosidering any kind of operation. This is due to the fact that MudaBlue considers many different terms from a file. Clan instead, focusing only on the the import and method that belongs to the \emph{JDK}, reduced greatly the number of distinct terms. The main solution was to increase the available memory for eclipse up to 8GB. Even though this memory space, we got many crashes, so we spent some time in refactoring the code to save memory, e.g. deleting unused data structure, using more light structures and so on.
 
+\begin{figure}[H]
+\includegraphics[width=15cm,height=20cm,keepaspectratio]{images/Architecture5.png}
+\caption{Cosine Smilarity}
+\end{figure}
 
-\subsubsection{Tools and Libreries}
+As stated before, by cosine similarity we mean a measure of similarity between two non-zero vectors of an inner product space that measures the cosine of the angle between them, that is, how much they are close or far each other. As for the \emph{LSA} we re-implemented the operation from scratch, so the method take as input two vectors and computes the operation, such vectors are taken from the \emph{LSA} matrix, in such a way that every couple is taken into account. Since in the final matrix we will have the simlarity between \emph{repo1 - repo2} and \emph{repo2 - repo1}, we computed the cosine only in the upper triangular matrix to cut half of the calculation.
+
+\begin{figure}[H]
+\includegraphics[width=15cm,height=20cm,keepaspectratio]{images/Architecture6.png}
+\caption{Final Matrix}
+\end{figure}
+
+At this stage the matrix is complete with \emph{580 * 580} in dimension, and with values between \emph{0.0} and \emph{1.0}.
+There is a more step for CLAN, because the approach consider the matrices separately, that is, at this stage we have two different matrices, one for the import and one for the method. So we have to sum up both in order to get the final one.
+
+\subsection{Tools and Libreries}
+During the experience, the work has been done using Eclipse IDE Oxygen .2, and using the following libreries.
 \begin{itemize}
 \item org.eclipse.jdt.core 3.10.0. 
 This is the core part of Eclipse's Java development tools. It contains the non-UI support for compiling and working with Java code, including the following:
@@ -132,14 +208,9 @@ This is the core part of Eclipse's Java development tools. It contains the non-U
 In particular used to compute the SVD, singular value decomposition.
 \item commons-text 1.2. Apache Commons Text is a library focused on algorithms working on strings. 
 \item javaparser-core 3.5.14. This is a library for parsing the java files.
-\item ejml 0.33. Efficient Java Matrix Library (EJML) is a linear algebra library for manipulating real/complex/dense/sparse matrices. Its design goals are; 1) to be as computationally and memory efficient as possible for both small and large matrices, and 2) to be accessible to both novices and experts. These goals are accomplished by dynamically selecting the best algorithms to use at runtime, clean API, and multiple interfaces.
+\item ejml 0.33. Efficient Java Matrix Library (EJML) is a linear algebra library for manipulating real/complex/dense/sparse matrices. Its design goals are; 1) to be as computationally and memory efficient as possible for both small and large matrices, and 2) to be accessible to both novices and experts.These goals are accomplished by dynamically selecting the best algorithms to use at runtime, clean API, and multiple interfaces.
 \end{itemize}
 
-
-
-\subsubsection{Architecture}
-
-architecture
 
 \subsubsection{Working Details}
 
