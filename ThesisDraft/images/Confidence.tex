@@ -1,0 +1,40 @@
+\documentclass[border=10pt]{standalone}
+%%%<
+\usepackage{verbatim}
+%%%>
+\usepackage{pgfplots}
+\pgfplotsset{width=12cm,compat=1.8}
+\begin{comment}
+:Title: Bar plot
+:Tags: 2D;Bar plots;Manual
+:Author: Christian Feuersänger
+:Slug: bar-plot
+
+Bar plots place horizontal or vertical bars at coordinates. Multiple bar plots
+in one axis can be stacked on top of each other or aligned next to each other.
+
+The code is from the PGFPlots 1.10 manual: "4.5.4 Bar Plots".
+\end{comment}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    %enlargelimits=0.15,
+    legend style={at={(0.5,1)},
+      anchor=north,legend columns=-1},
+    xlabel={score},
+    ylabel={\# of projects},
+    symbolic x coords={1,2,3,4},
+    xtick=data,
+    nodes near coords,
+    nodes near coords align={vertical},
+    ymin=5,ymax=180,
+    ]
+\addplot coordinates {(1,110) (2,85) (3,36) (4,18)};   
+\addplot coordinates {(1,111) (2,84) (3,37) (4,18)};    
+\addplot coordinates {(1,41) (2,32) (3,122) (4,55)};
+\addplot coordinates {(1,30) (2,25) (3,130) (4,65)};
+\legend{MUDABlue, CLAN, RepoPal,CrossSim$_3$}
+\end{axis}
+\end{tikzpicture}
+\end{document}

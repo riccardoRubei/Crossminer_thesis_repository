@@ -1,0 +1,37 @@
+% arara: pdflatex
+% !arara: indent: {overwrite: yes}
+\documentclass[tikz]{standalone}
+
+\usepackage{pgfplots}
+
+\begin{document}
+	
+	\pgfplotstableread[row sep=\\,col sep=&]{
+		alias & val \\
+		RepoPal   	 & 100 \\
+		CrossSim    & 100  \\
+		Clan    & 60  \\
+		MudaBlue   & 60  \\
+	}\mydata
+	
+	\begin{tikzpicture}
+	\begin{axis}[
+	ybar,
+	bar width=.5cm,
+	width=\textwidth,
+	height=.5\textwidth,
+	legend style={at={(0.5,1)},
+		anchor=north,legend columns=-1},       
+	symbolic x coords={RepoPal,CrossSim,Clan,MudaBlue},
+	xtick=data,
+	x tick label style={rotate=45,anchor=east},
+	nodes near coords,
+	nodes near coords align={vertical},
+	ymin=30,ymax=120,
+	ylabel={\%},
+	]
+	\addplot table[x=alias,y=val]{\mydata};
+	\legend{Success Rate}
+	\end{axis}
+	\end{tikzpicture}
+\end{document}
