@@ -1,8 +1,11 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Overview}
+In this chapter we are going to illustrate the approaches that we have implemented, in particular we will discuss about MudaBlue,Clan, RepoPal and CrossSim. As explained before, the purpose is to provide a baseline to evaluate CrossSim, so it's mandatory to have a precise idea of what these approaches are and how does they work. Concerning MudaBlue and Clan, we will discuss about their rationale, showing also their original results, then we will show how we reimplemented such approaches from an high-level point of view.
+
 
 \subsection{MUDABlue}\label{sec:mudablue}
 
-The first procedure analysed was MUDABlue, unfortunately none implentation was available on the web, so i reimplemented it from scratch. The MUDABlue method is an automatc categorizaton method or a large collecton of software systems. MUDABlue method does not only categorize sooware systemsd but also determines categories rom the sooware systems collecton automatcally. MUDABlue has three major aspects: 1) it relies on no other information than the source code, 2) it determines category sets automatically, and 3) it allows a software system to be a member of multiple categories. Since we were interested only in the evaluation of the similarity we discarded the phases related to clusterization and categorization.
+The first procedure analysed was MUDABlue, unfortunately none implentation was available on the web, so i reimplemented it from scratch. The MUDABlue method is an automatc categorizaton method of a large collecton of software systems. MUDABlue method does not only categorize sooware systems but also determines categories from the software systems collection automatigcally. MUDABlue has three major aspects: 1) it relies on no other information than the source code, 2) it determines category sets automatically, and 3) it allows a software system to be a member of multiple categories. Since we were interested only in the evaluation of the similarity we discarded the phases related to clusterization and categorization.
 
 The MUDABlue approach can be briefly summarized in 7 steps, as the following image depicts:
 
@@ -56,7 +59,7 @@ the better result.
 \clearpage
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{CLAN:  Closely reLated ApplicatioNs}\label{sec:clan}
 
@@ -112,7 +115,7 @@ corresponding position. [nota e chiedere]
 \clearpage
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5  
 
 \subsection{RepoPal: Exploiting Metadata to Detect Similar GitHub Repositories}\label{sec:repopal}
 
@@ -141,7 +144,9 @@ The similarity between two readme files is calculated as the cosine similarity b
 \begin{equation}
 sim_{f}(r_{i},r_{j})=CosineSim(\vec{f_{i}},\vec{f_{j}})
 \end{equation}
+\clearpage
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{CrossSim}
 
 Since the purpose of this thesis is to provide implementation and data to validate CrossSim approach, is useful to explain in detail it.
@@ -162,8 +167,56 @@ A detailed description of the proposed graph-based representation of open source
 
 \subsubsection{Graph-based Representation of OSS Ecosystems}
 We consider the community of developers together with OSS projects, libraries and their mutual interactions as an \emph{ecosystem}. In this system, either humans or non-human factors have mutual dependency and implication on the others. There, several connections and interactions prevail, such as developers commit to repositories, users star repositories, or projects contain source code files, just to name a few. We propose a solution that makes use of graphs for representing relationships in OSS ecosystems. Specifically, the graph model has been chosen since it allows for flexible data integration and facilitates numerous similarity metrics and clustering techniques \cite{Blondel:2004:MSG:1035533.1035557},\cite{Lu2007},\cite{Schaeffer:2007:SGC:2296006.2296057}. All the playing actors and their communications are transformed into a directed graph. Humans and non-human artifacts are represented as nodes and there is a directed edge between a pair of nodes if they interact with each others. The representation model considers different artifacts in a united fashion, taking into account their mutual, both direct and indirect relationships as well as their co-occurrence as a whole. The representation is twofold: First, it incorporates semantic relationships into the graph. Second, it helps combine both low-level and high-level information into a homogeneous representation.
+
+
+
+\begin{figure}[t!]
+	\centering
+	\includegraphics[width=0.60\textwidth]{images/OSSGraph1.pdf}
+	\caption{Sample graph-based representation of OSS ecosystems}
+	\label{fig:OSSGraph1}
+\end{figure}
+
+
+To demonstrate the utilization of graphs in an OSS ecosystem, we consider an excerpt of the dependencies for two OSS projects, namely \texttt{project\#1} and \texttt{project\#2} in Figure~\ref{fig:OSSGraph1}. Using dependency information extracted from source code and the corresponding metadata (e.g. coming from the tools developed in by Work Package 2), this graph can be properly built to represent the two projects as a whole. In this figure, \texttt{project\#1} contains code file \texttt{HttpSocket.java} and \texttt{project\#2} contains \texttt{FtpSocket.java} with the corresponding edges being marked with the semantic predicate \texttt{hasSourceCode}. Both source code files implement \texttt{interface\#1} being marked by the semantic predicate \texttt{implements}. \texttt{Project\#1} and \texttt{project\#2} are also connected via other semantic paths, such as API \texttt{isUsedBy} highlighted in Figure~\ref{fig:OSSGraph3}. In practice, an OSS graph is much larger with numerous nodes and edges, and the relationship between two projects can be thought as a sub-graph. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.60\textwidth]{images/OSSGraph3.pdf}
+	\caption{Similarity between OSS projects with respect to API usage}
+	\label{fig:OSSGraph3}
+\end{figure}
+
+
+
+Based on the graph structure, one can exploit nodes, links and the mutual relationships to compute similarity using existing graph similarity algorithms. To the best of our knowledge, there exist several metrics for computing similarity in graph \cite{Blondel:2004:MSG:1035533.1035557},\cite{Nguyen:2015:CRV:2942298.2942305},\cite{Nguyen:2015:ESP:2740908.2742141}. The graph structure also allows for graph kernel methods, which are an effective way to compute similarity \cite{ODMD14a}. Considering Figure~\ref{fig:OSSGraph1}, we can compute the similarity between \texttt{project\#1} and \texttt{project\#2} with regards to the semantic paths between them, e.g. the two-hop path using \texttt{hasSourceCode} and \texttt{implements} (Figure~\ref{fig:OSSGraph2}), or the one-hop path using API \texttt{isUsedBy}. For example, concerning \texttt{isUsedBy}, the two projects are considered to be similar since with the predicate both projects originate from \texttt{API\#1}. The hypothesis is based on the fact that the projects are aiming at creating common functionalities by using common libraries \cite{McMillan:2012:DSS:2337223.2337267},\cite{6671293}.
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.60\textwidth]{images/OSSGraph2.pdf}
+	\caption{Similarity between OSS projects with respect to source implementation}
+	\label{fig:OSSGraph2}
+\end{figure}
+
+
+The representation allows us to compute similarity between other graph components, e.g. developers. Back to Figure~\ref{fig:OSSGraph1}, though there is no direct connection between \texttt{developer\#1} and \texttt{developer\#2}, their similarity can still be inferred from indirect semantic paths, such as \texttt{develops} and \texttt{implements} which are highlighted in Figure \ref{fig:OSSGraph4}.
+%
+If we consider other semantic paths, we see that the two developers have more in common as they both take part in \texttt{project\#1} and \texttt{projects\#2} represented by \texttt{commits}. To a certain extent, the two developers are considered to be similar, although they are not directly connected. In reality, the connection between \texttt{developer\#1} and \texttt{developer\#2} is enforced by further semantic paths and as a result their similarity can be more precisely computed. The similarities between developers can serve as input for a collaborative filtering recommendation system, with which a developer is recommended a list of projects or libraries that similar developers already worked with \cite{Pazzani2007},\cite{Schafer:2007:CFR:1768197.1768208}. This is an invaluable tool in the context of the CROSSMINER project since it is essential to equip developers with recommendation functionalities to help them increase reusability and productivity.
+
+
+\begin{figure}[t!]
+	\centering
+	\includegraphics[width=0.60\textwidth]{images/OSSGraph4.pdf}
+	\caption{Similarity between developers}
+	\label{fig:OSSGraph4}
+\end{figure}
+
+The relationships underpinning the graph-based representations of the simple ecosystems shown in Fig. \ref{fig:OSSGraph1}-\ref{fig:OSSGraph4} are shown in Table~\ref{tab:Representation}. For the first implementation of CrossSim the relationships $isUsedBy$, $develops$, and $stars$ have been considered. 
 \clearpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \subsection{System Description}
 
 \begin{figure}[H]
@@ -268,6 +321,7 @@ To be more formal the final matrix $\| M \|$ is square matrix whose rows and col
 
 There is one more step for CLAN, since the approach consider the matrices separately, that is, at this stage we have two different matrices, one for the imports and one for the methods. So we have to sum up both in order to get the final one.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \subsection{Tools and Libreries}
 During the experience, the work has been done using Eclipse IDE Oxygen .2, and using the following libreries.
