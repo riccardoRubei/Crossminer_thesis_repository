@@ -218,7 +218,44 @@ The relationships underpinning the graph-based representations of the simple eco
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \subsection{System Description}
+In this section we want to explain our work and what we have done. In order to do this we will use some UML diagram plus a generich high level architecture diagram.
 
+ASK IF IS POSSIBLE TO PUT AN IMAGE LIKE D8.1 PAGE 41 OR SIMILAR
+THE IDEA IS TO SHOW HOW A SIMILIRATY MODULE FITS INSIDE A COMPLETE PROJECT
+
+\subsubsection{Component Point of View}
+Here we want to analyze the system from a Software Engineer point of view, so we will start by showing the component diagram.
+\begin{figure}[H]
+	\includegraphics[width=15cm,height=20cm,keepaspectratio]{images/ComponentDiagram.png}
+	\caption{Component Diagram}
+	\label{fig:Component}
+\end{figure}
+As you can see there are 5 main components:
+\begin{itemize}
+	\item Project Repository manager: this is the component who provide the repositories and who manage the file system.
+	\item Parser: this component analyzes all the \emph{.java} files in order to retrieve the keywords to create the term-document matrix. As stated before we search for the \emph{JDK} related imports and methods for Clan and any imports, method, variables and field variables for MudaBlue.
+	\item Matrix Manager: the matrix manager is the central component, in the sense that manages the creation of the term-document matrix, but not only, it coordinates all the matrices "roaming" during the process. For example the term-document matrix can't be analzed as it is by the SVD component, it requires a rework before.
+	\item LSA Manager: here all the operations concerning the Latent Semantic Analsys occurs, from the low-rank matrix reduction to the Singular Value Decomposition.
+	\item Cosine Similarity Manager: once the LSA completes his work we can apply the cosine similarity to get the final version of the matrix.
+\end{itemize}
+
+\begin{figure}[H]
+	\includegraphics[width=15cm,height=20cm,keepaspectratio]{images/SequenceDiagram.png}
+	\caption{Sequence Diagram}
+	\label{fig:Sequence}
+\end{figure}
+
+In the figure \ref{fig:Sequence} we can see the sequence diagram.
+When the process starts, the repository manager analyzes the file system in order to provide all the repositories to be analyzed. It also check if the parsing has been occurred before to such repositories, this is due the extremely high consumption of memory, so we splitted the phases in two moments.\\
+When we know what are the repositories to be analyzed we can start, as explained before for MudaBlue and Clan the terms are different, but we still use the same library in both cases \emph{Java Parser}.\\
+The outcome will be a term-document matrix worked by the Latent Semantic Analysis manager.
+First of all we invoke the \emph{commons math} for decomposing the matrix, then we can multiply them back in order the get the LSA matrix.\\
+At this stage we just need to take the matrix and then apply the cosine similarity, for each vector of the matrix we calculate the cosine with all the others vectors. In this way we will get a final matrix of \emph{580 x 580}.
+The final matrix can be taken for further analysis or anything that we need.
+
+\clearpage
+
+\subsubsection{Description}
 \begin{figure}[H]
 \includegraphics[width=15cm,height=20cm,keepaspectratio]{images/Architecture.png}
 \caption{System Structure}

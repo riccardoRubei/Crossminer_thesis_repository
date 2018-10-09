@@ -1,0 +1,17 @@
+The purpose of this work was providing a baseline result for the evaluation of a novel similarity calculator approach, CrossSim.
+CrossSim is an approach developed by us inside the context of the CrossMiner project.
+
+CROSSMINER\footnote{\url{https://www.crossminer.org}} is a research project funded by the EU Horizon 2020 Research and Innovation Programme, aiming at supporting the development of complex software systems by \textit{i)} enabling monitoring, in-depth analysis and evidence-based selection of open source components, and \textit{ii)} facilitating knowledge extraction from large OSS repositories \cite{10.1007/978-3-319-74730-9_33}. 
+
+In order to provide such a baseline was mandatory to find some similar approach, we decided to use MudaBlue and Clan which are two close approaches, since there weren't any implementation available we re-implemented them from scratch. The contribute can be summarized as follows:
+
+\begin{itemize}
+	\item Study and Analysis of the problem. In this phase we have analyzed the similarity problem discovering that is well known problem studied in order to find a solution to some very interesting problems such as: (plagiarism detection, information retrieval,text classification, document clustering, topic detection and so on).In order to validate our novel approach we eventually decided to study in detail and implement two similarity calculator approaches: MudaBlue and Clan.
+	\item Implementation. The implementation phase covered a lot of aspects. First of all was necessary analyzing the projects by parsing each \emph{.java} file and then summing up everything in a \emph{Term-Document matrix}. We applied then, the core of the apporaches, the \emph{Latent Semantic Analysis}, applying then the cosine similarity on the matrix we got the final matrix ready to be evaluated. The Ide was Eclipse and the language Java, with a lot of supporting library.
+	\item Results Validation. At this stage we started the evaluation phase which consisted in a user study. We asked to a group of 10 people with experencie in Java delepoment, to rate a pull of queries provided by us. The results confirmed that CrossSim is a more precise method to calculate similarity with rispect to Clan and MudaBlue.
+\end{itemize}
+
+One of the most hard issue faced was related to the physical memory required to compute the Latent Semantic Analysis, for MudaBlue in particular we got something like \emph{700000} terms. This means that the required memory, only to manage the matrix was about 3Gb, this excluding all the memory used for other data structures and for the parsing. That's why we put a bound for the Eclipse virtual memory up to 8Gb and worked in two phase. During the first phase we collected all the terms by parsing everything and then, after an IDE restart, computing the LSA.
+
+%%%%%Future Works%%%%%
+Since the evualation was succesfully, in the sense that, results confirmed that CrossSim is a valuable similarity approach, the idea is to continue the development of the other features that still are missing (e.g. Code snippet suggestion, Api reccomandation).
