@@ -1,0 +1,53 @@
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}Summary}{4}{subsection.1.1}
+\contentsline {section}{\numberline {2}Crossminer Project}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}CROSSMINER}{6}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Open Source Software Challenges}{6}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Selecting Open Source Components}{7}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Project Technologies}{7}{subsubsection.2.1.3}
+\contentsline {section}{\numberline {3}The Similarity Problem}{10}{section.3}
+\contentsline {subsection}{\numberline {3.1}Overview}{10}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}String-Based}{10}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1} Levenshtein distance}{10}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Cosine Similarity}{11}{subsubsection.3.2.2}
+\contentsline {subsection}{\numberline {3.3}Corpus-Based}{12}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Term-Document Matrix}{12}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Latent Semantic Analysis}{13}{subsubsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4}Knowledge-Based}{19}{subsection.3.4}
+\contentsline {section}{\numberline {4}The Approaches}{20}{section.4}
+\contentsline {subsection}{\numberline {4.1}Overview}{20}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}MUDABlue}{20}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Exctract Identifiers}{20}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Create identifier-by-software matrix}{21}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Remove useless identifiers}{21}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}Apply the LSA}{21}{subsubsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.5}Apply the Cosine Similarity}{21}{subsubsection.4.2.5}
+\contentsline {subsubsection}{\numberline {4.2.6}Categorization}{21}{subsubsection.4.2.6}
+\contentsline {subsubsection}{\numberline {4.2.7}Results}{21}{subsubsection.4.2.7}
+\contentsline {subsection}{\numberline {4.3}CLAN: Closely reLated ApplicatioNs}{23}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Terms Extraction}{23}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}TDMs Creation}{24}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}LSI Procedure}{24}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}Apply the Cosine Similarity}{24}{subsubsection.4.3.4}
+\contentsline {subsubsection}{\numberline {4.3.5}Sum of the matrices}{24}{subsubsection.4.3.5}
+\contentsline {subsubsection}{\numberline {4.3.6}Final similarity matrix}{24}{subsubsection.4.3.6}
+\contentsline {subsubsection}{\numberline {4.3.7}Results}{24}{subsubsection.4.3.7}
+\contentsline {subsection}{\numberline {4.4}RepoPal: Exploiting Metadata to Detect Similar GitHub Repositories}{26}{subsection.4.4}
+\contentsline {paragraph}{Readme-based similarity}{26}{section*.17}
+\contentsline {subsection}{\numberline {4.5}CrossSim}{27}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}Graph-based Representation of OSS Ecosystems}{27}{subsubsection.4.5.1}
+\contentsline {subsection}{\numberline {4.6}System Description}{31}{subsection.4.6}
+\contentsline {subsubsection}{\numberline {4.6.1}Component Point of View}{32}{subsubsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.2}Description}{34}{subsubsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.3}System Details}{35}{subsubsection.4.6.3}
+\contentsline {subsection}{\numberline {4.7}Tools and Libreries}{41}{subsection.4.7}
+\contentsline {section}{\numberline {5}Evaluation}{42}{section.5}
+\contentsline {subsection}{\numberline {5.1}Overview}{42}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Dataset}{42}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}User Study}{44}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Calculation of metrics}{44}{subsubsection.5.3.1}
+\contentsline {subsection}{\numberline {5.4}Evaluation Results}{46}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Comments}{48}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Threats to Validity}{48}{subsection.5.6}
+\contentsline {section}{\numberline {6}Conclusion}{50}{section.6}
+\contentsline {section}{References}{51}{section*.39}

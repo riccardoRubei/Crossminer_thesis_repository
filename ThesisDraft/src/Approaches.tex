@@ -219,12 +219,15 @@ The relationships underpinning the graph-based representations of the simple eco
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \subsection{System Description}
 In this section we want to explain our work and what we have done. In order to do this we will use some UML diagram plus a generich high level architecture diagram.
-
-ASK IF IS POSSIBLE TO PUT AN IMAGE LIKE D8.1 PAGE 41 OR SIMILAR
-THE IDEA IS TO SHOW HOW A SIMILIRATY MODULE FITS INSIDE A COMPLETE PROJECT
+\begin{figure}[H]
+	\includegraphics[width=15cm,height=20cm,keepaspectratio]{images/UseCaseDiagram.png}
+	\caption{Use Case Diagram}
+	\label{fig:UseCase}
+\end{figure}
+This image, exctracted from CrossSim documentation depicts how a similarity calculator fits inside a real project.
+It is clear that in order to provide a meaningful recommendation, it is mandatory to have a similarity calculator better as possible since all the functionality extending the \emph{GetProjectAlternatives} use case, rely on some similarity computation.
 
 \subsubsection{Component Point of View}
-Here we want to analyze the system from a Software Engineer point of view, so we will start by showing the component diagram.
 \begin{figure}[H]
 	\includegraphics[width=15cm,height=20cm,keepaspectratio]{images/ComponentDiagram.png}
 	\caption{Component Diagram}

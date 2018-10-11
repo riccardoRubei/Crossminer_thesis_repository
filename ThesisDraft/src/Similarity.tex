@@ -50,7 +50,7 @@ These are the two string that we want to compare to see how much they are relate
 \end{itemize}
 \newpage
 From the strings is possible to count the occurrencies of each term, putting everything in a matrix.
-\begin{figure}
+\begin{table}
 	\begin{equation} \nonumber
 	\bordermatrix{~ & string 1 & string 2 \cr	
 		me 		& 2 & 2  \cr 
@@ -64,7 +64,7 @@ From the strings is possible to count the occurrencies of each term, putting eve
 	\end{equation}
 	\caption{The occurrencies.}
 	\label{fig:TDM}
-\end{figure}
+\end{table}
 
 Since in this kind of evaluation is not important the meaning or where the words are, is possibile to create the related vectore in order to compute the similarity.\\
 
@@ -102,7 +102,7 @@ Another common weighting scheme uses only the frequency of terms in documents fo
 	\item[+] $d_{3}$: \emph{Nice is a nice city.}
 \end{itemize}
 
-\begin{figure}[h!]
+\begin{table}[h!]
 	\begin{equation} \nonumber
 	\bordermatrix{~ & she & is & today & a & nice & city \cr	
 		d_{1} 		& 1 & 1 & 0 & 0 & 1 & 0 \cr 
@@ -111,7 +111,7 @@ Another common weighting scheme uses only the frequency of terms in documents fo
 	\end{equation}
 	\caption{An example of a term-document matrix}
 	\label{fig:TDM}
-\end{figure}
+\end{table}
 
 The set of terms $t$ consists of $6$ elements, i.e. $t=(she$, $is$, $today$, $a$, $nice$, $city)$ and the corresponding term-document matrix for $D$ is depicted in Figure \ref{fig:TDM}.
 
@@ -153,7 +153,7 @@ Image that these are a set of document to be analyzed and we want to apply the p
 	\item doc9: Graph minors: A survey
 \end{itemize}
 
-\begin{figure}[h!]
+\begin{table}[h!]
 	\begin{equation} \nonumber
 	\bordermatrix{~ & doc1 & doc2 & doc3 & doc4 & doc5 & doc6 & doc7 & doc8 & doc9 \cr	
 		human	& 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \cr
@@ -171,9 +171,9 @@ Image that these are a set of document to be analyzed and we want to apply the p
 	\end{equation}
 	\caption{Term-Document matrix related to the example.}
 	\label{fig:TDM}
-\end{figure}
+\end{table}
 
-\begin{figure}[h!]
+\begin{table}[h!]
 	\begin{equation} \nonumber
 	\bordermatrix{ ~ \cr
 		& 0.22 & -0.11 & 0.29 & -0.41 & -0.11 & -0.34 & 0.52 & -0.06 & -0.41 \cr
@@ -191,9 +191,9 @@ Image that these are a set of document to be analyzed and we want to apply the p
 	\end{equation}
 	\caption{$U_{mm}$x}
 	\label{fig:TDM}
-\end{figure}
+\end{table}
 
-\begin{figure}[h!]
+\begin{table}[h!]
 	\begin{equation} \nonumber
 	\bordermatrix{~  \cr	
 		& 3.34 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \cr
@@ -209,10 +209,10 @@ Image that these are a set of document to be analyzed and we want to apply the p
 	\end{equation}
 	\caption{ $S_{mn}$}
 	\label{fig:TDM}
-\end{figure}
+\end{table}
 
 \clearpage
-\begin{figure}[h!]
+\begin{table}[h!]
 	\begin{equation} \nonumber
 	\bordermatrix{~  \cr	
 		& 0.20 & 0.61 & 0.46 & 0.54 & 0.28 & 0.00 & 0.01 & 0.02 & 0.08 \cr
@@ -228,7 +228,8 @@ Image that these are a set of document to be analyzed and we want to apply the p
 	\end{equation}
 	\caption{$V_{mn}^{T}$}
 	\label{fig:TDM}
-\end{figure}
+\end{table}
+
 The following image depict the result of the decomposition with a rank of 2.
 \begin{table}[h!]
 	\begin{equation} \nonumber
