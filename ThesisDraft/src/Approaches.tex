@@ -163,8 +163,6 @@ The architecture of CrossSim is depicted in Fig. \ref{fig:CrossSim}: the rectang
 %
 The \emph{Graph similarity} module implements the similarity algorithm that is applied on the source graph-based representation of the input ecosystems generates matrices representing the similarity value for each pair of input projects. 
 
-A detailed description of the proposed graph-based representation of open source projects is given in Sec. \ref{sec:GraphRepresentation}. Details about the implemented similarity algorithm are given in Sec. \ref{sec:SimRank}.
-
 \subsubsection{Graph-based Representation of OSS Ecosystems}
 We consider the community of developers together with OSS projects, libraries and their mutual interactions as an \emph{ecosystem}. In this system, either humans or non-human factors have mutual dependency and implication on the others. There, several connections and interactions prevail, such as developers commit to repositories, users star repositories, or projects contain source code files, just to name a few. We propose a solution that makes use of graphs for representing relationships in OSS ecosystems. Specifically, the graph model has been chosen since it allows for flexible data integration and facilitates numerous similarity metrics and clustering techniques \cite{Blondel:2004:MSG:1035533.1035557},\cite{Lu2007},\cite{Schaeffer:2007:SGC:2296006.2296057}. All the playing actors and their communications are transformed into a directed graph. Humans and non-human artifacts are represented as nodes and there is a directed edge between a pair of nodes if they interact with each others. The representation model considers different artifacts in a united fashion, taking into account their mutual, both direct and indirect relationships as well as their co-occurrence as a whole. The representation is twofold: First, it incorporates semantic relationships into the graph. Second, it helps combine both low-level and high-level information into a homogeneous representation.
 
@@ -211,10 +209,7 @@ If we consider other semantic paths, we see that the two developers have more in
 	\caption{Similarity between developers}
 	\label{fig:OSSGraph4}
 \end{figure}
-
-The relationships underpinning the graph-based representations of the simple ecosystems shown in Fig. \ref{fig:OSSGraph1}-\ref{fig:OSSGraph4} are shown in Table~\ref{tab:Representation}. For the first implementation of CrossSim the relationships $isUsedBy$, $develops$, and $stars$ have been considered. 
 \clearpage
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \subsection{System Description}

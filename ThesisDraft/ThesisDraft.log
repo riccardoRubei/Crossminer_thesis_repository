@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.9.24)  10 OCT 2018 15:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.9.24)  11 OCT 2018 11:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -737,20 +737,20 @@ LaTeX Warning: Label `fig:TDM' multiply defined.
 )
 \openout1 = `ThesisDraft.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -820,7 +820,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 69.
+Package hyperref Info: Link coloring OFF on input line 64.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -830,9 +830,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count132
 )
-LaTeX Info: Redefining \ref on input line 69.
-LaTeX Info: Redefining \pageref on input line 69.
-LaTeX Info: Redefining \nameref on input line 69.
+LaTeX Info: Redefining \ref on input line 64.
+LaTeX Info: Redefining \pageref on input line 64.
+LaTeX Info: Redefining \nameref on input line 64.
 
 (./ThesisDraft.out) (./ThesisDraft.out)
 \@outlinefile=\write3
@@ -856,24 +856,24 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
  [6
 
 ] [7]
-<images/crossminer.png, id=332, 1062.86742pt x 465.60155pt>
+<images/crossminer.png, id=326, 1062.86742pt x 465.60155pt>
 File: images/crossminer.png Graphic file (type png)
 
 <use images/crossminer.png>
 Package pdftex.def Info: images/crossminer.png used on input line 52.
 (pdftex.def)             Requested size: 284.52911pt x 124.64131pt.
 
-<images/logicView.png, id=334, 592.46344pt x 557.08125pt>
+<images/logicView.png, id=331, 592.46344pt x 557.08125pt>
 File: images/logicView.png Graphic file (type png)
 
 <use images/logicView.png>
-Package pdftex.def Info: images/logicView.png used on input line 59.
+Package pdftex.def Info: images/logicView.png used on input line 63.
 (pdftex.def)             Requested size: 284.5329pt x 267.54047pt.
-) [8 <./images/crossminer.png>] [9 <./images/logicView.png>] (./src/Similarity.
-tex [10
+ [8 <./images/crossminer.png>] [9 <./images/logicView.png>]) [10] (./src/Simila
+rity.tex [11
 
 ]
-<images/Cosine.pdf, id=352, 193.72375pt x 198.7425pt>
+<images/Cosine.pdf, id=355, 193.72375pt x 198.7425pt>
 File: images/Cosine.pdf Graphic file (type pdf)
  <use images/Cosine.pdf>
 Package pdftex.def Info: images/Cosine.pdf used on input line 37.
@@ -883,12 +883,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
-[11 <./images/Cosine.pdf>]
+[12 <./images/Cosine.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
-[12pdfTeX warning (ext4): destination with the same identifier (name{equation.3
+[13pdfTeX warning (ext4): destination with the same identifier (name{equation.3
 .2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -909,7 +909,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2}
                                                   \fi \fi 
 l.97 A
       nother common weighting scheme uses only the frequency of terms in doc...
-] [13]pdfTeX warning (ext4): destination with the same identifier (name{equatio
+] [14]pdfTeX warning (ext4): destination with the same identifier (name{equatio
 n.3.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -931,16 +931,16 @@ er (name{equation.3.4}) has been already used, duplicate ignored
 l.124 \begin{equation}
                       
 
-LaTeX Warning: Reference `sec:cosine' on page 14 undefined on input line 138.
+LaTeX Warning: Reference `sec:cosine' on page 15 undefined on input line 138.
 
-[14]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+[15]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[15] [16pdfTeX warning (ext4): destination with the same identifier (name{equat
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[16] [17pdfTeX warning (ext4): destination with the same identifier (name{equat
 ion.3.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -992,10 +992,10 @@ me identifier (name{equation.3.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.235 	\begin{equation}
-                        \nonumber [17
+                        \nonumber [18
 
 ]
-<images/LSIk.png, id=457, 753.81625pt x 193.72375pt>
+<images/LSIk.png, id=460, 753.81625pt x 193.72375pt>
 File: images/LSIk.png Graphic file (type png)
  <use images/LSIk.png>
 Package pdftex.def Info: images/LSIk.png used on input line 257.
@@ -1005,12 +1005,12 @@ Overfull \hbox (8.52748pt too wide) in paragraph at lines 257--258
  [][] 
  []
 
-[18
+[19
 
- <./images/LSIk.png>]) [19
+ <./images/LSIk.png>]) [20
 
 ] (./src/Approaches.tex
-<images/Mudablue1.png, id=476, 709.90219pt x 259.7203pt>
+<images/Mudablue1.png, id=479, 709.90219pt x 259.7203pt>
 File: images/Mudablue1.png Graphic file (type png)
 
 <use images/Mudablue1.png>
@@ -1021,10 +1021,10 @@ Overfull \hbox (8.54666pt too wide) in paragraph at lines 13--15
  [][] 
  []
 
-[20
+[21
 
- <./images/Mudablue1.png>] [21] [22]
-<images/Clan.png, id=497, 830.35219pt x 361.35pt>
+ <./images/Mudablue1.png>] [22] [23]
+<images/Clan.png, id=500, 830.35219pt x 361.35pt>
 File: images/Clan.png Graphic file (type png)
  <use images/Clan.png>
 Package pdftex.def Info: images/Clan.png used on input line 71.
@@ -1034,25 +1034,25 @@ Overfull \hbox (8.53992pt too wide) in paragraph at lines 71--73
  [][] 
  []
 
-[23
+[24
 
  <./images/Clan.png>]
-<images/ConfidenceClan.pdf, id=503, 316.78351pt x 179.90411pt>
+<images/ConfidenceClan.pdf, id=506, 316.78351pt x 179.90411pt>
 File: images/ConfidenceClan.pdf Graphic file (type pdf)
 
 <use images/ConfidenceClan.pdf>
 Package pdftex.def Info: images/ConfidenceClan.pdf used on input line 100.
 (pdftex.def)             Requested size: 284.5273pt x 161.58551pt.
- [24]
-<images/PrecisionClan.pdf, id=508, 319.84294pt x 179.90813pt>
+ [25]
+<images/PrecisionClan.pdf, id=512, 319.84294pt x 179.90813pt>
 File: images/PrecisionClan.pdf Graphic file (type pdf)
 
 <use images/PrecisionClan.pdf>
 Package pdftex.def Info: images/PrecisionClan.pdf used on input line 107.
 (pdftex.def)             Requested size: 284.55194pt x 160.05731pt.
- [25 <./images/ConfidenceClan.pdf> <./images/PrecisionClan.pdf>] [26
+ [26 <./images/ConfidenceClan.pdf> <./images/PrecisionClan.pdf>] [27
 
-] <images/CrossSim.pdf, id=547, 643.40375pt x 204.765pt>
+] <images/CrossSim.pdf, id=550, 643.40375pt x 204.765pt>
 File: images/CrossSim.pdf Graphic file (type pdf)
 
 <use images/CrossSim.pdf>
@@ -1063,98 +1063,85 @@ Overfull \hbox (8.55397pt too wide) in paragraph at lines 157--158
 [][] 
  []
 
-
-LaTeX Warning: Reference `sec:GraphRepresentation' on page 27 undefined on inpu
-t line 166.
-
-
-LaTeX Warning: Reference `sec:SimRank' on page 27 undefined on input line 166.
-
-[27
+[28
 
  <./images/CrossSim.pdf>]
-<images/OSSGraph1.pdf, id=582, 381.36076pt x 253.95778pt>
+<images/OSSGraph1.pdf, id=586, 381.36076pt x 253.95778pt>
 File: images/OSSGraph1.pdf Graphic file (type pdf)
 
 <use images/OSSGraph1.pdf>
-Package pdftex.def Info: images/OSSGraph1.pdf used on input line 175.
+Package pdftex.def Info: images/OSSGraph1.pdf used on input line 173.
 (pdftex.def)             Requested size: 250.95476pt x 167.11664pt.
 
-<images/OSSGraph3.pdf, id=585, 416.38965pt x 253.95778pt>
+<images/OSSGraph3.pdf, id=589, 416.38965pt x 253.95778pt>
 File: images/OSSGraph3.pdf Graphic file (type pdf)
 
 <use images/OSSGraph3.pdf>
-Package pdftex.def Info: images/OSSGraph3.pdf used on input line 185.
+Package pdftex.def Info: images/OSSGraph3.pdf used on input line 183.
 (pdftex.def)             Requested size: 250.95476pt x 153.06172pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[28 <./images/OSSGraph1.pdf>]
-<images/OSSGraph2.pdf, id=618, 416.5432pt x 257.42273pt>
+[29 <./images/OSSGraph1.pdf>]
+<images/OSSGraph2.pdf, id=621, 416.5432pt x 257.42273pt>
 File: images/OSSGraph2.pdf Graphic file (type pdf)
 
 <use images/OSSGraph2.pdf>
-Package pdftex.def Info: images/OSSGraph2.pdf used on input line 197.
+Package pdftex.def Info: images/OSSGraph2.pdf used on input line 195.
 (pdftex.def)             Requested size: 250.95476pt x 155.09114pt.
- [29 <./images/OSSGraph3.pdf> <./images/OSSGraph2.pdf>] <images/OSSGraph4.pdf, 
-id=644, 413.52693pt x 257.16576pt>
+ [30 <./images/OSSGraph3.pdf> <./images/OSSGraph2.pdf>] <images/OSSGraph4.pdf, 
+id=646, 413.52693pt x 257.16576pt>
 File: images/OSSGraph4.pdf Graphic file (type pdf)
 
 <use images/OSSGraph4.pdf>
-Package pdftex.def Info: images/OSSGraph4.pdf used on input line 210.
+Package pdftex.def Info: images/OSSGraph4.pdf used on input line 208.
 (pdftex.def)             Requested size: 250.95476pt x 156.06644pt.
 
-
-LaTeX Warning: Reference `tab:Representation' on page 30 undefined on input lin
-e 215.
-
-[30 <./images/OSSGraph4.pdf>]
-<images/UseCaseDiagram.png, id=659, 904.37875pt x 694.595pt>
+<images/UseCaseDiagram.png, id=647, 904.37875pt x 694.595pt>
 File: images/UseCaseDiagram.png Graphic file (type png)
 
 <use images/UseCaseDiagram.png>
-Package pdftex.def Info: images/UseCaseDiagram.png used on input line 223.
+Package pdftex.def Info: images/UseCaseDiagram.png used on input line 217.
 (pdftex.def)             Requested size: 426.78304pt x 327.78453pt.
 
-Overfull \hbox (8.52936pt too wide) in paragraph at lines 223--224
+Overfull \hbox (8.52936pt too wide) in paragraph at lines 217--218
 [][] 
  []
 
-<images/ComponentDiagram.png, id=660, 995.72pt x 386.44376pt>
+[31 <./images/OSSGraph4.pdf>]
+<images/ComponentDiagram.png, id=661, 995.72pt x 386.44376pt>
 File: images/ComponentDiagram.png Graphic file (type png)
 
 <use images/ComponentDiagram.png>
-Package pdftex.def Info: images/ComponentDiagram.png used on input line 232.
+Package pdftex.def Info: images/ComponentDiagram.png used on input line 226.
 (pdftex.def)             Requested size: 426.79904pt x 165.64276pt.
 
-Overfull \hbox (8.54536pt too wide) in paragraph at lines 232--233
+Overfull \hbox (8.54536pt too wide) in paragraph at lines 226--227
 [][] 
  []
 
-[31
-
- <./images/UseCaseDiagram.png>]
+[32 <./images/UseCaseDiagram.png>]
 <images/SequenceDiagram.png, id=668, 935.495pt x 470.75874pt>
 File: images/SequenceDiagram.png Graphic file (type png)
 
 <use images/SequenceDiagram.png>
-Package pdftex.def Info: images/SequenceDiagram.png used on input line 246.
+Package pdftex.def Info: images/SequenceDiagram.png used on input line 240.
 (pdftex.def)             Requested size: 426.79285pt x 214.77022pt.
 
-Overfull \hbox (8.53917pt too wide) in paragraph at lines 246--247
+Overfull \hbox (8.53917pt too wide) in paragraph at lines 240--241
 [][] 
  []
 
-[32 <./images/ComponentDiagram.png>] [33 <./images/SequenceDiagram.png>]
+[33 <./images/ComponentDiagram.png>] [34 <./images/SequenceDiagram.png>]
 <images/Architecture.png, id=682, 939.51pt x 590.205pt>
 File: images/Architecture.png Graphic file (type png)
 
 <use images/Architecture.png>
-Package pdftex.def Info: images/Architecture.png used on input line 263.
+Package pdftex.def Info: images/Architecture.png used on input line 257.
 (pdftex.def)             Requested size: 426.7896pt x 268.1114pt.
 
-Overfull \hbox (8.53592pt too wide) in paragraph at lines 263--264
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 257--258
 [][] 
  []
 
@@ -1162,101 +1149,101 @@ Overfull \hbox (8.53592pt too wide) in paragraph at lines 263--264
 File: images/Architecture1.png Graphic file (type png)
 
 <use images/Architecture1.png>
-Package pdftex.def Info: images/Architecture1.png used on input line 282.
+Package pdftex.def Info: images/Architecture1.png used on input line 276.
 (pdftex.def)             Requested size: 426.7896pt x 268.1114pt.
 
-Overfull \hbox (8.53592pt too wide) in paragraph at lines 282--283
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 276--277
 [][] 
  []
 
-[34
+[35
 
  <./images/Architecture.png>]
 <images/Architecture2.png, id=690, 939.51pt x 590.205pt>
 File: images/Architecture2.png Graphic file (type png)
 
 <use images/Architecture2.png>
-Package pdftex.def Info: images/Architecture2.png used on input line 290.
+Package pdftex.def Info: images/Architecture2.png used on input line 284.
 (pdftex.def)             Requested size: 426.7896pt x 268.1114pt.
 
-Overfull \hbox (8.53592pt too wide) in paragraph at lines 290--291
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 284--285
 [][] 
  []
 
-[35 <./images/Architecture1.png>]
+[36 <./images/Architecture1.png>]
 <images/Architecture3.png, id=697, 939.51pt x 590.205pt>
 File: images/Architecture3.png Graphic file (type png)
 
 <use images/Architecture3.png>
-Package pdftex.def Info: images/Architecture3.png used on input line 305.
+Package pdftex.def Info: images/Architecture3.png used on input line 299.
 (pdftex.def)             Requested size: 426.7896pt x 268.1114pt.
 
-Overfull \hbox (8.53592pt too wide) in paragraph at lines 305--306
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 299--300
 [][] 
  []
 
-[36 <./images/Architecture2.png>]
-<images/Architecture4.png, id=704, 939.51pt x 590.205pt>
+[37 <./images/Architecture2.png>]
+<images/Architecture4.png, id=705, 939.51pt x 590.205pt>
 File: images/Architecture4.png Graphic file (type png)
 
 <use images/Architecture4.png>
-Package pdftex.def Info: images/Architecture4.png used on input line 329.
+Package pdftex.def Info: images/Architecture4.png used on input line 323.
 (pdftex.def)             Requested size: 426.7896pt x 268.1114pt.
 
-Overfull \hbox (8.53592pt too wide) in paragraph at lines 329--330
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 323--324
 [][] 
  []
 
-[37 <./images/Architecture3.png>]
+[38 <./images/Architecture3.png>]
 <images/Architecture5.png, id=713, 939.51pt x 590.205pt>
 File: images/Architecture5.png Graphic file (type png)
 
 <use images/Architecture5.png>
-Package pdftex.def Info: images/Architecture5.png used on input line 339.
+Package pdftex.def Info: images/Architecture5.png used on input line 333.
 (pdftex.def)             Requested size: 426.7896pt x 268.1114pt.
 
-Overfull \hbox (8.53592pt too wide) in paragraph at lines 339--340
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 333--334
 [][] 
  []
 
-[38 <./images/Architecture4.png>]
+[39 <./images/Architecture4.png>]
 <images/Architecture6.png, id=720, 939.51pt x 590.205pt>
 File: images/Architecture6.png Graphic file (type png)
 
 <use images/Architecture6.png>
-Package pdftex.def Info: images/Architecture6.png used on input line 346.
+Package pdftex.def Info: images/Architecture6.png used on input line 340.
 (pdftex.def)             Requested size: 426.7896pt x 268.1114pt.
 
-Overfull \hbox (8.53592pt too wide) in paragraph at lines 346--347
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 340--341
 [][] 
  []
 
-[39 <./images/Architecture5.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 350--353
+[40 <./images/Architecture5.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 344--347
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--361
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
 
  []
 
-[40 <./images/Architecture6.png>]) [41] (./src/Evaluation.tex [42
+[41 <./images/Architecture6.png>]) [42] (./src/Evaluation.tex [43
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 32--32
 []|\OT1/cmr/bx/n/10 # of
  []
 
-[43]
+[44]
 Overfull \hbox (1.39343pt too wide) in paragraph at lines 67--67
 []|\OT1/cmr/bx/n/10.95 Score| 
  []
 
 
-LaTeX Warning: Citation `Ghose2001' on page 44 undefined on input line 79.
+LaTeX Warning: Citation `Ghose2001' on page 45 undefined on input line 79.
 
-[44] [45] <images/Precision.pdf, id=777, 319.84492pt x 179.90813pt>
+[45] [46] <images/Precision.pdf, id=777, 319.84492pt x 179.90813pt>
 File: images/Precision.pdf Graphic file (type pdf)
 
 <use images/Precision.pdf>
@@ -1269,7 +1256,7 @@ File: images/SuccessRate.pdf Graphic file (type pdf)
 <use images/SuccessRate.pdf>
 Package pdftex.def Info: images/SuccessRate.pdf used on input line 120.
 (pdftex.def)             Requested size: 284.52983pt x 149.42467pt.
- [46 <./images/Precision.pdf> <./images/SuccessRate.pdf>] <images/Confidence.pd
+ [47 <./images/Precision.pdf> <./images/SuccessRate.pdf>] <images/Confidence.pd
 f, id=798, 355.68584pt x 304.7927pt>
 File: images/Confidence.pdf Graphic file (type pdf)
 
@@ -1283,21 +1270,21 @@ File: images/ExecutionTime.pdf Graphic file (type pdf)
 <use images/ExecutionTime.pdf>
 Package pdftex.def Info: images/ExecutionTime.pdf used on input line 143.
 (pdftex.def)             Requested size: 227.6221pt x 219.22864pt.
- [47 <./images/Confidence.pdf>] [48 <./images/ExecutionTime.pdf>]) [49] (./src/
-Conclusion.tex) [50
+ [48 <./images/Confidence.pdf>]) [49 <./images/ExecutionTime.pdf>] (./src/Concl
+usion.tex) [50
 
 ] (./ThesisDraft.bbl [51
 
-]
-[52] [53])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
+] [52]
+[53])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
  [54]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
  (./ThesisDraft.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 104.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 104.
 Package rerunfilecheck Info: File `ThesisDraft.out' has not changed.
-(rerunfilecheck)             Checksum: C5D7376399532D3C271871431E2B7BD6;3686.
+(rerunfilecheck)             Checksum: 778EE7D845CF1D2752758EF73BCCD6B1;3628.
 
 
 LaTeX Warning: There were undefined references.
@@ -1305,13 +1292,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
- 9016 strings out of 493029
- 134581 string characters out of 6136234
+ 9011 strings out of 493029
+ 134493 string characters out of 6136234
  248442 words of memory out of 5000000
- 12183 multiletter control sequences out of 15000+600000
+ 12179 multiletter control sequences out of 15000+600000
  14449 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,11n,43p,1832b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1333,10 +1320,10 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive
 dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmtt9.pfb>
-Output written on ThesisDraft.pdf (54 pages, 1475989 bytes).
+Output written on ThesisDraft.pdf (54 pages, 1478787 bytes).
 PDF statistics:
- 959 PDF objects out of 1000 (max. 8388607)
- 819 compressed objects within 9 object streams
- 200 named destinations out of 1000 (max. 500000)
- 552 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 955 PDF objects out of 1000 (max. 8388607)
+ 815 compressed objects within 9 object streams
+ 199 named destinations out of 1000 (max. 500000)
+ 544 words of extra memory for PDF output out of 10000 (max. 10000000)
 

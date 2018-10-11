@@ -55,9 +55,30 @@ The outcomes of the different CROSSMINER analysis tools will contribute to the d
 \label{fig:CrossminerApproach}
 \end{figure}
 
+According to such objectives and the overview about RSSE previously given, CROSSMINER can be seen as a recommendation system aimed at supporting developers while producing new software by integrating existing open source components. Figure \ref{fig:CrossminerApproach} shows CROSSMINER at a glance and how the project aims at reaching its objectives.
+
+Essentially, the \textit{data preprocessing} challenge is addressed by the CROSSMINER components contained in the \texttt{Offline} box shown on the right-hand side of Fig.\ref{fig:CrossminerApproach}. The developer context is captured by the IDE (see the \texttt{Online} box in Fig.\ref{fig:CrossminerApproach}), which also produces recommendations that do not require particular and expensive data analysis. For more elaborated recommendations, preprocessed data available in the \texttt{Knowledge Base} is used. Both the IDE and Web based dashboards will be used to present the produced recommendations to the developer. 
+
 \begin{figure}[H]
 \includegraphics[width=10cm,height=15cm,keepaspectratio]{images/logicView.png}
 \centering
 \caption{Component Diagram of the Crossminer Knowledge Base}
 \label{fig:CrossminerComponent}
 \end{figure}
+
+\texttt{KnowledgeBase}  The \textit{KnowledgeBase} component is responsible for setting up the other components, as well as for their execution.
+
+\texttt{Recommender} The \textit{Recommender} component has the responsibility of creating recommendations in response to user requests. This component is extensible in order to add the management of specific kinds of artifacts. The model shows three specific recommender components: the \texttt{CodeRecommender} is able to provide developers with code examples that can be examined to solve the particular problem at hand (e.g., the correct usage of a used API). The \texttt{VersionRecommender} component is able to suggest developers the correct version of a used third party component. The \texttt{APIRecommender} implements the mechanisms for retrieving from the KB information about APIs that should be used in the project being implemented.
+
+
+\texttt{ClusterCalculator} It has the responsibility of calculating clusters of analyzed artifacts as discussed in the previous sections. To this end similarity functions are used as implemented by the  \texttt{SimilarityCalculator} component, which is in charge of managing the execution of both atomic and composed similarity calculations (see the \texttt{AtomicSimilarityComposer} and
+\texttt{SimilarityComposer} components, respectively).
+
+\texttt{KnowledgeBaseScheduler} The calculation of clusters and thus the execution of the available similarity functions is performed periodically and it is triggered by the \textit{KnowledgeBaseScheduler} component.
+
+
+\texttt{UserFeedbackManager} It manages the feedback expressed by the user on received recommendation. Such a component is used by \texttt{Recommender} to take into account previous user feedback when creating future suggestions. Specific effort will be spent to understand how to identify developers e.g., to remember previous feedback at a user-level.
+
+\texttt{DeveloperActivityMonitor} It stores and manages the data about the activity of the developer while using the CROSSMINER IDE.
+
+\texttt{Indexer} The component implements indexing mechanisms to provide performance gains in the retrieval of data.
