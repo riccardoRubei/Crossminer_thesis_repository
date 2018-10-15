@@ -5,7 +5,7 @@
 
 
 
-In this section we discuss the process that has been conceived and applied to evaluate the performance the four approaches introduced in Chapter~\ref{sec:Implementation}. To this end, the evaluation process that has been applied is shown in Figure~\ref{fig:EvaluationProcess} and consists of activities and artifacts that are going to be explained later on this chapter. In particular, a set of Java projects (Section~\ref{sec:Dataset}) has been crawled to feed as input for the computation by all approaches, \ie \MUDABlue, \CLAN, \RepoPal, and \CrossSim. Afterwards, a set of projects is selected as queries to compute similarities against all the remaining OSS projects (Section~\ref{sec:Queries}). Once the scores have been computed, for each similarity tool, some of the top similar projects are chosen, and mixed to be evaluated by humans (Section~\ref{sec:UserStudy}). The results are then evaluated using various quality metrics (Section~\ref{sec:Metrics}). Finally, the experimental results are discussed (Section~\ref{sec:Results}).
+In this section we discuss the process that has been conceived and applied to evaluate the performance the four approaches introduced in Chapter~\ref{sec:Implementation}. To this end, the evaluation process that has been applied is shown in Figure~\ref{fig:EvaluationProcess} and consists of activities and artifacts that are going to be explained later on this chapter. In particular, a set of Java projects (Section~\ref{sec:Dataset}) has been crawled to feed as input for the computation by all approaches, \ie \MUDABlue, \CLAN, \RepoPal, and \CrossSim. Afterwards, a set of projects is selected as queries to compute similarities against all the remaining OSS projects (Section~\ref{sec:Queries}). Once the scores have been computed, for each similarity tool, some of the top similar projects are chosen, mixed with results by the other tools, and eventually evaluated by humans (Section~\ref{sec:UserStudy}). The outcomes are then evaluated using various quality metrics (Section~\ref{sec:Metrics}). Finally, the experimental results are discussed (Section~\ref{sec:Results}).
 
 
 \begin{figure}[h!]
@@ -132,9 +132,9 @@ Among $580$ projects in the dataset, $50$ have been selected as queries and they
 %In particular, given a query, a developer is asked to evaluate the similarity between the query and the corresponding retrieved projects. 
 
 
-We performed a user study following the descriptions in \cite{Lo:2012:DSA:2473496.2473616},\cite{McMillan:2012:DSS:2337223.2337267},\cite{10.1109/SANER.2017.7884605} to evaluate the similarity between query projects and their corresponding retrieved projects. A group of $15$ software developers who have at least 5 years of experience took part in the experiments. In order to have a fair evaluation, for each query we mixed and shuffled the top-$5$ results generated from the computation by all similarity metrics in a single file and present them to the evaluators. This mimics a \emph{taste test} where users are asked to evaluate a product, \eg food or drink, without having a priori knowledge about what is being addressed \cite{Ghose2001},\cite{doi:10.1108/13522750810879048}. This aims at eliminating any bias or prejudice against a specific similarity metric. The participants are asked to label the similarity for each pair of projects (\ie $<$\textit{query, retrieved project}$>$) with regards to their application domains and functionalities using the scales listed in Table \ref{tab:Scales} \cite{McMillan:2012:DSS:2337223.2337267}. For example, an OSS project $p_{1}$ that performs the sending of files across a TCP/IP network is somehow similar to an OSS project $p_{2}$ that exchanges text messages between two users, \ie $Score(p_{1},p_{2})=3$. However an OSS project $p_{3}$ with the functionalities of a pure text editor is dissimilar to both $p_{1}$ and $p_{2}$, \ie $Score(p_{1},p_{2})=Score(p_{1},p_{3})=1$. Given a query, a retrieved project is considered as a \emph{false positive} if its similarity to the query is labeled as \code{Dissimilar} ($1$) or \code{Neutral} ($2$). In contrast, \emph{true positives} are those retrieved projects that have a score of $3$ or $4$, \ie \code{Similar} of \code{Highly similar}. A good similarity metric should produce as much true positives as possible.
+We performed a user study following the descriptions in \cite{Lo:2012:DSA:2473496.2473616},\cite{McMillan:2012:DSS:2337223.2337267},\cite{10.1109/SANER.2017.7884605} to evaluate the similarity between query projects and their corresponding retrieved projects. A group of $15$ software developers who have at least 5 years of experience took part in the experiments. In order to have a fair evaluation, for each query we mixed and shuffled the top-$5$ results generated from the computation by all similarity metrics in a single file and present them to the evaluators. This mimics a \emph{taste test} where users are asked to evaluate a product, \eg food or drink, without having a priori knowledge about what is being addressed \cite{Ghose2001},\cite{doi:10.1108/13522750810879048}. This aims at eliminating any bias or prejudice against a specific similarity metric. The participants are asked to label the similarity for each pair of projects (\ie $<$\textit{query, retrieved project}$>$) with regards to their application domains and functionalities using the scales listed in Table \ref{tab:Scales} \cite{McMillan:2012:DSS:2337223.2337267}.
 
-\begin{table*}[h!]
+\begin{table}[h!]
 	\centering
 	\begin{tabular}{|p{3.0cm}|p{8.0cm}|p{1.0cm}|}  \hline
 		{\bf Scale} & {\bf Description} & {\bf Score} \\  \hline
@@ -145,10 +145,12 @@ We performed a user study following the descriptions in \cite{Lo:2012:DSA:247349
 	\end{tabular}
 	\caption[The similarity scales]{Similarity scales}
 	\label{tab:Scales}
-\end{table*}
+\end{table}
+
+For example, an OSS project $p_{1}$ that performs the sending of files across a TCP/IP network is somehow similar to an OSS project $p_{2}$ that exchanges text messages between two users, \ie $Score(p_{1},p_{2})=3$. However, an OSS project $p_{3}$ with the functionalities of a pure text editor is dissimilar to both $p_{1}$ and $p_{2}$, \ie $Score(p_{1},p_{2})=Score(p_{1},p_{3})=1$. Given a query, a retrieved project is considered as a \emph{false positive} if its similarity to the query is labeled as \code{Dissimilar} ($1$) or \code{Neutral} ($2$). In contrast, \emph{true positives} are those retrieved projects that have a score of $3$ or $4$, \ie \code{Similar} of \code{Highly similar}. A good similarity metric should produce as much true positives as possible.
 
 
-The participants are asked to label the similarity for each pair of projects (i.e., $<$\textit{query, retrieved project}$>$) with regards to their application domains and functionalities using the scales listed in Table \ref{tab:Scales}. For example, an OSS project $p_{1}$ that performs the sending of files across a TCP/IP network is somehow similar to an OSS project $p_{2}$ that exchanges text messages between two users, i.e. $Score(p_{1},p_{2})=3$. However an OSS project $p_{3}$ with the functionalities of a pure text editor is dissimilar to both $p_{1}$ and $p_{2}$, i.e. $Score(p_{1},p_{2})=Score(p_{1},p_{3})=1$. Given a query, a retrieved project is considered as a \emph{false positive} if its similarity to the query is labelled as Dissimilar ($1$) or Neutral ($2$). In contrast, \emph{true positives} are those retrieved projects that have a score of $3$ or $4$, i.e. Similar of Highly similar. A good similarity metric should produce as much true positives as possible.
+%The participants are asked to label the similarity for each pair of projects (i.e., $<$\textit{query, retrieved project}$>$) with regards to their application domains and functionalities using the scales listed in Table \ref{tab:Scales}. For example, an OSS project $p_{1}$ that performs the sending of files across a TCP/IP network is somehow similar to an OSS project $p_{2}$ that exchanges text messages between two users, i.e. $Score(p_{1},p_{2})=3$. However an OSS project $p_{3}$ with the functionalities of a pure text editor is dissimilar to both $p_{1}$ and $p_{2}$, i.e. $Score(p_{1},p_{2})=Score(p_{1},p_{3})=1$. Given a query, a retrieved project is considered as a \emph{false positive} if its similarity to the query is labelled as Dissimilar ($1$) or Neutral ($2$). In contrast, \emph{true positives} are those retrieved projects that have a score of $3$ or $4$, i.e. Similar of Highly similar. A good similarity metric should produce as much true positives as possible.
 
 
 \section{Evaluation Metrics} \label{sec:Metrics}
@@ -163,35 +165,44 @@ To evaluate the outcomes of the algorithms with respect to the user study, the f
 
 Further than the previous metrics, we introduce an additional one to measure the ranking produced by the similarity tools. For a query, a similarity tool is deemed to be good if all top-5 retrieved projects are relevant. In case there are false positives, i.e. those that are labeled \emph{Dissimilar} and \emph{Neutral}, it is expected that these will be ranked lower than the true positives. In case an irrelevant project has a higher rank than that of a relevant project, we suppose that the similarity tool is generating an improper recommendation. The \emph{Ranking} metric presented below is a means to evaluate whether a similarity metric produces properly ranked recommendations. 
 
+\begin{itemize}
+	\item \textit{Ranking}: the obtained human evaluation has been analysed to check the correlations among the ranking calculated by the similarity tools and the scores given by the human evaluation. To this end the Spearman's rank correlation coefficient $r_{s}$ \cite{spearman1904proof} is used to measure how well a similarity metric ranks the retrieved projects given a query. Considering two ranked variables $r_{1}=(\rho_{1},\rho_{2},..,\rho_{n})$ and $r_{2}=(\sigma_{1},\sigma_{2},..,\sigma_{n})$, $r_{s}$ is defined as: $r_{s}=1-\frac{6\sum_{i=1}^{n} (\rho_{i}-\sigma_{i})^{2}}{n(n^{2}-1)}$; $r_{s}$ ranges from $-1.00$ (perfect negative correlation) and $+1.00$ (perfect positive correlation); $r_{s}=0$ implies that the two variables are not correlated. Because of the large number of ties, we also used \emph{Kendall's tau}~\cite{kendall1948rank} coefficient, which is used to measure the ordinal association between two considered quantities. Similar to Spearman's correlation coefficient, values of Kendall's tau correlation coefficient $\tau$ range from -1 (perfect negative correlation) to +1 (perfect positive correlation).
+\end{itemize}	
+
 
 
 
 
 \section{Results} \label{sec:Results}
 
-To study the performance of the metrics in detecting similar projects for the set of queries, the following research questions are considered:
+To study the performance of the metrics in detecting similar projects for the set of queries, we consider the following research questions:% are considered:
 
-\newcommand{\rqfirst}{RQ$_1$: Which similarity metric yields a better performance in terms of Success rate, and Precision?}\textit{\textbf{\rqfirst}} 
+\newcommand{\rqfirst}{RQ$_1$: Which similarity metric yields a better performance in terms of Success rate and Precision?}\textit{\textbf{\rqfirst}} 
 
-By this question, we study the performance of different approaches.
+The experimental results suggest that RepoPal is a good choice for computing similarity among OSS projects. This indeed confirms the claim made by the authors of RepoPal in \cite{10.1109/SANER.2017.7884605}. In comparison with the other metrics, \ie \MUDABlue, \CLAN and \RepoPal, three \CrossSim configurations gain a superior performance, with \CrossSimA$_{3}$ overtaking all. As can be seen in and Figure~\ref{fig:Precision}, \CrossSimA$_{3}$ outperforms RepoPal with respect to \textit{Precision}. Both gain a \textit{success rate} of $100\%$, however \CrossSimA$_{3}$ has a better precision. \CrossSimA$_{3}$ obtains a precision of $0.78$ and RepoPal gets $0.71$. The \textit{Confidence} for both metrics is shown in Figure~\ref{fig:Confidence}. Also by this index, \CrossSimA$_{3}$ yields a better outcome as it has more scores that are either $3$ or $4$ and less scores that are $1$ or $2$. In addition to the conventional quality indexes, we investigated the ranking produced by the two metrics using the Spearman's ($r_s$)  and  Kendall's tau ($\tau$) correlation indexes. 
+The aim is to see how good is the correlation between the rank generated by each metric and the scores given by the users, which are already sorted in descending order. In this way, a lower $r_s$ ($\tau$) means a better ranking. $r_s$ and $\tau$ are computed for all $50$ queries and related first five results. The value of $r_s$ is $0.250$  for \CrossSimA$_{3}$ and $-0.193$   for $RepoPal$. The value of $\tau$ is $-0.214$  for \CrossSimA$_{3}$ and $-0.163$ for \RepoPal. By this quality index, \CrossSimA$_{3}$ performs slightly better than \RepoPal. 
+
+The execution time related to the application of \RepoPal and \CrossSimA$_{3}$ is shown in Figure~\ref{fig:ExecutionTime}. For the experiments on the dataset using a laptop with Intel Core i5-7200U CPU @ 2.50GHz $\times$ 4, 8GB RAM, Ubuntu 16.04, RepoPal takes $\approx$4 hours to generate the similarity matrix, whereas the execution of \CrossSimA$_{3}$, including both the time for generating the input graph and that for generating the similarity matrix, takes $\approx$16 minutes. Such an important time difference is due to the time needed to calculate the similarity between \code{README.md} files, on which \textit{RepoPal} relies.
+
+The results obtained by \CrossSim confirm our hypothesis that the incorporation of various features, e.g. dependencies and star events into graph is beneficial to similarity computation. To compute similarity between two projects, RepoPal considers the relationship between the projects per se, whereas \CrossSim takes also the cross relationships among other projects into account by means of graphs. Furthermore, \CrossSim is more flexible as it can include other artifacts in similarity computation, on the fly, without affecting the internal design. Last but not least, the ratio between the overall performance of \CrossSim and its execution time is very encouraging.
+
+%By this question, we study the performance of different approaches.
 
 \begin{figure}[!h]
 \includegraphics[width=10cm,height=15cm,keepaspectratio]{images/Precision.pdf}
 \centering
 \caption{Precision Comparison}
-\label{fig:PrecisionC}
+\label{fig:Precision}
 \end{figure}
 
-Experimental results suggests that CrossSim approach overperforms all the other approaches, in particular Clan and MudaBlue.
-Repopal got a good score, this means that is still a valid choice for similarity in the OSS environment.
-The precision,as the figure~\ref{fig:PrecisionC} depicts, shows that CrossSim and Repopal got a score \emph{greater than 70\%}.
-Clan and MudaBlue instead, reported a very low score, \emph{about 20\%}, on 10 queries evaluted, just 2 got a score \emph{$\geq3$}.
+
+Experimental results suggests that \CrossSim approach outperforms all the other approaches, in particular \MUDABlue and \CLAN. \RepoPal got a good score, this means that is still a valid choice for similarity in the OSS environment. The precision, as the figure~\ref{fig:Precision} depicts, shows that CrossSim and Repopal got a score \emph{greater than $70$\%}. Clan and MudaBlue instead, reported a very low score, \emph{about 20\%}, on 10 queries evaluted, just 2 got a score \emph{$\geq3$}.
 
 \begin{figure}[!h]
 \includegraphics[width=10cm,height=15cm,keepaspectratio]{images/SuccessRate.pdf}
 \centering
 \caption{Success Rate Comparison}
-\label{fig:SuccessC}
+\label{fig:Success}
 \end{figure}
 
 Concerning the success rate, the results of CrossSim and Repopal are quite impressive, about \emph{100\%} of queries got score high, the situation is lower for Clan and MudaBlue that achieved just the \emph{60\%} of the queries. In order to calculate this values, we counted for each query how many votes were \emph{$\geq3$} divided then by 25, which is the number of queries.
@@ -201,7 +212,7 @@ Concerning the success rate, the results of CrossSim and Repopal are quite impre
 \includegraphics[width=10cm,height=15cm,keepaspectratio]{images/Confidence.pdf}
 \centering
 \caption{Confidence Comparison}
-\label{fig:ConfidenceC}
+\label{fig:Confidence}
 \end{figure}
 
 The confidence confirms what stated so far, the mojority of the votes for MudaBlue and Clan are between 1 and 2,that is, users evaluated as dissimilar most of the projects. For CrossSim the result is quite more nice, with 130 rank 3 votes and 60 rank 4 votes, so more than half results are good. Repopal also got a good evaluation, close to CrossSim but a bit lower.
@@ -214,7 +225,7 @@ An important factor for a similarity metric is the ability to compute within an 
 \includegraphics[width=8cm,height=13cm,keepaspectratio]{images/ExecutionTime.pdf}
 \centering
 \caption{Execution Time Comparison}
-\label{fig:LabelC}
+\label{fig:ExecutionTime}
 \end{figure}
 
 
@@ -227,9 +238,6 @@ When we consider \CrossSimA$_{1}$ in combination with \CrossSimA$_{2}$, the effe
 Next, \CrossSimA$_{1}$ and \CrossSimA$_{3}$ are studied together to analyze the effect of the removal of the most frequent dependencies. \CrossSimA$_{3}$ outperforms \CrossSimA$_{1}$ as it gains a precision of $0.784$, the highest value among all, compared to $0.748$ by \CrossSimA$_{1}$. The removal of the most frequent dependencies helps also improve the performance of \CrossSimA$_{4}$ in comparison to \CrossSimA$_{2}$, which is a similar configuration, except that all dependencies are taken into account. Together, this implies that the elimination of too popular dependencies in the original graph is a profitable amendment. This is understandable once we get a deeper insight into the design of SimRank as already presented in Section \ref{sec:SimRank} and Figure \ref{fig:SimRank}. There, two projects are deemed to be similar if they share a same dependency, or in other words their corresponding nodes in the graph are pointed by a common node. However, with frequent dependencies as in Table \ref{tab:FrequentDeps} this characteristic may not hold anymore. Take as an example, two projects are pointed by a frequent dependency, e.g. \href{https://mvnrepository.com/artifact/junit/junit}{junit:junit} because they use JUnit\footnote{JUnit: Testing Framework for Java 8: \url{http://junit.org/junit5/}} for testing. And since testing is a common functionality of many software projects, it does not help contribute towards the characterization of a project and as a result, needs to be removed from similarity computation. 
 
 
-
-
-
 \section{Threats to Validity}\label{sec:threatsValidity}
 
 In this section, we investigate the threats that may affect the validity of the experiments as well as how we have tried to minimize them. In particular, we focus on the following threats to validity as discussed below. %internal and external 
@@ -239,4 +247,4 @@ phases: (\emph{i}) by involving three participants in the user study. In particu
 
 \textit{\textbf{External validity}}  refers to the generalizability of obtained results and findings. Concerning the generalizability of our approach, we were able to consider a dataset of $580$ projects, due to the fact that the number of projects that meet the requirements of both RepoPal and CrossSim is low and thus required a prolonged crawling. During the data collection, we crawled both projects in some specific categories as well as random projects. The random projects served as a means to test the generalizability of our algorithm. If the algorithm works well, it will not perceive newly added random projects as similar to projects of the specific categories.
 
-\textit{\textbf{Reliable validity}}  is related to the reproducibility of our experiments. To allow anyone to seamlessly replicate the evaluation, we made available the source code implementation of MUDABlue, CLAN, RepoPal, and CrossSim as also the dataset exploited in the paper in our GitHub repository \cite{CROSSSIM-DATA}.
+\textit{\textbf{Reliable validity}}  is related to the reproducibility of our experiments. To allow anyone to seamlessly replicate the evaluation, we made available the source code implementation of \MUDABlue, \CLAN, \RepoPal, and \CrossSim as also the dataset exploited in the paper in our GitHub repository \cite{CROSSSIM-DATA}.
