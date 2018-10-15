@@ -1,0 +1,66 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\contentsline {chapter}{Acknowledgements}{iii}{section*.1}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.5}
+\contentsline {section}{\numberline {1.1}Preamble}{1}{section.6}
+\contentsline {section}{\numberline {1.2}The CROSSMINER~project}{1}{section.7}
+\contentsline {section}{\numberline {1.3}Problem Statement}{3}{section.10}
+\contentsline {section}{\numberline {1.4}Thesis Structure}{3}{section.11}
+\contentsline {chapter}{\numberline {2}Mathematical Background}{5}{chapter.12}
+\contentsline {section}{\numberline {2.1}Term-Document Matrix}{5}{section.13}
+\contentsline {section}{\numberline {2.2}Cosine Similarity}{6}{section.16}
+\contentsline {section}{\numberline {2.3}Latent Semantic Analysis}{7}{section.22}
+\contentsline {section}{\numberline {2.4}Jaccard Index}{9}{section.30}
+\contentsline {section}{\numberline {2.5}Graph Similarity}{10}{section.33}
+\contentsline {chapter}{\numberline {3}Literature Review on Software Similarity Measurement}{13}{chapter.36}
+\contentsline {section}{\numberline {3.1}MUDABlue: Automatic Categorization for Open Source Repositories}{13}{section.37}
+\contentsline {section}{\numberline {3.2}CLAN: Finding Related Applications}{14}{section.38}
+\contentsline {section}{\numberline {3.3}TagSim: Collaborative Tagging to Detect Similar Applications}{14}{section.40}
+\contentsline {section}{\numberline {3.4}CLANdroid: Detecting Similar Android Applications}{15}{section.45}
+\contentsline {section}{\numberline {3.5}SimApp: Detecting Similar Mobile Apps by Online Kernel Learning}{16}{section.47}
+\contentsline {section}{\numberline {3.6}AnDarwin: Detecting Similar Android Applications}{17}{section.50}
+\contentsline {section}{\numberline {3.7}GPLAG: Using Graph for Detecting Software Plagiarism}{18}{section.51}
+\contentsline {section}{\numberline {3.8}WuKong: Detecting Cloned Android Apps}{18}{section.52}
+\contentsline {section}{\numberline {3.9}LibRec: Automated Library Recommendation}{18}{section.54}
+\contentsline {section}{\numberline {3.10}RepoPal}{19}{section.56}
+\contentsline {paragraph}{Readme-based similarity}{20}{section*.58}
+\contentsline {paragraph}{Stargazer-based similarity}{20}{section*.60}
+\contentsline {paragraph}{Time-based similarity}{20}{section*.63}
+\contentsline {section}{\numberline {3.11}\textsc {CrossSim}\xspace : Detecting similar OSS projects using graph}{20}{section.66}
+\contentsline {section}{\numberline {3.12}Analysis}{23}{section.72}
+\contentsline {chapter}{\numberline {4}Implementation}{29}{chapter.77}
+\contentsline {section}{\numberline {4.1}Overview}{29}{section.78}
+\contentsline {section}{\numberline {4.2}MUDABlue}{29}{section.79}
+\contentsline {subsection}{\numberline {4.2.1}Exctract Identifiers}{30}{subsection.81}
+\contentsline {subsection}{\numberline {4.2.2}Create identifier-by-software matrix}{30}{subsection.82}
+\contentsline {subsection}{\numberline {4.2.3}Remove useless identifiers}{30}{subsection.83}
+\contentsline {subsection}{\numberline {4.2.4}Apply the LSA}{30}{subsection.84}
+\contentsline {subsection}{\numberline {4.2.5}Apply the Cosine Similarity}{30}{subsection.85}
+\contentsline {subsection}{\numberline {4.2.6}Categorization}{30}{subsection.86}
+\contentsline {subsection}{\numberline {4.2.7}Results}{30}{subsection.87}
+\contentsline {section}{\numberline {4.3}CLAN: Closely reLated ApplicatioNs}{31}{section.92}
+\contentsline {subsection}{\numberline {4.3.1}Terms Extraction}{31}{subsection.94}
+\contentsline {subsection}{\numberline {4.3.2}TDMs Creation}{32}{subsection.95}
+\contentsline {subsection}{\numberline {4.3.3}LSI Procedure}{32}{subsection.96}
+\contentsline {subsection}{\numberline {4.3.4}Apply the Cosine Similarity}{32}{subsection.97}
+\contentsline {subsection}{\numberline {4.3.5}Sum of the matrices}{32}{subsection.98}
+\contentsline {subsection}{\numberline {4.3.6}Final similarity matrix}{32}{subsection.99}
+\contentsline {subsection}{\numberline {4.3.7}Results}{32}{subsection.100}
+\contentsline {section}{\numberline {4.4}RepoPal: Exploiting Metadata to Detect Similar GitHub Repositories}{33}{section.101}
+\contentsline {paragraph}{Readme-based similarity}{33}{section*.102}
+\contentsline {section}{\numberline {4.5}CrossSim}{34}{section.104}
+\contentsline {section}{\numberline {4.6}System Description}{34}{section.105}
+\contentsline {subsection}{\numberline {4.6.1}Component Point of View}{35}{subsection.107}
+\contentsline {subsection}{\numberline {4.6.2}Description}{36}{subsection.110}
+\contentsline {subsection}{\numberline {4.6.3}System Details}{37}{subsection.112}
+\contentsline {section}{\numberline {4.7}Tools and Libraries}{41}{section.121}
+\contentsline {chapter}{\numberline {5}Evaluation}{43}{chapter.122}
+\contentsline {section}{\numberline {5.1}Dataset}{43}{section.124}
+\contentsline {section}{\numberline {5.2}Query definition}{45}{section.128}
+\contentsline {section}{\numberline {5.3}User Study}{45}{section.130}
+\contentsline {section}{\numberline {5.4}Evaluation Metrics}{46}{section.132}
+\contentsline {section}{\numberline {5.5}Results}{47}{section.133}
+\contentsline {section}{\numberline {5.6}Threats to Validity}{49}{section.139}
+\contentsline {chapter}{\numberline {6}Conclusions}{51}{chapter.140}
+\contentsline {chapter}{Bibliography}{53}{appendix*.142}

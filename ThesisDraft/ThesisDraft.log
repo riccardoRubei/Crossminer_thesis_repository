@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.9.24)  11 OCT 2018 11:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  12 OCT 2018 10:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1097,39 +1097,40 @@ File: images/OSSGraph4.pdf Graphic file (type pdf)
 <use images/OSSGraph4.pdf>
 Package pdftex.def Info: images/OSSGraph4.pdf used on input line 208.
 (pdftex.def)             Requested size: 250.95476pt x 156.06644pt.
-
-<images/UseCaseDiagram.png, id=647, 904.37875pt x 694.595pt>
+ [31 <./images/OSSGraph4.pdf>]
+<images/UseCaseDiagram.png, id=660, 904.37875pt x 694.595pt>
 File: images/UseCaseDiagram.png Graphic file (type png)
 
 <use images/UseCaseDiagram.png>
-Package pdftex.def Info: images/UseCaseDiagram.png used on input line 217.
+Package pdftex.def Info: images/UseCaseDiagram.png used on input line 218.
 (pdftex.def)             Requested size: 426.78304pt x 327.78453pt.
 
-Overfull \hbox (8.52936pt too wide) in paragraph at lines 217--218
+Overfull \hbox (8.52936pt too wide) in paragraph at lines 218--219
 [][] 
  []
 
-[31 <./images/OSSGraph4.pdf>]
 <images/ComponentDiagram.png, id=661, 995.72pt x 386.44376pt>
 File: images/ComponentDiagram.png Graphic file (type png)
 
 <use images/ComponentDiagram.png>
-Package pdftex.def Info: images/ComponentDiagram.png used on input line 226.
+Package pdftex.def Info: images/ComponentDiagram.png used on input line 227.
 (pdftex.def)             Requested size: 426.79904pt x 165.64276pt.
 
-Overfull \hbox (8.54536pt too wide) in paragraph at lines 226--227
+Overfull \hbox (8.54536pt too wide) in paragraph at lines 227--228
 [][] 
  []
 
-[32 <./images/UseCaseDiagram.png>]
+[32
+
+ <./images/UseCaseDiagram.png>]
 <images/SequenceDiagram.png, id=668, 935.495pt x 470.75874pt>
 File: images/SequenceDiagram.png Graphic file (type png)
 
 <use images/SequenceDiagram.png>
-Package pdftex.def Info: images/SequenceDiagram.png used on input line 240.
+Package pdftex.def Info: images/SequenceDiagram.png used on input line 241.
 (pdftex.def)             Requested size: 426.79285pt x 214.77022pt.
 
-Overfull \hbox (8.53917pt too wide) in paragraph at lines 240--241
+Overfull \hbox (8.53917pt too wide) in paragraph at lines 241--242
 [][] 
  []
 
@@ -1138,10 +1139,10 @@ Overfull \hbox (8.53917pt too wide) in paragraph at lines 240--241
 File: images/Architecture.png Graphic file (type png)
 
 <use images/Architecture.png>
-Package pdftex.def Info: images/Architecture.png used on input line 257.
+Package pdftex.def Info: images/Architecture.png used on input line 258.
 (pdftex.def)             Requested size: 426.7896pt x 268.1114pt.
 
-Overfull \hbox (8.53592pt too wide) in paragraph at lines 257--258
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 258--259
 [][] 
  []
 
@@ -1149,10 +1150,10 @@ Overfull \hbox (8.53592pt too wide) in paragraph at lines 257--258
 File: images/Architecture1.png Graphic file (type png)
 
 <use images/Architecture1.png>
-Package pdftex.def Info: images/Architecture1.png used on input line 276.
+Package pdftex.def Info: images/Architecture1.png used on input line 277.
 (pdftex.def)             Requested size: 426.7896pt x 268.1114pt.
 
-Overfull \hbox (8.53592pt too wide) in paragraph at lines 276--277
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 277--278
 [][] 
  []
 
@@ -1163,10 +1164,10 @@ Overfull \hbox (8.53592pt too wide) in paragraph at lines 276--277
 File: images/Architecture2.png Graphic file (type png)
 
 <use images/Architecture2.png>
-Package pdftex.def Info: images/Architecture2.png used on input line 284.
+Package pdftex.def Info: images/Architecture2.png used on input line 285.
 (pdftex.def)             Requested size: 426.7896pt x 268.1114pt.
 
-Overfull \hbox (8.53592pt too wide) in paragraph at lines 284--285
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 285--286
 [][] 
  []
 
@@ -1175,10 +1176,10 @@ Overfull \hbox (8.53592pt too wide) in paragraph at lines 284--285
 File: images/Architecture3.png Graphic file (type png)
 
 <use images/Architecture3.png>
-Package pdftex.def Info: images/Architecture3.png used on input line 299.
+Package pdftex.def Info: images/Architecture3.png used on input line 300.
 (pdftex.def)             Requested size: 426.7896pt x 268.1114pt.
 
-Overfull \hbox (8.53592pt too wide) in paragraph at lines 299--300
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 300--301
 [][] 
  []
 
@@ -1187,10 +1188,10 @@ Overfull \hbox (8.53592pt too wide) in paragraph at lines 299--300
 File: images/Architecture4.png Graphic file (type png)
 
 <use images/Architecture4.png>
-Package pdftex.def Info: images/Architecture4.png used on input line 323.
+Package pdftex.def Info: images/Architecture4.png used on input line 324.
 (pdftex.def)             Requested size: 426.7896pt x 268.1114pt.
 
-Overfull \hbox (8.53592pt too wide) in paragraph at lines 323--324
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 324--325
 [][] 
  []
 
@@ -1199,10 +1200,10 @@ Overfull \hbox (8.53592pt too wide) in paragraph at lines 323--324
 File: images/Architecture5.png Graphic file (type png)
 
 <use images/Architecture5.png>
-Package pdftex.def Info: images/Architecture5.png used on input line 333.
+Package pdftex.def Info: images/Architecture5.png used on input line 334.
 (pdftex.def)             Requested size: 426.7896pt x 268.1114pt.
 
-Overfull \hbox (8.53592pt too wide) in paragraph at lines 333--334
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 334--335
 [][] 
  []
 
@@ -1211,20 +1212,20 @@ Overfull \hbox (8.53592pt too wide) in paragraph at lines 333--334
 File: images/Architecture6.png Graphic file (type png)
 
 <use images/Architecture6.png>
-Package pdftex.def Info: images/Architecture6.png used on input line 340.
+Package pdftex.def Info: images/Architecture6.png used on input line 341.
 (pdftex.def)             Requested size: 426.7896pt x 268.1114pt.
 
-Overfull \hbox (8.53592pt too wide) in paragraph at lines 340--341
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 341--342
 [][] 
  []
 
 [40 <./images/Architecture5.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 344--347
+Underfull \hbox (badness 10000) in paragraph at lines 345--348
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--355
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
 
  []
 
@@ -1296,7 +1297,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
  9011 strings out of 493029
- 134493 string characters out of 6136234
+ 134493 string characters out of 6136233
  248442 words of memory out of 5000000
  12179 multiletter control sequences out of 15000+600000
  14449 words of font info for 52 fonts, out of 8000000 for 9000
@@ -1320,7 +1321,7 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive
 dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmtt9.pfb>
-Output written on ThesisDraft.pdf (54 pages, 1478787 bytes).
+Output written on ThesisDraft.pdf (54 pages, 1478786 bytes).
 PDF statistics:
  955 PDF objects out of 1000 (max. 8388607)
  815 compressed objects within 9 object streams

@@ -1,0 +1,2247 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{10.1007/978-3-319-74730-9_33}{inproceedings}{}
+  \name{author}{1}{}{%
+    {{}%
+     {al.}{a.}%
+     {Alessandra}{A.}%
+     {Bagnato~et.}{B.~e.}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer International Publishing}%
+  }
+  \strng{namehash}{aABe1}
+  \strng{fullhash}{aABe1}
+  \field{sortinit}{A}
+  \field{abstract}{%
+  Deciding if an OSS project meets the required standards for adoption is hard,
+  and keeping up-to-date with a rapidly evolving project is even harder. Making
+  decisions about quality and adoption involves analysing code, documentation,
+  online discussions, and issue trackers. There is too much information to
+  process manually and it is common that uninformed decisions have to be made
+  with detrimental effects. CROSSMINER aims to remedy this by automatically
+  extracting the required knowledge and injecting it into the developers'
+  Integrated Development Environments (IDE), at the time they need it to make
+  design decisions. This allows them to reduce their effort in knowledge
+  acquisition and to increase the quality of their code. CROSSMINER uniquely
+  combines advanced software project analyses with online IDE monitoring.
+  Developers will be monitored to infer which information is timely, based on
+  readily available knowledge stored earlier by a set of advanced offline deep
+  analyses of related OSS projects.%
+  }
+  \field{booktitle}{Software Technologies: Applications and Foundations}
+  \field{isbn}{978-3-319-74730-9}
+  \field{pages}{375\bibrangedash 384}
+  \field{title}{Developer-Centric Knowledge Mining from Large Open-Source
+  Software Repositories (CROSSMINER)}
+  \field{year}{2018}
+\endentry
+
+\entry{Al-Kofahi:2010:FSA:1912607.1913281}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Al-Kofahi}{A.-K.}%
+     {Jafar~M.}{J.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tamrawi}{T.}%
+     {Ahmed}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nguyen}{N.}%
+     {Tung~Thanh}{T.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nguyen}{N.}%
+     {Hoan~Anh}{H.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nguyen}{N.}%
+     {Tien~N.}{T.~N.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Computer Society}%
+  }
+  \strng{namehash}{AKJM+1}
+  \strng{fullhash}{AKJMTANTTNHANTN1}
+  \field{sortinit}{A}
+  \field{booktitle}{Proceedings of the 2010 IEEE International Conference on
+  Software Maintenance}
+  \verb{doi}
+  \verb 10.1109/ICSM.2010.5609751
+  \endverb
+  \field{isbn}{978-1-4244-8630-4}
+  \field{pages}{1\bibrangedash 10}
+  \field{series}{ICSM '10}
+  \field{title}{Fuzzy Set Approach for Automatic Tagging in Evolving Software}
+  \verb{url}
+  \verb http://dx.doi.org/10.1109/ICSM.2010.5609751
+  \endverb
+  \list{location}{1}{%
+    {Washington, DC, USA}%
+  }
+  \field{year}{2010}
+\endentry
+
+\entry{kb2005}{unpublished}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Baker}{B.}%
+     {Kirk}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \name{editor}{1}{}{%
+    {{}%
+     {Baker}{B.}%
+     {Kirk}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{algorithm datamining decomposition singular svd tutorial}
+  \strng{namehash}{BK1}
+  \strng{fullhash}{BK1}
+  \field{sortinit}{B}
+  \field{title}{Singular Value Decomposition Tutorial}
+  \field{year}{2005}
+\endentry
+
+\entry{confairsBhandariSDJ13}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Bhandari}{B.}%
+     {Upasna}{U.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sugiyama}{S.}%
+     {Kazunari}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Datta}{D.}%
+     {Anindya}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jindal}{J.}%
+     {Rajni}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \name{editor}{6}{}{%
+    {{}%
+     {Banchs}{B.}%
+     {Rafael~E.}{R.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Silvestri}{S.}%
+     {Fabrizio}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Liu}{L.}%
+     {Tie-Yan}{T.-Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zhang}{Z.}%
+     {Min}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gao}{G.}%
+     {Sheng}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lang}{L.}%
+     {Jun}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \keyw{dblp}
+  \strng{namehash}{BU+1}
+  \strng{fullhash}{BUSKDAJR1}
+  \field{sortinit}{B}
+  \field{booktitle}{AIRS}
+  \field{isbn}{978-3-642-45067-9}
+  \field{pages}{440\bibrangedash 451}
+  \field{series}{Lecture Notes in Computer Science}
+  \field{title}{Serendipitous Recommendation for Mobile Apps Using Item-Item
+  Similarity Graph.}
+  \verb{url}
+  \verb http://dblp.uni-trier.de/db/conf/airs/airs2013.html#BhandariSDJ13
+  \endverb
+  \field{volume}{8281}
+  \field{year}{2013}
+\endentry
+
+\entry{Blondel:2004:MSG:1035533.1035557}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Blondel}{B.}%
+     {Vincent~D.}{V.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gajardo}{G.}%
+     {Anah\'{\i}}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Heymans}{H.}%
+     {Maureen}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Senellart}{S.}%
+     {Pierre}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dooren}{D.}%
+     {Paul~Van}{P.~V.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{2}{%
+    {Society for Industrial}%
+    {Applied Mathematics}%
+  }
+  \keyw{algorithms, eigenvalues of graphs, graph algorithms, graph theory}
+  \strng{namehash}{BVD+1}
+  \strng{fullhash}{BVDGAHMSPDPV1}
+  \field{sortinit}{B}
+  \verb{doi}
+  \verb 10.1137/S0036144502415960
+  \endverb
+  \field{issn}{0036-1445}
+  \field{number}{4}
+  \field{pages}{647\bibrangedash 666}
+  \field{title}{A Measure of Similarity Between Graph Vertices: Applications to
+  Synonym Extraction and Web Searching}
+  \verb{url}
+  \verb http://dx.doi.org/10.1137/S0036144502415960
+  \endverb
+  \field{volume}{46}
+  \list{location}{1}{%
+    {Philadelphia, PA, USA}%
+  }
+  \field{journaltitle}{SIAM Rev.}
+  \field{month}{04}
+  \field{year}{2004}
+\endentry
+
+\entry{Chen:2015:SFD:2684822.2685305}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Chen}{C.}%
+     {Ning}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hoi}{H.}%
+     {Steven~C.H.}{S.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Li}{L.}%
+     {Shaohua}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Xiao}{X.}%
+     {Xiaokui}{X.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{mobile applications, multi-modal data, multiple kernels, online kernel
+  learning, similarity function}
+  \strng{namehash}{CN+1}
+  \strng{fullhash}{CNHSCLSXX1}
+  \field{sortinit}{C}
+  \field{booktitle}{Proceedings of the Eighth ACM International Conference on
+  Web Search and Data Mining}
+  \verb{doi}
+  \verb 10.1145/2684822.2685305
+  \endverb
+  \field{isbn}{978-1-4503-3317-7}
+  \field{pages}{305\bibrangedash 314}
+  \field{series}{WSDM '15}
+  \field{title}{SimApp: A Framework for Detecting Similar Mobile Applications
+  by Online Kernel Learning}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/2684822.2685305
+  \endverb
+  \list{location}{1}{%
+    {Shanghai, China}%
+  }
+  \field{year}{2015}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Collobert:2011:NLP:1953048.2078186}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Collobert}{C.}%
+     {Ronan}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Weston}{W.}%
+     {Jason}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bottou}{B.}%
+     {L{\'e}on}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Karlen}{K.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kavukcuoglu}{K.}%
+     {Koray}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kuksa}{K.}%
+     {Pavel}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {JMLR.org}%
+  }
+  \strng{namehash}{CR+1}
+  \strng{fullhash}{CRWJBLKMKKKP1}
+  \field{sortinit}{C}
+  \field{issn}{1532-4435}
+  \field{pages}{2493\bibrangedash 2537}
+  \field{title}{Natural Language Processing (Almost) from Scratch}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=1953048.2078186
+  \endverb
+  \field{volume}{12}
+  \field{journaltitle}{J. Mach. Learn. Res.}
+  \field{month}{11}
+  \field{year}{2011}
+\endentry
+
+\entry{Crussell2013}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Crussell}{C.}%
+     {Jonathan}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gibler}{G.}%
+     {Clint}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chen}{C.}%
+     {Hao}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \name{editor}{3}{}{%
+    {{}%
+     {Crampton}{C.}%
+     {Jason}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jajodia}{J.}%
+     {Sushil}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mayes}{M.}%
+     {Keith}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer Berlin Heidelberg}%
+  }
+  \strng{namehash}{CJGCCH1}
+  \strng{fullhash}{CJGCCH1}
+  \field{sortinit}{C}
+  \field{abstract}{%
+  The popularity and utility of smartphones rely on their vibrant application
+  markets; however, plagiarism threatens the long-term health of these markets.
+  We present a scalable approach to detecting similar Android apps based on
+  their semantic information. We implement our approach in a tool called
+  AnDarwin and evaluate it on 265,359 apps collected from 17 markets including
+  Google Play and numerous thirdparty markets. In contrast to earlier
+  approaches, AnDarwin has four advantages: it avoids comparing apps pairwise,
+  thus greatly improving its scalability; it analyzes only the app code and
+  does not rely on other information - such as the app's market, signature, or
+  description - thus greatly increasing its reliability; it can detect both
+  full and partial app similarity; and it can automatically detect library code
+  and remove it from the similarity analysis. We present two use cases for
+  AnDarwin: finding similar apps by different developers (``clones'') and
+  similar apps from the same developer (``rebranded''). In ten hours, AnDarwin
+  detected at least 4,295 apps that have been the victims of cloning and 36,106
+  apps that are rebranded. By analyzing the clusters found by AnDarwin, we
+  found 88 new variants of malware and identified 169 malicious apps based on
+  differences in the requested permissions. Our evaluation demonstrates
+  AnDarwin's ability to accurately detect similar apps on a large scale.%
+  }
+  \field{booktitle}{Computer Security -- ESORICS 2013: 18th European Symposium
+  on Research in Computer Security, Egham, UK, September 9-13, 2013.
+  Proceedings}
+  \verb{doi}
+  \verb 10.1007/978-3-642-40203-6_11
+  \endverb
+  \field{isbn}{978-3-642-40203-6}
+  \field{pages}{182\bibrangedash 199}
+  \field{title}{AnDarwin: Scalable Detection of Semantically Similar Android
+  Applications}
+  \verb{url}
+  \verb https://doi.org/10.1007/978-3-642-40203-6_11
+  \endverb
+  \list{location}{1}{%
+    {Berlin, Heidelberg}%
+  }
+  \field{year}{2013}
+\endentry
+
+\entry{DiNoia:2012:LOD:2362499.2362501}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Di~Noia}{D.~N.}%
+     {Tommaso}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mirizzi}{M.}%
+     {Roberto}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ostuni}{O.}%
+     {Vito~Claudio}{V.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Romito}{R.}%
+     {Davide}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zanker}{Z.}%
+     {Markus}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{DBpedia, LinkedMDB, content-based recommender systems, freebase, linked
+  data, movielens, precision, recall, semantic web, vector space model}
+  \strng{namehash}{DNT+1}
+  \strng{fullhash}{DNTMROVCRDZM1}
+  \field{sortinit}{D}
+  \field{booktitle}{Proceedings of the 8th International Conference on Semantic
+  Systems}
+  \verb{doi}
+  \verb 10.1145/2362499.2362501
+  \endverb
+  \field{isbn}{978-1-4503-1112-0}
+  \field{pages}{1\bibrangedash 8}
+  \field{series}{I-SEMANTICS '12}
+  \field{title}{Linked Open Data to Support Content-based Recommender Systems}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/2362499.2362501
+  \endverb
+  \list{location}{1}{%
+    {Graz, Austria}%
+  }
+  \field{year}{2012}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{10.1109/APSEC.2004.69}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Garg}{G.}%
+     {Pankaj~K.}{P.~K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kawaguchi}{K.}%
+     {Shinji}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Matsushita}{M.}%
+     {Makoto}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Inoue}{I.}%
+     {Katsuro}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Computer Society}%
+  }
+  \strng{namehash}{GPK+1}
+  \strng{fullhash}{GPKKSMMIK1}
+  \field{sortinit}{G}
+  \verb{doi}
+  \verb doi.ieeecomputersociety.org/10.1109/APSEC.2004.69
+  \endverb
+  \field{issn}{1530-1362}
+  \field{pages}{184\bibrangedash 193}
+  \field{title}{MUDABlue: An Automatic Categorization System for Open Source
+  Repositories}
+  \list{location}{1}{%
+    {Los Alamitos, CA, USA}%
+  }
+  \field{journaltitle}{2013 20th Asia-Pacific Software Engineering Conference
+  (APSEC)}
+  \field{year}{2004}
+\endentry
+
+\entry{Ghose2001}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Ghose}{G.}%
+     {Sanjoy}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lowengart}{L.}%
+     {Oded}{O.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GSLO1}
+  \strng{fullhash}{GSLO1}
+  \field{sortinit}{G}
+  \field{abstract}{%
+  Taste tests are being increasingly used by marketers to influence consumers
+  to change their preferences toward their brands. This research indicates how
+  perceptual and preferential taste tests can be used in conjunction with
+  visual maps to provide support to marketing managers for making better brand
+  positioning and targeting decisions on the basis of taste for different
+  segments of consumers. An empirical blind taste-test study is used to
+  illustrate the concepts. The preferential taste judgment part of the
+  empirical study is designed to capture violations of the `Independence of
+  Irrelevant Alternatives' (IIA) effect that is commonly observed in consumers'
+  actual purchases. The present paper also uses a hypothetical example to
+  indicate the importance of considering the location of consumer `ideal
+  points' before making formulation changes in a brand as part of a targeting
+  strategy. Various managerial implications of using the suggested perceptual
+  preferential taste-mapping analyses are also discussed. Appropriate
+  measurements of consumer tastes provide insights for identifying and
+  targeting viable market segments.%
+  }
+  \verb{doi}
+  \verb 10.1057/palgrave.jt.5740031
+  \endverb
+  \field{issn}{1479-1862}
+  \field{number}{1}
+  \field{pages}{26\bibrangedash 41}
+  \field{title}{Taste tests: Impacts of consumer perceptions and preferences on
+  brand positioning strategies}
+  \verb{url}
+  \verb https://doi.org/10.1057/palgrave.jt.5740031
+  \endverb
+  \field{volume}{10}
+  \field{journaltitle}{Journal of Targeting, Measurement and Analysis for
+  Marketing}
+  \field{year}{2001}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Huang:2012:LCD:2343876.2343884}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Huang}{H.}%
+     {Lan}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Milne}{M.}%
+     {David}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Frank}{F.}%
+     {Eibe}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Witten}{W.}%
+     {Ian~H.}{I.~H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {John Wiley \& Sons, Inc.}%
+  }
+  \keyw{content analysis, semantic analysis, text mining}
+  \strng{namehash}{HL+1}
+  \strng{fullhash}{HLMDFEWIH1}
+  \field{sortinit}{H}
+  \verb{doi}
+  \verb 10.1002/asi.22689
+  \endverb
+  \field{issn}{1532-2882}
+  \field{number}{8}
+  \field{pages}{1593\bibrangedash 1608}
+  \field{title}{Learning a Concept-based Document Similarity Measure}
+  \verb{url}
+  \verb http://dx.doi.org/10.1002/asi.22689
+  \endverb
+  \field{volume}{63}
+  \list{location}{1}{%
+    {New York, NY, USA}%
+  }
+  \field{journaltitle}{J. Am. Soc. Inf. Sci. Technol.}
+  \field{month}{08}
+  \field{year}{2012}
+\endentry
+
+\entry{Islam:2008:STS:1376815.1376819}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Islam}{I.}%
+     {Aminul}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Inkpen}{I.}%
+     {Diana}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{Semantic similarity of words, corpus-based measures, similarity of
+  short texts}
+  \strng{namehash}{IAID1}
+  \strng{fullhash}{IAID1}
+  \field{sortinit}{I}
+  \verb{doi}
+  \verb 10.1145/1376815.1376819
+  \endverb
+  \field{issn}{1556-4681}
+  \field{number}{2}
+  \field{pages}{10:1\bibrangedash 10:25}
+  \field{title}{Semantic Text Similarity Using Corpus-based Word Similarity and
+  String Similarity}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/1376815.1376819
+  \endverb
+  \field{volume}{2}
+  \list{location}{1}{%
+    {New York, NY, USA}%
+  }
+  \field{journaltitle}{ACM Trans. Knowl. Discov. Data}
+  \field{month}{07}
+  \field{year}{2008}
+\endentry
+
+\entry{jaccard}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Jaccard}{J.}%
+     {Paul}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{JP1}
+  \strng{fullhash}{JP1}
+  \field{sortinit}{J}
+  \verb{doi}
+  \verb 10.1111/j.1469-8137.1912.tb05611.x
+  \endverb
+  \field{number}{2}
+  \field{pages}{37\bibrangedash 50}
+  \field{title}{{The Distribution of the Flora in the Alpine Zone}}
+  \field{volume}{11}
+  \field{journaltitle}{New Phytologist}
+  \field{year}{{1912}}
+\endentry
+
+\entry{Jeh:2002:SMS:775047.775126}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Jeh}{J.}%
+     {Glen}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Widom}{W.}%
+     {Jennifer}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \strng{namehash}{JGWJ1}
+  \strng{fullhash}{JGWJ1}
+  \field{sortinit}{J}
+  \field{booktitle}{Proceedings of the Eighth ACM SIGKDD International
+  Conference on Knowledge Discovery and Data Mining}
+  \verb{doi}
+  \verb 10.1145/775047.775126
+  \endverb
+  \field{isbn}{1-58113-567-X}
+  \field{pages}{538\bibrangedash 543}
+  \field{series}{KDD '02}
+  \field{title}{SimRank: A Measure of Structural-context Similarity}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/775047.775126
+  \endverb
+  \list{location}{1}{%
+    {Edmonton, Alberta, Canada}%
+  }
+  \field{year}{2002}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Landauer1998}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Landauer}{L.}%
+     {T.K.}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Foltz}{F.}%
+     {P.W.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Laham}{L.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ABLEX PUBLISHING CO}%
+  }
+  \keyw{Psycho NLP semantic}
+  \strng{namehash}{LTFPLD1}
+  \strng{fullhash}{LTFPLD1}
+  \field{sortinit}{L}
+  \field{pages}{259\bibrangedash 284}
+  \field{title}{An introduction to latent semantic analysis}
+  \field{volume}{25}
+  \verb{file}
+  \verb Landauer1998.pdf:NLP/Landauer1998.pdf:PDF
+  \endverb
+  \field{journaltitle}{Discourse processes}
+  \field{year}{1998}
+\endentry
+
+\entry{10.1109ICPC.2016.7503721}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Linares-Vasquez}{L.-V.}%
+     {Mario}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Holtzhauer}{H.}%
+     {Andrew}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Poshyvanyk}{P.}%
+     {Denys}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Computer Society}%
+  }
+  \strng{namehash}{LVMHAPD1}
+  \strng{fullhash}{LVMHAPD1}
+  \field{sortinit}{L}
+  \verb{doi}
+  \verb doi.ieeecomputersociety.org/10.1109ICPC.2016.7503721
+  \endverb
+  \field{pages}{1\bibrangedash 10}
+  \field{title}{On automatically detecting similar Android apps}
+  \field{volume}{00}
+  \list{location}{1}{%
+    {Los Alamitos, CA, USA}%
+  }
+  \field{journaltitle}{2016 IEEE 24th International Conference on Program
+  Comprehension (ICPC)}
+  \field{year}{2016}
+\endentry
+
+\entry{Linden:2003:ARI:642462.642471}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Linden}{L.}%
+     {Greg}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Smith}{S.}%
+     {Brent}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {York}{Y.}%
+     {Jeremy}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Educational Activities Department}%
+  }
+  \strng{namehash}{LGSBYJ1}
+  \strng{fullhash}{LGSBYJ1}
+  \field{sortinit}{L}
+  \verb{doi}
+  \verb 10.1109/MIC.2003.1167344
+  \endverb
+  \field{issn}{1089-7801}
+  \field{number}{1}
+  \field{pages}{76\bibrangedash 80}
+  \field{title}{Amazon.Com Recommendations: Item-to-Item Collaborative
+  Filtering}
+  \verb{url}
+  \verb http://dx.doi.org/10.1109/MIC.2003.1167344
+  \endverb
+  \field{volume}{7}
+  \list{location}{1}{%
+    {Piscataway, NJ, USA}%
+  }
+  \field{journaltitle}{IEEE Internet Computing}
+  \field{month}{01}
+  \field{year}{2003}
+\endentry
+
+\entry{Liu:2006:GDS:1150402.1150522}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Liu}{L.}%
+     {Chao}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chen}{C.}%
+     {Chen}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Han}{H.}%
+     {Jiawei}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yu}{Y.}%
+     {Philip~S.}{P.~S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{graph mining, program dependence graph, software plagiarism detection}
+  \strng{namehash}{LC+1}
+  \strng{fullhash}{LCCCHJYPS1}
+  \field{sortinit}{L}
+  \field{booktitle}{Proceedings of the 12th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}
+  \verb{doi}
+  \verb 10.1145/1150402.1150522
+  \endverb
+  \field{isbn}{1-59593-339-5}
+  \field{pages}{872\bibrangedash 881}
+  \field{series}{KDD '06}
+  \field{title}{GPLAG: Detection of Software Plagiarism by Program Dependence
+  Graph Analysis}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/1150402.1150522
+  \endverb
+  \list{location}{1}{%
+    {Philadelphia, PA, USA}%
+  }
+  \field{year}{2006}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Lo:2012:DSA:2473496.2473616}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Lo}{L.}%
+     {David}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jiang}{J.}%
+     {Lingxiao}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Thung}{T.}%
+     {Ferdian}{F.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Computer Society}%
+  }
+  \keyw{Tagging,Collaboration,Software systems,Java,Cloning,Search engines}
+  \strng{namehash}{LDJLTF1}
+  \strng{fullhash}{LDJLTF1}
+  \field{sortinit}{L}
+  \field{booktitle}{Proceedings of the 2012 IEEE International Conference on
+  Software Maintenance (ICSM)}
+  \verb{doi}
+  \verb 10.1109/ICSM.2012.6405331
+  \endverb
+  \field{isbn}{978-1-4673-2313-0}
+  \field{pages}{600\bibrangedash 603}
+  \field{series}{ICSM '12}
+  \field{title}{Detecting Similar Applications with Collaborative Tagging}
+  \verb{url}
+  \verb http://dx.doi.org/10.1109/ICSM.2012.6405331
+  \endverb
+  \list{location}{1}{%
+    {Washington, DC, USA}%
+  }
+  \field{year}{2012}
+\endentry
+
+\entry{Lu2007}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Lu}{L.}%
+     {Wangzhong}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Janssen}{J.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Milios}{M.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Japkowicz}{J.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zhang}{Z.}%
+     {Yongzheng}{Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LW+1}
+  \strng{fullhash}{LWJJMEJNZY1}
+  \field{sortinit}{L}
+  \field{abstract}{%
+  Published scientific articles are linked together into a graph, the citation
+  graph, through their citations. This paper explores the notion of similarity
+  based on connectivity alone, and proposes several algorithms to quantify it.
+  Our metrics take advantage of the local neighborhoods of the nodes in the
+  citation graph. Two variants of link-based similarity estimation between two
+  nodes are described, one based on the separate local neighborhoods of the
+  nodes, and another based on the joint local neighborhood expanded from both
+  nodes at the same time. The algorithms are implemented and evaluated on a
+  subgraph of the citation graph of computer science in a retrieval context.
+  The results are compared with text-based similarity, and demonstrate the
+  complementarity of link-based and text-based retrieval.%
+  }
+  \verb{doi}
+  \verb 10.1007/s10115-006-0023-9
+  \endverb
+  \field{issn}{0219-3116}
+  \field{number}{1}
+  \field{pages}{105\bibrangedash 129}
+  \field{title}{Node similarity in the citation graph}
+  \verb{url}
+  \verb https://doi.org/10.1007/s10115-006-0023-9
+  \endverb
+  \field{volume}{11}
+  \field{journaltitle}{Knowledge and Information Systems}
+  \field{year}{2007}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Maarek:1991:IRA:126244.126254}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Maarek}{M.}%
+     {Yo\"{e}lle~S.}{Y.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Berry}{B.}%
+     {Daniel~M.}{D.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kaiser}{K.}%
+     {Gail~E.}{G.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Press}%
+  }
+  \keyw{attributes, automatic programming, browsing, clustering technique,
+  free-style natural language queries, free-text indexing scheme, indexing
+  scheme, information retrieval approach, information retrieval systems, large
+  software libraries, lexical affinities, natural language documentation,
+  natural languages, software reusability, software reuse, subroutines}
+  \strng{namehash}{MYSBDMKGE1}
+  \strng{fullhash}{MYSBDMKGE1}
+  \field{sortinit}{M}
+  \verb{doi}
+  \verb 10.1109/32.83915
+  \endverb
+  \field{issn}{0098-5589}
+  \field{number}{8}
+  \field{pages}{800\bibrangedash 813}
+  \field{title}{An Information Retrieval Approach for Automatically
+  Constructing Software Libraries}
+  \verb{url}
+  \verb http://dx.doi.org/10.1109/32.83915
+  \endverb
+  \field{volume}{17}
+  \list{location}{1}{%
+    {Piscataway, NJ, USA}%
+  }
+  \field{journaltitle}{IEEE Trans. Softw. Eng.}
+  \field{month}{08}
+  \field{year}{1991}
+\endentry
+
+\entry{conf:iscis:MadylovaO09}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Madylova}{M.}%
+     {Ainura}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {\"{O}g\"{u}duc\"{u}}{O.}%
+     {Sule~G\"{u}nd\"{u}z}{S.~G.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \keyw{dblp}
+  \strng{namehash}{MAOSG1}
+  \strng{fullhash}{MAOSG1}
+  \field{sortinit}{M}
+  \field{booktitle}{ISCIS}
+  \field{pages}{129\bibrangedash 134}
+  \field{title}{A taxonomy based semantic similarity of documents using the
+  cosine measure.}
+  \verb{url}
+  \verb http://dblp.uni-trier.de/db/conf/iscis/iscis2009.html#MadylovaO09
+  \endverb
+  \field{day}{30}
+  \field{month}{12}
+  \field{year}{2009}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{Manning:2008:IIR:1394399}{book}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Manning}{M.}%
+     {Christopher~D.}{C.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Raghavan}{R.}%
+     {Prabhakar}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sch\"{u}tze}{S.}%
+     {Hinrich}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Cambridge University Press}%
+  }
+  \strng{namehash}{MCDRPSH1}
+  \strng{fullhash}{MCDRPSH1}
+  \field{sortinit}{M}
+  \field{isbn}{0521865719, 9780521865715}
+  \field{title}{Introduction to Information Retrieval}
+  \list{location}{1}{%
+    {New York, NY, USA}%
+  }
+  \field{year}{2008}
+\endentry
+
+\entry{McMillan:2012:DSS:2337223.2337267}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {McMillan}{M.}%
+     {Collin}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Grechanik}{G.}%
+     {Mark}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Poshyvanyk}{P.}%
+     {Denys}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Press}%
+  }
+  \strng{namehash}{MCGMPD1}
+  \strng{fullhash}{MCGMPD1}
+  \field{sortinit}{M}
+  \field{booktitle}{Proceedings of the 34th International Conference on
+  Software Engineering}
+  \field{isbn}{978-1-4673-1067-3}
+  \field{pages}{364\bibrangedash 374}
+  \field{series}{ICSE '12}
+  \field{title}{Detecting Similar Software Applications}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=2337223.2337267
+  \endverb
+  \list{location}{1}{%
+    {Zurich, Switzerland}%
+  }
+  \field{year}{2012}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Mihalcea:2006:CKM:1597538.1597662}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Mihalcea}{M.}%
+     {Rada}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Corley}{C.}%
+     {Courtney}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Strapparava}{S.}%
+     {Carlo}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {AAAI Press}%
+  }
+  \strng{namehash}{MRCCSC1}
+  \strng{fullhash}{MRCCSC1}
+  \field{sortinit}{M}
+  \field{booktitle}{Proceedings of the 21st National Conference on Artificial
+  Intelligence - Volume 1}
+  \field{isbn}{978-1-57735-281-5}
+  \field{pages}{775\bibrangedash 780}
+  \field{series}{AAAI'06}
+  \field{title}{Corpus-based and Knowledge-based Measures of Text Semantic
+  Similarity}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=1597538.1597662
+  \endverb
+  \list{location}{1}{%
+    {Boston, Massachusetts}%
+  }
+  \field{year}{2006}
+\endentry
+
+\entry{Miller:1995:WLD:219717.219748}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Miller}{M.}%
+     {George~A.}{G.~A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \strng{namehash}{MGA1}
+  \strng{fullhash}{MGA1}
+  \field{sortinit}{M}
+  \verb{doi}
+  \verb 10.1145/219717.219748
+  \endverb
+  \field{issn}{0001-0782}
+  \field{number}{11}
+  \field{pages}{39\bibrangedash 41}
+  \field{title}{WordNet: A Lexical Database for English}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/219717.219748
+  \endverb
+  \field{volume}{38}
+  \list{location}{1}{%
+    {New York, NY, USA}%
+  }
+  \field{journaltitle}{Commun. ACM}
+  \field{month}{11}
+  \field{year}{1995}
+\endentry
+
+\entry{NDD:KaRS:2018}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Nguyen}{N.}%
+     {Phuong~T.}{P.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Di~Rocco}{D.~R.}%
+     {Juri}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Di~Ruscio}{D.~R.}%
+     {Davide}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{Autoencoders, DBpedia, Deep Learning, Knowledge graphs, Linked Open
+  Data, Recommender Systems}
+  \strng{namehash}{NPTDRJDRD1}
+  \strng{fullhash}{NPTDRJDRD1}
+  \field{sortinit}{N}
+  \field{booktitle}{Proceedings of the 1st Workshop on Knowledge-aware and
+  Conversational Recommender System}
+  \field{series}{KaRS 2018}
+  \field{title}{Knowledge-aware Recommender System for Software Development}
+  \list{location}{1}{%
+    {Vancouver, Canada}%
+  }
+  \field{year}{2018}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{DBLP:conf/iir/NDD013}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Nguyen}{N.}%
+     {Phuong~T.}{P.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rocco}{R.}%
+     {Juri~Di}{J.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ruscio}{R.}%
+     {Davide~Di}{D.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{NPTRJDRDD1}
+  \strng{fullhash}{NPTRJDRDD1}
+  \field{sortinit}{N}
+  \field{booktitle}{Proceedings of the 9th Italian Information Retrieval
+  Workshop, Roma, Italy, May 28-30, 2018.}
+  \field{title}{Mining {Software repositories} to support {OSS} developers: {A}
+  recommender systems approach}
+  \field{year}{2018}
+\endentry
+
+\entry{Nguyen:2015:ESP:2740908.2742141}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Nguyen}{N.}%
+     {Phuong~T.}{P.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tomeo}{T.}%
+     {Paolo}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Di~Noia}{D.~N.}%
+     {Tommaso}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Di~Sciascio}{D.~S.}%
+     {Eugenio}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{personalized pagerank, recommender systems, simrank, web of data}
+  \strng{namehash}{NPT+1}
+  \strng{fullhash}{NPTTPDNTDSE1}
+  \field{sortinit}{N}
+  \field{booktitle}{Proceedings of the 24th International Conference on World
+  Wide Web}
+  \verb{doi}
+  \verb 10.1145/2740908.2742141
+  \endverb
+  \field{isbn}{978-1-4503-3473-0}
+  \field{pages}{1477\bibrangedash 1482}
+  \field{series}{WWW '15 Companion}
+  \field{title}{An Evaluation of {SimRank} and {Personalized PageRank} to
+  {Build} a {Recommender System for the Web of Data}}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/2740908.2742141
+  \endverb
+  \list{location}{1}{%
+    {Florence, Italy}%
+  }
+  \field{year}{2015}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Nguyen:2015:CRV:2942298.2942305}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Nguyen}{N.}%
+     {Phuong~T.}{P.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tomeo}{T.}%
+     {Paolo}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Di~Noia}{D.~N.}%
+     {Tommaso}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Di~Sciascio}{D.~S.}%
+     {Eugenio}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer-Verlag New York, Inc.}%
+  }
+  \keyw{Content-based recommender systems, Linked open data, Quality
+  assessment, Semantic similarity}
+  \strng{namehash}{NPT+1}
+  \strng{fullhash}{NPTTPDNTDSE1}
+  \field{sortinit}{N}
+  \field{booktitle}{Proceedings of the 14th International Conference on The
+  Semantic Web - ISWC 2015 - Volume 9366}
+  \verb{doi}
+  \verb 10.1007/978-3-319-25007-6_35
+  \endverb
+  \field{isbn}{978-3-319-25006-9}
+  \field{pages}{605\bibrangedash 621}
+  \field{title}{Content-Based Recommendations via DBpedia and Freebase: A Case
+  Study in the Music Domain}
+  \verb{url}
+  \verb http://dx.doi.org/10.1007/978-3-319-25007-6_35
+  \endverb
+  \list{location}{1}{%
+    {New York, NY, USA}%
+  }
+  \field{year}{2015}
+\endentry
+
+\entry{NDRDSEAA2018}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Nguyen}{N.}%
+     {Phuong~T.}{P.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rocco}{R.}%
+     {Juri~Di}{J.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rubei}{R.}%
+     {Riccardo}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ruscio}{R.}%
+     {Davide~Di}{D.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{NPT+1}
+  \strng{fullhash}{NPTRJDRRRDD1}
+  \field{sortinit}{N}
+  \field{booktitle}{Procs. of 44th Euromicro Conference on Software Engineering
+  and Advanced Applications (SEAA) - to appear}
+  \field{title}{Cross{S}im: exploiting mutual relationships to detect similar
+  {OSS} projects}
+  \field{year}{2018}
+\endentry
+
+\entry{CROSSSIM-DATA}{misc}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Nguyen}{N.}%
+     {Phuong~T.}{P.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Di~Rocco}{D.~R.}%
+     {Juri}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rubei}{R.}%
+     {Riccardo}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Di~Ruscio}{D.~R.}%
+     {Davide}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{NPT+1}
+  \strng{fullhash}{NPTDRJRRDRD1}
+  \field{sortinit}{N}
+  \field{note}{\url{https://doi.org/10.5281/zenodo.1252866}}
+  \field{title}{{CrossSim} tool and evaluation data}
+  \field{year}{2018}
+\endentry
+
+\entry{DBLP:conf/rweb/NoiaO15}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Noia}{N.}%
+     {Tommaso~Di}{T.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ostuni}{O.}%
+     {Vito~Claudio}{V.~C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{NTDOVC1}
+  \strng{fullhash}{NTDOVC1}
+  \field{sortinit}{N}
+  \field{booktitle}{Reasoning Web. Web Logic Rules - 11th International Summer
+  School 2015, Berlin, Germany, July 31 - August 4, 2015, Tutorial Lectures}
+  \verb{doi}
+  \verb 10.1007/978-3-319-21768-0_4
+  \endverb
+  \field{pages}{88\bibrangedash 113}
+  \field{title}{Recommender Systems and Linked Open Data}
+  \verb{url}
+  \verb https://doi.org/10.1007/978-3-319-21768-0_4
+  \endverb
+  \field{year}{2015}
+\endentry
+
+\entry{ODMD14a}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Ostuni}{O.}%
+     {Vito~Claudio}{V.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {{Di Noia}}{D.}%
+     {Tommaso}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mirizzi}{M.}%
+     {Roberto}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {{Di Sciascio}}{D.}%
+     {Eugenio}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{OVC+1}
+  \strng{fullhash}{OVCDTMRDE1}
+  \field{sortinit}{O}
+  \field{booktitle}{The 15th International Conference on Electronic Commerce
+  and Web Technologies}
+  \field{series}{Lecture Notes in Business Information Processing}
+  \field{title}{A Linked Data Recommender System using a Neighborhood-based
+  Graph Kernel}
+  \verb{url}
+  \verb http://sisinflab.poliba.it/sisinflab/publications/ 2014/ODMD14a
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\entry{Pazzani2007}{inbook}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Pazzani}{P.}%
+     {Michael~J.}{M.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Billsus}{B.}%
+     {Daniel}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \name{editor}{3}{}{%
+    {{}%
+     {Brusilovsky}{B.}%
+     {Peter}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kobsa}{K.}%
+     {Alfred}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nejdl}{N.}%
+     {Wolfgang}{W.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer Berlin Heidelberg}%
+  }
+  \strng{namehash}{PMJBD1}
+  \strng{fullhash}{PMJBD1}
+  \field{sortinit}{P}
+  \field{abstract}{%
+  This chapter discusses content-based recommendation systems, i.e., systems
+  that recommend an item to a user based upon a description of the item and a
+  profile of the user's interests. Content-based recommendation systems may be
+  used in a variety of domains ranging from recommending web pages, news
+  articles, restaurants, television programs, and items for sale. Although the
+  details of various systems differ, content-based recommendation systems share
+  in common a means for describing the items that may be recommended, a means
+  for creating a profile of the user that describes the types of items the user
+  likes, and a means of comparing items to the user profile to determine what
+  to re commend. The profile is often created and updated automatically in
+  response to feedback on the desirability of items that have been presented to
+  the user.%
+  }
+  \field{booktitle}{The Adaptive Web: Methods and Strategies of Web
+  Personalization}
+  \verb{doi}
+  \verb 10.1007/978-3-540-72079-9_10
+  \endverb
+  \field{isbn}{978-3-540-72079-9}
+  \field{pages}{325\bibrangedash 341}
+  \field{title}{Content-Based Recommendation Systems}
+  \verb{url}
+  \verb https://doi.org/10.1007/978-3-540-72079-9_10
+  \endverb
+  \list{location}{1}{%
+    {Berlin, Heidelberg}%
+  }
+  \field{year}{2007}
+\endentry
+
+\entry{doi:10.1108/13522750810879048}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Pettigrew}{P.}%
+     {Simone}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Charters}{C.}%
+     {Stephen}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{PSCS1}
+  \strng{fullhash}{PSCS1}
+  \field{sortinit}{P}
+  \field{abstract}{%
+  Purpose – The purpose of this paper is to investigate the benefits of
+  tasting as a projective technique (PT) in explicating consumers' thoughts and
+  feelings towards food and beverage products.Design/methodology/approach –
+  In total, ten focus groups were conducted with 35 consumers, 14 wine
+  producers, and 13 mediators. The mediator category included those involved in
+  marketing, wholesaling, retailing, and judging wine. Participants in each
+  focus group were given the same four wines to taste. Initially they were
+  invited to discuss their views on wine quality. The participants were then
+  presented with the wines and asked to discuss their responses to them,
+  particularly their perceptions of the quality of the wines.Findings – The
+  primary findings related to: the changes in apparent certainty levels amongst
+  professionals and high‐involvement informants; exposure of real and
+  contradictory preferences; role of cognitive, affective, and sensory
+  responses to wine; and interpretation of the language of tasting.Research
+  limitations/implications – Tasting as a PT has the potential to generate
+  additional and insightful data that can increase our appreciation of the
+  complexities involved in consumption experiences. In particular, it can
+  reveal the uncertainty that can affect consumers' product evaluations and
+  explicate the multiple evaluation pathways that can be used by consumers of
+  food and beverage products.Originality/value – The paper is of value in
+  showing that the ability of PTs to yield both stated and actual preferences
+  provides insight into the salient external factors that impact on consumption
+  decisions and gives an indication of where marketers could most effectively
+  focus their product development and promotional attention.%
+  }
+  \verb{doi}
+  \verb 10.1108/13522750810879048
+  \endverb
+  \verb{eprint}
+  \verb https://doi.org/10.1108/13522750810879048
+  \endverb
+  \field{number}{3}
+  \field{pages}{331\bibrangedash 343}
+  \field{title}{Tasting as a projective technique}
+  \verb{url}
+  \verb https://doi.org/10.1108/13522750810879048
+  \endverb
+  \field{volume}{11}
+  \field{journaltitle}{Qualitative Market Research: An International Journal}
+  \field{year}{2008}
+\endentry
+
+\entry{Ponzanelli:2014:MST:2597073.2597077}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Ponzanelli}{P.}%
+     {Luca}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bavota}{B.}%
+     {Gabriele}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Di~Penta}{D.~P.}%
+     {Massimiliano}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Oliveto}{O.}%
+     {Rocco}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lanza}{L.}%
+     {Michele}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \strng{namehash}{PL+1}
+  \strng{fullhash}{PLBGDPMORLM1}
+  \field{sortinit}{P}
+  \field{booktitle}{Proceedings of MSR 2014}
+  \verb{doi}
+  \verb 10.1145/2597073.2597077
+  \endverb
+  \field{isbn}{978-1-4503-2863-0}
+  \field{pages}{102\bibrangedash 111}
+  \field{title}{Mining {StackOverflow} to Turn the {IDE} into a Self-confident
+  Programming Prompter}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/2597073.2597077
+  \endverb
+  \list{location}{1}{%
+    {Hyderabad, India}%
+  }
+  \field{year}{2014}
+\endentry
+
+\entry{Ramos1999}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Ramos}{R.}%
+     {Juan}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{ontology_learning}
+  \strng{namehash}{RJ1}
+  \strng{fullhash}{RJ1}
+  \field{sortinit}{R}
+  \field{title}{Using TF-IDF to Determine Word Relevance in Document Queries}
+  \field{year}{1999}
+\endentry
+
+\entry{Reed:2006:TNT:1193211.1193734}{inproceedings}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Reed}{R.}%
+     {Joel~W.}{J.~W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jiao}{J.}%
+     {Yu}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Potok}{P.}%
+     {Thomas~E.}{T.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Klump}{K.}%
+     {Brian~A.}{B.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Elmore}{E.}%
+     {Mark~T.}{M.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hurson}{H.}%
+     {Ali~R.}{A.~R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Computer Society}%
+  }
+  \strng{namehash}{RJW+1}
+  \strng{fullhash}{RJWJYPTEKBAEMTHAR1}
+  \field{sortinit}{R}
+  \field{booktitle}{Proceedings of the 5th International Conference on Machine
+  Learning and Applications}
+  \verb{doi}
+  \verb 10.1109/ICMLA.2006.50
+  \endverb
+  \field{isbn}{0-7695-2735-3}
+  \field{pages}{258\bibrangedash 263}
+  \field{series}{ICMLA '06}
+  \field{title}{TF-ICF: A New Term Weighting Scheme for Clustering Dynamic Data
+  Streams}
+  \verb{url}
+  \verb http://dx.doi.org/10.1109/ICMLA.2006.50
+  \endverb
+  \list{location}{1}{%
+    {Washington, DC, USA}%
+  }
+  \field{year}{2006}
+\endentry
+
+\entry{Sarwar:2001:ICF:371920.372071}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Sarwar}{S.}%
+     {Badrul}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Karypis}{K.}%
+     {George}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Konstan}{K.}%
+     {Joseph}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Riedl}{R.}%
+     {John}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \strng{namehash}{SB+1}
+  \strng{fullhash}{SBKGKJRJ1}
+  \field{sortinit}{S}
+  \field{booktitle}{Proceedings of the 10th International Conference on World
+  Wide Web}
+  \verb{doi}
+  \verb 10.1145/371920.372071
+  \endverb
+  \field{isbn}{1-58113-348-0}
+  \field{pages}{285\bibrangedash 295}
+  \field{series}{WWW '01}
+  \field{title}{Item-based Collaborative Filtering Recommendation Algorithms}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/371920.372071
+  \endverb
+  \list{location}{1}{%
+    {Hong Kong, Hong Kong}%
+  }
+  \field{year}{2001}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Schaeffer:2007:SGC:2296006.2296057}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Schaeffer}{S.}%
+     {Satu~Elisa}{S.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier Science Publishers B. V.}%
+  }
+  \strng{namehash}{SSE1}
+  \strng{fullhash}{SSE1}
+  \field{sortinit}{S}
+  \verb{doi}
+  \verb 10.1016/j.cosrev.2007.05.001
+  \endverb
+  \field{issn}{1574-0137}
+  \field{number}{1}
+  \field{pages}{27\bibrangedash 64}
+  \field{title}{Survey: Graph Clustering}
+  \verb{url}
+  \verb http://dx.doi.org/10.1016/j.cosrev.2007.05.001
+  \endverb
+  \field{volume}{1}
+  \list{location}{1}{%
+    {Amsterdam, The Netherlands, The Netherlands}%
+  }
+  \field{journaltitle}{Comput. Sci. Rev.}
+  \field{month}{08}
+  \field{year}{2007}
+\endentry
+
+\entry{Schafer:2007:CFR:1768197.1768208}{incollection}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Schafer}{S.}%
+     {J.~Ben}{J.~B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Frankowski}{F.}%
+     {Dan}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Herlocker}{H.}%
+     {Jon}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sen}{S.}%
+     {Shilad}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \name{editor}{3}{}{%
+    {{}%
+     {Brusilovsky}{B.}%
+     {Peter}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kobsa}{K.}%
+     {Alfred}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nejdl}{N.}%
+     {Wolfgang}{W.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer-Verlag}%
+  }
+  \strng{namehash}{SJB+1}
+  \strng{fullhash}{SJBFDHJSS1}
+  \field{sortinit}{S}
+  \field{chapter}{Collaborative Filtering Recommender Systems}
+  \field{isbn}{978-3-540-72078-2}
+  \field{pages}{291\bibrangedash 324}
+  \field{title}{The Adaptive Web}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=1768197.1768208
+  \endverb
+  \list{location}{1}{%
+    {Berlin, Heidelberg}%
+  }
+  \field{year}{2007}
+\endentry
+
+\entry{6671293}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Thung}{T.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lo}{L.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lawall}{L.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{collaborative filtering;data mining;software reliability;association
+  rule mining;automated library recommendation;collaborative filtering;recall
+  rate;software projects;software reliability;third-party libraries;Association
+  rules;Collaboration;Feature extraction;Generators;Itemsets;Libraries}
+  \strng{namehash}{TFLDLJ1}
+  \strng{fullhash}{TFLDLJ1}
+  \field{sortinit}{T}
+  \field{booktitle}{2013 20th Working Conference on Reverse Engineering (WCRE)}
+  \verb{doi}
+  \verb 10.1109/WCRE.2013.6671293
+  \endverb
+  \field{issn}{1095-1350}
+  \field{pages}{182\bibrangedash 191}
+  \field{title}{Automated library recommendation}
+  \field{year}{2013}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Turney:2010:FMV:1861751.1861756}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Turney}{T.}%
+     {Peter~D.}{P.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pantel}{P.}%
+     {Patrick}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {AI Access Foundation}%
+  }
+  \strng{namehash}{TPDPP1}
+  \strng{fullhash}{TPDPP1}
+  \field{sortinit}{T}
+  \field{issn}{1076-9757}
+  \field{number}{1}
+  \field{pages}{141\bibrangedash 188}
+  \field{title}{From Frequency to Meaning: Vector Space Models of Semantics}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=1861751.1861756
+  \endverb
+  \field{volume}{37}
+  \list{location}{1}{%
+    {USA}%
+  }
+  \field{journaltitle}{J. Artif. Int. Res.}
+  \field{month}{01}
+  \field{year}{2010}
+\endentry
+
+\entry{tversky1977features}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Tversky}{T.}%
+     {Amos}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {American Psychological Association}%
+  }
+  \keyw{psychology similarity toread}
+  \strng{namehash}{TA1}
+  \strng{fullhash}{TA1}
+  \field{sortinit}{T}
+  \field{abstract}{%
+  Questions the metric and dimensional assumptions that underlie the geometric
+  representation of similarity on both theoretical and empirical grounds. A new
+  set-theoretical approach to similarity is developed in which objects are
+  represented as collections of features and similarity is described as a
+  feature-matching process. Specifically, a set of qualitative assumptions is
+  shown to imply the contrast model, which expresses the similarity between
+  objects as a linear combination of the measures of their common and
+  distinctive features. Several predictions of the contrast model are tested in
+  studies of similarity with both semantic and perceptual stimuli. The model is
+  used to uncover, analyze, and explain a variety of empirical phenomena such
+  as the role of common and distinctive features, the relations between
+  judgments of similarity and difference, the presence of asymmetric
+  similarities, and the effects of context on judgments of similarity. The
+  contrast model generalizes standard representations of similarity data in
+  terms of clusters and trees. It is also used to analyze the relations of
+  prototypicality and family resemblance. (39 ref) (PsycINFO Database Record
+  (c) 2012 APA, all rights reserved)%
+  }
+  \verb{doi}
+  \verb 10.1037/0033-295X.84.4.327
+  \endverb
+  \field{issn}{19391471}
+  \field{number}{4}
+  \field{pages}{327\bibrangedash 352}
+  \field{title}{Features of similarity}
+  \field{volume}{84}
+  \list{location}{1}{%
+    {US}%
+  }
+  \field{journaltitle}{Psychological Review}
+  \field{year}{1977}
+\endentry
+
+\entry{Ugurel:2002:WCA:775047.775141}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Ugurel}{U.}%
+     {Secil}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Krovetz}{K.}%
+     {Robert}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Giles}{G.}%
+     {C.~Lee}{C.~L.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \strng{namehash}{USKRGCL1}
+  \strng{fullhash}{USKRGCL1}
+  \field{sortinit}{U}
+  \field{booktitle}{Proceedings of the Eighth ACM SIGKDD International
+  Conference on Knowledge Discovery and Data Mining}
+  \verb{doi}
+  \verb 10.1145/775047.775141
+  \endverb
+  \field{isbn}{1-58113-567-X}
+  \field{pages}{632\bibrangedash 638}
+  \field{series}{KDD '02}
+  \field{title}{What's the Code?: Automatic Classification of Source Code
+  Archives}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/775047.775141
+  \endverb
+  \list{location}{1}{%
+    {Edmonton, Alberta, Canada}%
+  }
+  \field{year}{2002}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Wang:2015:WSA:2771783.2771795}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Wang}{W.}%
+     {Haoyu}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Guo}{G.}%
+     {Yao}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ma}{M.}%
+     {Ziang}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chen}{C.}%
+     {Xiangqun}{X.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{Android, Clone detection, mobile applications, repackaging, third-party
+  library}
+  \strng{namehash}{WH+1}
+  \strng{fullhash}{WHGYMZCX1}
+  \field{sortinit}{W}
+  \field{booktitle}{Proceedings of the 2015 International Symposium on Software
+  Testing and Analysis}
+  \verb{doi}
+  \verb 10.1145/2771783.2771795
+  \endverb
+  \field{isbn}{978-1-4503-3620-8}
+  \field{pages}{71\bibrangedash 82}
+  \field{series}{ISSTA 2015}
+  \field{title}{WuKong: A Scalable and Accurate Two-phase Approach to Android
+  App Clone Detection}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/2771783.2771795
+  \endverb
+  \list{location}{1}{%
+    {Baltimore, MD, USA}%
+  }
+  \field{year}{2015}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{xia:tag:2013}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Xia}{X.}%
+     {Xin}{X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lo}{L.}%
+     {David}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wang}{W.}%
+     {Xinyu}{X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zhou}{Z.}%
+     {Bo}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Press}%
+  }
+  \strng{namehash}{XX+1}
+  \strng{fullhash}{XXLDWXZB1}
+  \field{sortinit}{X}
+  \field{booktitle}{Proceedings of the 10th Working Conference on Mining
+  Software Repositories}
+  \field{isbn}{978-1-4673-2936-1}
+  \field{pages}{287\bibrangedash 296}
+  \field{series}{MSR '13}
+  \field{title}{Tag Recommendation in Software Information Sites}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=2487085.2487140
+  \endverb
+  \list{location}{1}{%
+    {Piscataway, NJ, USA}%
+  }
+  \field{year}{2013}
+\endentry
+
+\entry{10.1109/SANER.2017.7884605}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Zhang}{Z.}%
+     {Yun}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lo}{L.}%
+     {David}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kochhar}{K.}%
+     {Pavneet~Singh}{P.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Xia}{X.}%
+     {Xin}{X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Li}{L.}%
+     {Quanlai}{Q.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sun}{S.}%
+     {Jianling}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Computer Society}%
+  }
+  \strng{namehash}{ZY+1}
+  \strng{fullhash}{ZYLDKPSXXLQSJ1}
+  \field{sortinit}{Z}
+  \verb{doi}
+  \verb doi.ieeecomputersociety.org/10.1109/SANER.2017.7884605
+  \endverb
+  \field{pages}{13\bibrangedash 23}
+  \field{title}{Detecting similar repositories on GitHub}
+  \field{volume}{00}
+  \list{location}{1}{%
+    {Los Alamitos, CA, USA}%
+  }
+  \field{journaltitle}{2017 IEEE 24th International Conference on Software
+  Analysis, Evolution and Reengineering (SANER)}
+  \field{year}{2017}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput
