@@ -1,0 +1,35 @@
+% arara: pdflatex
+% !arara: indent: {overwrite: yes}
+\documentclass[tikz]{standalone}
+
+\usepackage{pgfplots}
+\pgfplotsset{width=3cm,compat=1.8}
+\begin{document}
+	
+	\pgfplotstableread[row sep=\\,col sep=&]{
+		alias & val  \\
+		MudaBlue   & 2.03 \\
+		Combined   & 2.23  \\
+		Clan   & 2.42 \\
+	}\mydata
+	
+	\begin{tikzpicture}
+	\begin{axis}[
+	ybar,
+	bar width=.5cm,
+	width=\textwidth,
+	height=.5\textwidth,
+	legend style={at={(0.5,1)}, anchor=north,legend columns=-1},       
+	symbolic x coords={MudaBlue,Combined,Clan},
+	xtick=data,
+	x tick label style={rotate=45,anchor=east},
+	nodes near coords,
+	nodes near coords align={vertical},
+	ymin=1.0,ymax=4.0,
+	%ylabel={},
+	]
+	\addplot table[x=alias,y=val]{\mydata};
+	\legend{Confidence, Distance, Energy}
+	\end{axis}
+	\end{tikzpicture}
+\end{document}
