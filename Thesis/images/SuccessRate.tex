@@ -8,10 +8,13 @@
 	
 	\pgfplotstableread[row sep=\\,col sep=&]{
 		alias & val \\
+		CLAN    & 60  \\
+		MUDABlue   & 60  \\
 		RepoPal   	 & 100 \\
-		CrossSim    & 100  \\
-		Clan    & 60  \\
-		MudaBlue   & 60  \\
+		CrossSim$_1$    & 100  \\
+		CrossSim$_2$    & 100  \\
+		CrossSim$_3$    & 100  \\
+		CrossSim$_4$    & 100  \\
 	}\mydata
 	
 	\begin{tikzpicture}
@@ -22,7 +25,7 @@
 	height=.5\textwidth,
 	legend style={at={(0.5,1)},
 		anchor=north,legend columns=-1},       
-	symbolic x coords={RepoPal,CrossSim,Clan,MudaBlue},
+	symbolic x coords={MUDABlue,CLAN,RepoPal,CrossSim$_1$,CrossSim$_2$,CrossSim$_3$,CrossSim$_4$},
 	xtick=data,
 	x tick label style={rotate=45,anchor=east},
 	nodes near coords,
