@@ -62,7 +62,35 @@ This classification is used throughout this paper as a means to distinguish betw
 
 Together with a tool for automatically categorizing open source repositories, the authors in \cite{10.1109/APSEC.2004.69} propose an approach for computing similarity between software projects using source code. A pre-processing stage is performed to extract identifiers such as variable names, function names and to remove unrelated factors such as comment.
 
-With the application of Latent Semantic Analysis, software is considered as a document and each identifier is considered as a word. LSA is used for extracting and representing the contextual usage meaning of words by statistical computations applied to a large corpus of text. In summary, MUDABlue works in the following steps to compute similarities between software systems:
+\begin{figure}[!h]
+	\includegraphics[width=15cm,height=20cm,keepaspectratio]{images/Mudablue1.png}
+	\centering
+	\caption{The MUDABlue working phases \cite{10.1109/APSEC.2004.69}}
+	\label{fig:MUDABlue}
+\end{figure}
+
+With the application of Latent Semantic Analysis, software is considered as a document and each identifier is a word. LSA is used for extracting and representing the contextual usage meaning of words by statistical computations applied to a large corpus of text. In summary, the process that \MUDABlue applies is depicted in Figure~\ref{fig:MUDABlue} and consists of the following steps \cite{10.1109/APSEC.2004.69}:% to compute similarities between software systems:
+
+%The MUDABlue approach can be briefly summarized in 7 steps, as the following image depicts:
+
+%\subsection{Extract Identifiers}
+%With identifier we are talking about relevant strings that can allow to characterize a document. In this phase each repository is scanned in order to find the target files, and for each of them the identifiers are exctracted, avoiding adding useless items such as comments. The dataset was a 41C projects gathered from SourceForge.
+%
+%\subsection{Create identifier-by-software matrix}
+%As stated before, the main item to work with is the term-document matrix, in this case we count how many times each term appears in each file for all the projects. The result is matrix \textbf{m x n} with m terms and n projects.
+%
+%\subsection{Remove useless identifiers}
+%From the matrix we remove all the useless terms, that is all the terms that apperas in just one repository, considered a specific terms, and all the terms that appears in more than 50\% of the repositories, considered as general terms.
+%
+%\subsection{Apply the LSA}
+%Once the matrix is ready con be worked, the \emph{SVD} procedure is applied and then the LSI. As explained before [NOTE] the \emph{SVD} procedure decompose the original matrix in 3 other matrices. When we multiply back these matrices we use a rank reducted version of the S matrix in order to generete the final one. The authors didn't provide us any details about their final rank value, so we tested many values and eventually selected one.
+%
+%\subsection{Apply the Cosine Similarity}
+%By using the cosine similarity method, we compare each repository vector with all the others and eventually getting an \textbf{n x n} matrix, in which is expressed the similarity of all the repository couple, with a value \emph{[0.0-1.0]}. Thereafter, the cluster analysis is applied using calculated similarities. 
+%
+%\subsection{Categorization}
+%Make software clusters from identifier clusters. From each identifier clusters, the software systems that contain one or more identifiers in the cluster are retrieved. The last step is to make software clusters’ titles. This can be done by summing all identifier-vectors comprised in the identifier cluster and then consider the ten identifiers that got the highest value in the summation vector.
+
 
 \begin{itemize}
 	
@@ -72,12 +100,48 @@ With the application of Latent Semantic Analysis, software is considered as a do
 	\item[iv)] Performs LSA on the identifier-software matrix and computes similarity on the reduced matrix using cosine similarity; 
 \end{itemize}
 
+
+
 MUDABlue has been evaluated on a database consisting of software systems written in C \cite{10.1109/APSEC.2004.69}. The outcomes of the evaluation were compared against two existing approaches, namely GURU \cite{Maarek:1991:IRA:126244.126254}, and the SVM based method by \emph{Ugurel et al} \cite{Ugurel:2002:WCA:775047.775141}. The evaluation shows that MUDABlue outperforms these observed algorithms with regards to precision and recall.
 
 
 \section{CLAN: Finding Related Applications}\label{sec:clan}
 
-CLAN (Closely reLated ApplicatioNs) \cite{McMillan:2012:DSS:2337223.2337267} is an approach for automatically detecting similar Java applications by exploiting the semantic layers corresponding to packages class hierarchies. CLAN works based on the document framework for computing similarity, semantic anchors, e.g. those that define the documents' semantic features. Semantic anchors and dependencies help obtain a more precise value for similarity computation between documents. The assumption is that if two applications have API calls implementing requirements described by the same abstraction, then the two applications are more similar than those that do not have common API calls. The approach uses API calls as semantic anchors to compute application similarity since API calls contain precisely defined semantics. The similarity between applications is computed by matching the semantics already expressed in the API calls.
+\CLAN (Closely reLated ApplicatioNs) \cite{McMillan:2012:DSS:2337223.2337267} is an approach for automatically detecting similar Java applications by exploiting the semantic layers corresponding to packages class hierarchies. CLAN works based on the document framework for computing similarity, semantic anchors, e.g. those that define the documents' semantic features. Semantic anchors and dependencies help obtain a more precise value for similarity computation between documents. The assumption is that if two applications have API calls implementing requirements described by the same abstraction, then the two applications are more similar than those that do not have common API calls. The approach uses API calls as semantic anchors to compute application similarity since API calls contain precisely defined semantics. The similarity between applications is computed by matching the semantics already expressed in the API calls. The working process applied by \CLAN is shown in Figure~\ref{fig:CLAN}.
+
+%\textit{CLAN} \cite{McMillan:2012:DSS:2337223.2337267} is an approach for automatically detecting similar Java applications by exploiting the semantic layers corresponding to packages class hierarchies. \textit{CLAN} works based on the document framework for computing similarity, semantic anchors, e.g. those that define the documents' semantic features. Semantic anchors and dependencies help obtain a more precise value for similarity computation between documents. The assumption is that if two applications have API calls implementing requirements described by the same abstraction, then the two applications are more similar than those that do not have common API calls. The approach uses API calls as semantic anchors to compute application similarity since API calls contain precisely defined semantics. The similarity between applications is computed by matching the semantics already expressed in the API calls.
+
+%The process consist of 12 steps here graphically reported.
+
+\begin{figure}[!h]
+	\includegraphics[width=0.80\textwidth]{images/Clan.png}
+	\centering
+	\caption{The \CLAN working phases \cite{McMillan:2012:DSS:2337223.2337267}}
+	\label{fig:CLAN}
+\end{figure}
+
+%
+%\subsection{Terms Extraction}
+%Steps from 1 to 3 can be merged together since are related to extraction of terms from the repositories.
+%As stated before, an important concept is that terms extracted are only API calls, this means that all other things present in a piece of code are discarded, for example all the variables or the function declaration and invocation. Furthermore these API calls belong only to the JDK, in such a way also the calls to any other external library are discarded. This idea is also applied in the extraction of the import declaration, focus only on the JDK packages import.
+%The result of this process will be an ordered set of data, representing the occurrencies of any Package;Class for all the projects.
+%
+%\subsection{TDMs Creation}
+%Once the dataset as been created, is reorganized in TDMs. Here two different matrices are created, one for the Classes and one for the Packages. Class-level and package-level similarities are different since applications are often more similar on the package level than on the class level because there are fewer packages than classes in the JDK. Therefore, there is the higher probability that two applications may have API calls that are located in the same package but not in the same class.
+%
+%\subsection{LSI Procedure}
+%The paper refers to LSI procedure, Latent Semantic Indexing[dumais2], but the term are synonym, so from here on, we will refer as Latent Semantic Analysis LSA.
+%
+%\subsection{Apply the Cosine Similarity}
+%As for Mudablue, we will apply the cosine similarity to the matrix got from the LSA procedure.
+%
+%\subsection{Sum of the matrices}
+%The 2 matrices are summed, but before are multplied by a certain value. Since the values for the entries in the 2 matrices are between 0.0 and 1.0 a simple sum could result in a value over 1.0, by this multiplication these values are reducted in order to be summed togheter but still maintaining the logical meaning. The authors chosen 0.5, also we, since is a good value to equal distribute the weight of the packages and method calls.The sum of this value is 1.0, and can span from 0.1 to 0.9 for each matrix, is clear that more is high on a matrix, more is important the values that we are considering from such matrix.
+%
+%\subsection{Final similarity matrix}
+%Once the matrix is ready, the system will use it to answer the query of users, from such  matrix the system will retrieve the common projects ordered by rank.
+
+
 
 Using a complete software application as input, CLAN represents source code files as a TDM, in which a row contains a unique class or package and a column corresponds to an application. SVD is then applied to reduce the dimension of the matrix. Similarity between applications is computed as the cosine similarity between vector in the reduced matrix. CLAN has been tested on a dataset with more than $8.000$ SourceForge\footnote{SourceForge: \url{https://sourceforge.net/}} applications and shows that it qualifies for the detection of similar applications \cite{McMillan:2012:DSS:2337223.2337267}.
 
@@ -467,7 +531,7 @@ Most low-level similarity algorithms (shown as \textit{L} in Table~\ref{tbl:Algo
 
 In contrast, high-level similarity techniques (shown as \textit{H} in Table~\ref{tbl:AlgorithmsAndFeatures}) do not consider source code for similarity computation. They characterize software by exploiting available features such as descriptions, user reviews, and \code{README.MD} file. The similarity is computed as the cosine similarity of the corresponding feature vectors. For computing similarity between mobile applications, other specific features such as images and permissions are also incorporated. A current trend in these techniques is to exploit textual content to compute similarity, e.g. in AppRec \cite{confairsBhandariSDJ13}, SimApp \cite{Chen:2015:SFD:2684822.2685305}, TagSim \cite{Lo:2012:DSA:2473496.2473616}. A main drawback with this approach is that, same words can be used to explain different requirements or the other way around, the same requirements can be described using different words \cite{10.1109/APSEC.2004.69}. So it might be the case that two textual contents with different vocabularies still have a similar description or two files with similar vocabularies contain different descriptions. The matching of words in the descriptions as well as source code to compute similarity is considered to be ineffective as already stated in \cite{McMillan:2012:DSS:2337223.2337267}. To overcome this problem, the application of a synonym dictionary like WordNet \cite{Miller:1995:WLD:219717.219748} is beneficial. Furthermore, the utilization TDM and LSA in textual contents is proven to be effective as LSA helps consider latent semantic relationships. Nevertheless, there is still a problem with the approaches like RepoPal where readme file is used for similarity computation, since in general the descriptions for software projects are written in different languages. According to our observation in GitHub, \code{README.MD} files are written in various languages, \eg not only English but also Japanese, Korean, or Chinese. And the comparison of a readme file in Japanese with one in English should yield dissimilarity, even though two projects may be similar. SimApp \cite{Chen:2015:SFD:2684822.2685305} is the only technique that attempts to combine several high-level information into similarity computation. It eventually applies a machine learning algorithm to learn optimal weights. The approach is promising, nevertheless it is only applicable in the presence of a decent training dataset, which is hard to come by in practice.
 
-\CrossSim is an approach that attempts to combine both low-level and high-level information in computing similarities. The approach integrates implicit semantic relationships and intrinsic dependencies among different users, repositories, source code. Thus, it is able to incorporate new features, on the fly, into the similarity computation without modifying the internal design. \CrossSim is expected to improve the overall performance of the similarity computation and thus the quality of the eventual recommendations. In the next chapter, we are going to introduce our implementation and evaluation of \CrossSim with respect to some notable tools, \ie \MUDABlue, \CLAN, and \RepoPal.
+\CrossSim is an approach that attempts to combine both low-level and high-level information in computing similarities. The approach integrates implicit semantic relationships and intrinsic dependencies among different users, repositories, source code. Thus, it is able to incorporate new features, on the fly, into the similarity computation without modifying the internal design. \CrossSim is expected to improve the overall performance of the similarity computation and thus the quality of the eventual recommendations. In the next chapters, we are going to introduce our implementation and evaluation of \CrossSim with respect to some notable tools, \ie \MUDABlue, \CLAN, and \RepoPal.
 
 
 %We aim to design a representation model that integrates semantic relationships among various artifacts and
