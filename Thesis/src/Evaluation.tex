@@ -219,7 +219,8 @@ The confidence confirms what stated so far, the mojority of the votes for MudaBl
 
 \newcommand{\rqsecond}{RQ$_2$: Which similarity metric is more efficient?}\textit{\textbf{\rqsecond}} 
 
-An important factor for a similarity metric is the ability to compute within an acceptable amount of time.
+In order to give an anwser more complete as possible we considered 4 metrics, (Success Rate, Similarity, Confidence and Execution Time).
+Our experimentation confirm what \cite{10.1109/SANER.2017.7884605} already stated, \emph{RepoPal} outperforms both \emph{MudaBlue} and \emph{Clan}. This evaluation has been confirmed by all the metrics, if one take a look to the Precision metric for example, it's easy to see that \emph{MudaBlue} and \emph{Clan} scored an high value a time over 5. It's interesting to take a look also to the Confidence, in fact here is confirmed that the evaluators mostly put a low score on the \emph{MudaBlue} and \emph{Clan} results. This is mainly due to the fact that both the approaches rely only on source code, and this is exactly what we wanted to demonstrate.
 
 \begin{figure}[!h]
 \includegraphics[width=8cm,height=13cm,keepaspectratio]{images/ExecutionTime.pdf}
