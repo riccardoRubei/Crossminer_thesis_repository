@@ -104,7 +104,7 @@ OF OPEN SOURCE PROJECTS}
 \begin{textblock*}{5.0cm}(1.5cm,2.0cm)
 \begin{itemize}
 	\item Introduction
-	\item CrossMiner
+	\item CROSSMINER
 	\item Contribution
 	\item Results
 	\item Conclusion
@@ -120,7 +120,7 @@ OF OPEN SOURCE PROJECTS}
 	\begin{figure}[!h]
 	\includegraphics[width=10cm,height=15.5cm,keepaspectratio]{images/scenario.png}
 	\centering
-	\label{fig:Crossminer}
+	\label{fig:Scenario}
 	\end{figure}
 \end{frame}
 
@@ -134,7 +134,19 @@ OF OPEN SOURCE PROJECTS}
 
 \end{frame}
 
-\begin{frame}{Introduction}{CROSSMINER}
+\begin{frame}{Introduction}{Similarity Overview}
+	\begin{itemize}
+		\item \textbf{Low-level Software Similarity}: Using source code
+				(variable/function names, API references, etc.)
+		\item \textbf{High-level Software Similarity}: Using metadata
+				such as readme files, description, GitHub star events
+	\end{itemize}
+\end{frame}
+
+\section{CROSSMINER}
+\subsection{CROSSMINER}
+
+\begin{frame}{CROSSMINER}{Description}
 \begin{itemize}
 	\item CROSSMINER aims at addressing such challenges by providing
 	advanced techniques and tools supporting the identification
@@ -145,7 +157,7 @@ OF OPEN SOURCE PROJECTS}
 
 \end{frame}
 
-\begin{frame}{Introduction}{CROSSMINER}
+\begin{frame}{CROSSMINER}{System Architecture}
 	\begin{figure}[!h]
 	\includegraphics[width=9cm,height=13.5cm,keepaspectratio]{images/crossminer.png}
 	\centering
@@ -153,7 +165,7 @@ OF OPEN SOURCE PROJECTS}
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Introduction}{CROSSMINER}
+\begin{frame}{CROSSMINER}{System Architecture}
 	\begin{figure}[!h]
 	\includegraphics[width=9cm,height=13.5cm,keepaspectratio]{images/UseCaseDiagram.png}
 	\centering
@@ -161,11 +173,19 @@ OF OPEN SOURCE PROJECTS}
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Introduction}{CROSSMINER}
+\begin{frame}{CROSSMINER}{System Architecture}
 	\begin{figure}[!h]
 	\includegraphics[width=8cm,height=11.5cm,keepaspectratio]{images/component.png}
 	\centering
 	\label{fig:ComponentDiagram}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{CROSSMINER}{CROSSSIM}
+	\begin{figure}[!h]
+	\includegraphics[width=9cm,height=13.5cm,keepaspectratio]{images/CrossSim.pdf}
+	\centering
+	\label{fig:CrossSim}
 	\end{figure}
 \end{frame}
 
@@ -178,6 +198,14 @@ OF OPEN SOURCE PROJECTS}
 	\centering
 	\label{fig:EvalProcess}
 	\end{figure}
+\end{frame}
+
+\begin{frame}{Contribution}{Procedure}
+	\begin{itemize}
+		\item Studying the originals papers
+		\item Implentation
+		\item Testing
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Contribution}{MudaBlue}
@@ -193,14 +221,6 @@ OF OPEN SOURCE PROJECTS}
 	\includegraphics[width=9cm,height=13.5cm,keepaspectratio]{images/Clan.png}
 	\centering
 	\label{fig:Clan}
-	\end{figure}
-\end{frame}
-
-\begin{frame}{Contribution}{CROSSSIM}
-	\begin{figure}[!h]
-	\includegraphics[width=9cm,height=13.5cm,keepaspectratio]{images/CrossSim.pdf}
-	\centering
-	\label{fig:CrossSim}
 	\end{figure}
 \end{frame}
 
@@ -255,7 +275,7 @@ OF OPEN SOURCE PROJECTS}
 
 \begin{frame}{Conclusion}{What Else to be Done}
 	\begin{itemize}
-		\item Integrate CrossSim inside the system
+		\item Eclipse Integration
 		\item Provide API recommandation
 		\item Provide snippets of code
 	\end{itemize}
